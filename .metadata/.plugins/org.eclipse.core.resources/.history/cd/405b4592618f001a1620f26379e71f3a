@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputstreamReader(System.in));
+			
+		
+		double walk = Math.ceil((dis - up - 0.0) / (up - down)) + 1.0; 
+		int day = (int)walk;		
+
+		System.out.println(day);
+
+	}
+
+
+
+}
+

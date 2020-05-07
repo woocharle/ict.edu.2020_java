@@ -1,0 +1,7 @@
+
+public class Ex18 {
+	public static void main(String[] args) {
+		System.out.println("조건연산자(삼항연산자)");
+		System.out.println("형식: 저장변수 = 조건식 ? 참일때 실행 문장 : 거짓일 때 실행문장");
+	}
+}

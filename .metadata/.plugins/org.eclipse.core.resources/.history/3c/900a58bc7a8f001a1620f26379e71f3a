@@ -1,0 +1,14 @@
+package com.ict.edu;
+
+public class Ex01 {
+	public static void main(String[] args) {
+		int k1 = 59;
+		String str = "초기값";
+		if(k1 >= 60) {
+			str = "합격";
+		}
+		System.out.println("결과: " + str);
+		System.out.println("수고하셨습니다.");
+		
+	}
+}

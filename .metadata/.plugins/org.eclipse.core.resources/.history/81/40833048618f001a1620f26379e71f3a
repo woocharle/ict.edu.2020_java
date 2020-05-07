@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+		Scanner scan = new Scanner(System.in);
+		
+		int up = scan.nextInt();
+		int down = scan.nextInt();
+		int dis = scan.nextInt();
+			
+		
+		double walk = Math.ceil((dis - up - 0.0) / (up - down)) + 1.0; 
+		int day = (int)walk;		
+
+		System.out.println(day);
+
+	}
+
+}
+

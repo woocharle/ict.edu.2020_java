@@ -1,0 +1,10 @@
+
+public class Ex19 {
+	public static void main(String[] args) {
+		int k1 = 7;
+		
+		int k2 = 6;
+		
+		char k3 = 'H';
+	}
+}
