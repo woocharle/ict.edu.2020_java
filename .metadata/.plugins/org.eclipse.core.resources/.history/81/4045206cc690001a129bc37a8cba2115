@@ -1,0 +1,58 @@
+import java.io.*;
+import java.util.*;
+
+public class Main{
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String str = br.readLine();
+		int num = Integer.parseInt(str);
+		int[] res = new int [num]; 
+		
+		for(int i = 0; i < num ; i++) {
+				str = br.readLine();
+				String data[] = str.split(" "); 
+				int dep = Integer.parseInt(data[0]);
+				int arr = Integer.parseInt(data[1]);
+				
+				
+		}
+
+		
+		
+	}
+
+	public static int rule(int row, int col) {
+		
+		int sum = 0;
+		int[] num = new int[col];
+		int[] tmp = new int[col];
+		
+		for(int i = 0; i < col; i++) {
+			num[i] = i + 1;
+			tmp[i] = num[i];
+		}
+		
+		for(int i = 0; i < row; i++) {
+			for (int j = 0; j < col; j++) {
+				sum = 0;
+				for(int k = 0; k <= j; k++) {
+					sum += tmp[k];
+				}	
+				num[j] = sum;
+				//System.out.println(num[j]);
+			}
+			for(int j = 0; j < col; j++) {
+				tmp[j] = num[j];
+			}
+
+		}
+		
+		sum= num[col - 1];
+	
+		return sum;
+		
+	}
+
+}
+
