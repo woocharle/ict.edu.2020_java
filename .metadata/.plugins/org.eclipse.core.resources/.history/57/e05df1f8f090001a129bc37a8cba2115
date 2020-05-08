@@ -1,0 +1,109 @@
+package com.ict.edu;
+
+public class Ex07 {
+	public static void main(String[] args) {
+		System.out.println("while문");
+	
+		System.out.println("---------------- for vs while ----------------");
+		
+		System.out.println("for문 이용");
+		for (int i = 0; i < 11; i++) {
+			System.out.print(i + " ");
+		}
+		
+		System.out.println("\n");
+		
+		System.out.println("while문 이용");
+		int k1 = 0;
+		
+		while (k1 < 11) {
+			System.out.print(k1 + " ");
+			k1 += 1;
+		}
+		
+		System.out.println("\n");
+		
+		System.out.println("while문(true) 이용");
+		
+		k1 = 0;
+		
+		while (true) {
+			if (k1 > 10) break;
+			System.out.print(k1 + " ");
+			k1 += 1;
+		}
+		
+		System.out.println("\n");
+		System.out.println("예제 \n");
+		
+		// 0 ~ 10까지 짝수만 출력
+		
+		k1 = 0;
+		
+		while (k1 < 11) {
+			if(k1 % 2 == 0) {
+				System.out.print(k1 + " ");
+			}
+			k1 += 1;
+		}
+		
+		System.out.println("\n");
+		
+		// 0 ~ 10까지 홀수만 출력
+		
+		k1 = 0;
+		
+		while (k1 < 11) {
+			if(k1 % 2 != 0) {
+				System.out.print(k1 + " ");
+			}
+			k1 += 1;
+		}
+		
+		System.out.println("\n");
+		
+		// 0 ~ 50까지 7의 배수만 출력
+		
+		k1 = 1;
+		
+		while (k1 < 50) {
+			if(k1 % 7 == 0) {
+				System.out.print(k1 + " ");
+			}
+			k1 += 1;
+		}
+		
+
+		// a ~ g까지 출력
+		
+		System.out.println("\n");
+		
+		char c1 = 'a';
+		
+		while (c1 <= 'g') {
+			System.out.print(c1 + " ");
+			
+			c1 += 1;
+		}
+		
+		
+		// 5단 (구구단)
+		
+		k1 = 1;
+		
+		while(k1 < 10) {
+			System.out.println(5 + " x " + k1 + " = " + k1 * 5);
+			k1++; 
+		}
+		
+		
+		
+		// 0 0 0 0
+		// 0 0 0 0
+		// 0 0 0 0
+		// 0 0 0 0
+		
+		
+		
+	}
+}
