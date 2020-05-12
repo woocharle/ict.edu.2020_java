@@ -1,0 +1,116 @@
+코드 하면서 배운점.
+
+되도록이면 한 함수 안에 루프문을 적게 써서 시간복잡도를 올라가지 않게 하자.
+
+ex) 백준에서는 최대 2개 안쪽으로 써야한다.
+
+참고 나무위키, https://www.weeklyps.com/entry/%EC%8B%9C%EA%B0%84%EB%B3%B5%EC%9E%A1%EB%8F%84
+
+
+
+2044번
+
+1. first
+
+import java.util.Scanner;
+
+public class Main {
+	
+	private static char[][] starArr = new char[6561][6561];
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		
+		sc.close();
+		
+		makeStar(n, 0, 0);
+		
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i=0; i<n; i++) {
+			for(int j=0; j<n; j++) {
+				sb.append(starArr[i][j]);
+			}
+			sb.append("\n");
+		}
+		
+		sb.deleteCharAt(sb.length()-1);
+		
+		System.out.println(sb);
+		
+	}
+
+	
+	private static void makeStar(int n, int x, int y) {
+		
+		if(n<=0) {
+			starArr[0][0] = '*';
+			return;
+		}
+		
+		int div = n/3;
+		
+		for(int i=x; i<x+n; i++) {
+			for(int j=y; j<y+n; j++) {
+				starArr[i][j] = starArr[i%n][j%n];
+			}
+		}
+		
+		for(int i=0; i<3; i++) {
+			for(int j=0; j<3; j++) {
+				if(i==1 && j==1) {
+					continue;
+				}
+				makeStar(div, div*i, div*j);
+			}
+		}
+		
+	}
+	
+
+
+}
+
+
+2. 최적
+
+
+import java.util.*;
+
+public class Main {
+    static char arr[][];
+    public static void star(int a, int b, int n) {
+        int div = 0;
+        if(n==1) {
+            arr[a][b] = '*';
+            return;
+        }
+        div = n/3;
+        for(int i=0; i<3; i++) {
+            for(int j=0; j<3; j++) {
+                if(i==1 & j==1) continue;
+                star(a+(div*i), b+(div*j), div);
+            }
+        }
+    }
+    
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        
+        int n = sc.nextInt();
+        arr = new char[n][n];
+        for(int i=0; i<arr.length; i++) {Arrays.fill(arr[i], ' ');}
+        star(0,0,n);
+        for(int i=0; i<arr.length; i++) {System.out.println(arr[i]);}
+        
+    }
+}
+
+
+
+
+
+
+

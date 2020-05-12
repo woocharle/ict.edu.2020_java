@@ -1,65 +1,42 @@
-import java.io.*;
+
 import java.util.*;
 
 public class Main{
-	public static void main(String[] args) throws IOException {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String data = br.readLine();
-		int num = Integer.parseInt(data);
-		int tmp = num;
-		int cnt = 0;
+	static char[][] arr;
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		
-		while(tmp != 1) {
-			tmp = tmp / 3;
-			cnt++; 
-		}
-			
-		for (int i = 0; i < num; i++) {
-			String str_t = "";
-			for (int j = 0; j < num ; j++) {
-				String str = "*";
-				for(int k = 1; k < 3; k++) {
-					if(i % Math.pow(3, k) == 1 && j % (int)Math.pow(3, k) == 1) {
-						str = " ";
-					}
-				
-					if(k > 1) {
-						if(i % Math.pow(3, k) < 2 * Math.pow(3, k - 1) - 1 && 
-								i % Math.pow(3, k) >= Math.pow(3, k - 1)) {
-							if(j % Math.pow(3, k) < 2 * Math.pow(3, k - 1) - 1 && 
-								j % Math.pow(3, k) >= Math.pow(3, k - 1)){
-								str = " ";
-							}
-							
-						}
-						
-					}
-				
-				}
-				str_t += str;
-			}
-			System.out.println(str_t);
-			
+		int n = sc.nextInt();
+		arr = new char[n][n];
+		//System.out.println(arr.length);
+		for(int i = 0; i < arr.length; i++) {
+			Arrays.fill(arr[i], ' ');
 		}
 		
-		/*
-		for(int i = 0 ; i < cnt; i++) {			
-			for (int j = (int)Math.pow(3, i) ; j < num; j += Math.pow(3, i + 1)) {
-				for (int k = (int)Math.pow(3, i); k < num; k += Math.pow(3, i + 1)) {
-					for(int l = 0; l < Math.pow(3, i); l++) {
-						for(int m = 0; m < Math.pow(3, i) ; m++) {
-							st[j + l][k + m] = " ";
-						}
-					}
-						
-				}
-				
-			}
-
+		emp(0, 0, n);
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
 		}
-		*/
-
+		
 	}
 
+	public static void emp(int a, int b, int n) {
+		int div = 0;
+		if(n == 1) {
+			arr[a][b] = '*';
+			return;
+		}
+		div = n / 3;
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				if(i ==1 && j ==1) continue;
+				emp(a + (div * i), b + (div * j), div);
+				
+			}
+			
+		}
+		
+	}
+	
 }
 
