@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Ex10"/>
+		<item key="selection" value="t3"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="t1"/>
+			<item value="Ex10"/>
+			<item value="arr"/>
+			<item value="sum"/>
+			<item value="name"/>
 			<item value="Ex09"/>
 			<item value="drink"/>
 			<item value="j"/>
@@ -18,10 +23,14 @@
 			<item value="parseint"/>
 			<item value="double"/>
 			<item value="f"/>
-			<item value="case"/>
-			<item value=""/>
 		</list>
 		<list key="replacehistory">
+			<item value="t3"/>
+			<item value="t2"/>
+			<item value="Ex12"/>
+			<item value="std"/>
+			<item value="avg"/>
+			<item value="grd"/>
 			<item value="Ex10"/>
 			<item value="menu"/>
 			<item value="i"/>

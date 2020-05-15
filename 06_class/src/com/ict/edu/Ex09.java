@@ -3,6 +3,7 @@ package com.ict.edu;
 public class Ex09 {
 	private String name;
 	private int sum;
+	private int rank;
 	private double avg;
 	private String grade;
 	
@@ -22,6 +23,10 @@ public class Ex09 {
 	
 	public String g_grade() {
 		return grade;
+	}
+	
+	public int g_rank() {
+		return rank;
 	}
 
 	// setter 
@@ -54,7 +59,11 @@ public class Ex09 {
 		}
 	}
 	
-	// 평균 구하기 
+	// 순위 구하기 
+	
+	public void s_rank(int rank) {
+		this.rank = rank + 1;
+	}
 	
 	
 	// 학점 구하기 

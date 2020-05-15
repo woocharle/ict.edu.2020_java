@@ -1,11 +1,28 @@
 package com.ict.edu;
 
-public class Ex10 {
+public class Ex12 {
+	// 멤버 필드
 	private String name;
 	private int sum;
-	private int rank;
 	private double avg;
 	private String grade;
+	private int rank;
+	
+	//생성자
+	
+	public Ex12() {
+		// 기존 생성자
+	}
+
+	public Ex12(String name, int kor, int eng, int math, int rank) {
+		this.name = name;
+		this.sum = s_sum(kor, eng, math);
+		this.avg = s_avg();
+		this.grade = s_hak();
+		this.rank = rank;
+		
+	}
+	
 	
 	//getter 
 
@@ -91,3 +108,4 @@ public class Ex10 {
 	}
 	
 }
+
