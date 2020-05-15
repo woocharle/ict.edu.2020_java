@@ -5,8 +5,20 @@ package com.ict.edu;
 public class Ex02 {
 	int kor = 80;   			//인스턴스 변수
 	static int eng = 85;		//static 변수
-	final int math = 90;		//인스턴스 상수 final이 있으면 상수
-	final static int com =95;	//static 상수(보통 상수 포함)   
+	final int MATH = 90;		//인스턴스 상수 final이 있으면 상수
+	final static int COM =95;	//static 상수(보통 상수 포함)   
+	
+	// 변수와 상수 
+	// 메소드: 기능, 동작
+	public void prn() {
+		kor = kor + 10;
+		eng = eng + 10;
+		//MATH = MATH + 10;
+		//COM = COM + 10;
+		
+		
+	}
+	
 	
 	
 }
