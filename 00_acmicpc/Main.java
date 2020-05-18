@@ -3,54 +3,99 @@ import java.io.*;
 import java.util.*;
 
 public class Main{
-	static int[] data;
+	static int[][] arr;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String str_1 = br.readLine();
-		String str_2 = br.readLine();
-		String[] input_1 = str_1.split(" ");
-		String[] input_2 = str_2.split(" ");
+		String str = br.readLine();
+		String[] data = str.split(" ");
+		int x = Integer.parseInt(data[0]);
+		int y = Integer.parseInt(data[1]);
 		
-		int num = Integer.parseInt(input_1[0]);
-		int std = Integer.parseInt(input_1[1]);
-		data = new int[num];
+		arr = new int[x][y];
 		
-	 	
-		for (int i = 0; i < data.length; i++) {
-			data[i] = Integer.parseInt(input_2[i]);
-		}
-		
-		int[] n_case = new int [num - 2];  
-		int max = 0;
-		for(int i = 0; i < n_case.length; i++) {
-			n_case[i] = jack(i, std, data);
-			//System.out.println(n_case[i]);
-			if(n_case[i] > max) {
-				max = n_case[i];
+		for (int i = 0; i < x; i++) {
+			str = br.readLine();
+			data = str.split(" ");
+			for (int j = 0; j < y; j++) {
+				arr[i][j] = Integer.parseInt(data[j]);
 			}
+			
 		}
 		
-		System.out.println(max);
-			
+		
+		
+		int[] fig = new int[6];
+		int max = 0;
+		for (int i = 0; i < arr.length; i++) {
+			fig[0]= fig1(i, arr);
+		}
+		
+		for (int i = 0; i < y; i++) {
+			fig[1] = fig1(i, arr);
+		}
+		
+
 	}
 	
-	public static int jack(int c, int std , int[] data) {		
+	public static int fig1(int k, int[][] arr) {
 		int max = 0;
+		int sum = 0;
+		int a = arr.length - 4;
+		int b = arr[k].length - 4;
 		
-		for (int i = c + 1; i < data.length - 1 ; i++) {
-			int sum = data[c] + data[i];
-			for (int j = i + 1; j < data.length; j++) {
-				sum += data[j];
-				if(sum > max && sum <= std) {
-					max = sum;
-				}
-				sum -= data[j];
+		for (int i = 0; i < b + 1; i++) {
+			for (int j = 0; j < 4; j++) {
+				sum += arr[k][i + j];
+			}
+			if(sum > max) {
+				max = sum;
 			}
 		}
+		
+		for (int i = 0; i < a + 1; i++) {
+			for (int j = 0; j < 4; j++) {
+				sum += arr[a + j][k];
+			}
+			if(sum > max) {
+				max = sum;
+			}
+		}
+
+	
 		
 		return max;
 	}
-
+	
+	
+	
+	
+	public static int fig2(int x, int y, int[][] arr) {
+		int max = 0;
+		
+		return max;
+	}
+	
+	public static int fig3(int x, int y, int[][] arr) {
+		int max = 0;
+		
+		return max;
+	}
+	
+	public static int fig4(int x, int y, int[][] arr) {
+		int max = 0;
+		
+		return max;
+	}
+	
+	public static int fig5(int x, int y, int[][] arr) {
+		int max = 0;
+		
+		return max;
+	}
+	
+	
+	
+	
 	
 }
 
