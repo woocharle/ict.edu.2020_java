@@ -12,8 +12,7 @@ public class Person {
 		this.age = age;
 	}
 	
-	
-	
+
 	// member method
 	public String getName() {
 		return name;
@@ -35,7 +34,7 @@ public class Person {
 	}
 
 	public void print() {
-		System.out.println("이름: " + name + ", 나이: " + age);
+		System.out.print("이름: " + name + ", 나이: " + age);
 	}
 
 	

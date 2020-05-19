@@ -7,7 +7,7 @@ import java.util.Date;
 public class Ex04 {
 	public static void main(String[] args) {
 		// 날짜 관련 클래스: 현재 사용하고 있는 컴퓨터 기준
-		// Data 클래스(deprecate => 언제든지 지원을 끊을 수 있다.)
+		// Date 클래스(deprecate => 언제든지 지원을 끊을 수 있다.)
 		// calendar 클래스 => Date 클래스 대신 사용 중인 클래스
 		
 		Date date = new Date();
@@ -18,10 +18,10 @@ public class Ex04 {
 		
 		System.out.println(date.getYear() + 1900 + "년");   // 2020 - 1900 getyear는 써먹을 수 없다.
 		System.out.println(date.getMonth() + 1 + "월");   // 2020 - 1900 getyear는 써먹을 수 없다.
-		System.out.println(date.getDate()+1900 + "일");   // 2020 - 1900 getyear는 써먹을 수 없다.
-		System.out.println(date.getHours()+1900 + "시");   // 2020 - 1900 getyear는 써먹을 수 없다.
-		System.out.println(date.getMinutes()+1900 + "분");   // 2020 - 1900 getyear는 써먹을 수 없다.
-		System.out.println(date.getSeconds()+1900 + "초");   // 2020 - 1900 getyear는 써먹을 수 없다.
+		System.out.println(date.getDate() + "일");   // 2020 - 1900 getyear는 써먹을 수 없다.
+		System.out.println(date.getHours() + "시");   // 2020 - 1900 getyear는 써먹을 수 없다.
+		System.out.println(date.getMinutes() + "분");   // 2020 - 1900 getyear는 써먹을 수 없다.
+		System.out.println(date.getSeconds() + "초");   // 2020 - 1900 getyear는 써먹을 수 없다.
 		System.out.println("==================================================================");
 		
 		int k = date.getDay(); // 0 - 6 , 0 => 일요일, 6 => 토요일

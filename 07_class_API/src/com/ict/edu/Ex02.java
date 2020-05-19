@@ -273,7 +273,7 @@ public class Ex02 {
 		  - 원래 의미는 기본 자료형을 객체로 만들 때 사용하는 클래스 (이제는 자동으로 만들어짐)
 		  - 문자열을 boolean형으로 : Boolean.parseBoolean();, true와 false밖에 못 들어간다.
 		  - 문자열을 정수형으로: Integer.parseInt();
-		  - 문자열을  long형으로 : Long.parseLong();, 문자열안에 숫자만 들어가야 하며 숫자 뒤에 L을 붙이면 오류가 난다. ex) 100L 은 오류
+		  - 문자열을 long형으로 : Long.parseLong();, 문자열안에 숫자만 들어가야 하며 숫자 뒤에 L을 붙이면 오류가 난다. ex) 100L 은 오류
 		  - 문자열을 float으로 : Float.parseFloat();, long과 마찬가지로 숫자 뒤에 f를 붙여도 오류가 나지 않는다.
 		  - 문자열을 double로 : Double.parseDouble();
 		  - 문자열을 문자로 바꾸는 Wrapper class는 없다.

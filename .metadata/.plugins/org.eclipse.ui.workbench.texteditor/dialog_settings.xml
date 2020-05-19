@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="p2"/>
+		<item key="selection" value="t."/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="z."/>
+			<item value="p."/>
+			<item value="sleep"/>
 			<item value="mp3"/>
 			<item value="getbyte"/>
 			<item value="t1"/>
@@ -20,11 +23,10 @@
 			<item value="j"/>
 			<item value="97"/>
 			<item value="&#x09;&#x09;System.out.print(&quot;입금액: &quot;);"/>
-			<item value="break"/>
-			<item value="pareInt"/>
-			<item value="parseint"/>
 		</list>
 		<list key="replacehistory">
+			<item value="t."/>
+			<item value="z."/>
 			<item value="p2"/>
 			<item value="t3"/>
 			<item value="t2"/>
@@ -38,8 +40,6 @@
 			<item value="65"/>
 			<item value="continue"/>
 			<item value="parseInt"/>
-			<item value="pareInt"/>
-			<item value="int"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

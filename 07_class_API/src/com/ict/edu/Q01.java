@@ -107,7 +107,7 @@ public class Q01 {
 				System.out.println(res);
 				
 				loop1: while(true) {
-							System.out.println("계속 하시겠습니까? (1.네  2.아니오)");
+							System.out.print("계속 하시겠습니까? (1.네  2.아니오)");
 							num = sc.nextInt();
 							if(num == 1) {
 								continue loop;

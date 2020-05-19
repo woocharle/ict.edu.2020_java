@@ -25,6 +25,26 @@ public class Ex12 {
 	
 	
 	//getter 
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getSum() {
+		return sum;
+	}
+	
+	public double getAvg() {
+		return avg;
+	}
+	
+	public String getHak() {
+		return grade;
+	}
+	
+	public int getRank() {
+		return rank;
+	}
 
 	// setter 
 	public void setName(String name) {
@@ -33,9 +53,6 @@ public class Ex12 {
 	
 	// 합계 구하기 
 
-	public void setSum(int sum) {
-		this.sum = sum;
-	}
 
 	public int s_sum(int kor, int eng, int math) {
 		return kor + eng + math;
@@ -43,10 +60,7 @@ public class Ex12 {
 	
 	// 평균 구하기
 	
-	public void setAvg(double avg) {
-		this.avg = avg;
-	}
-	
+
 	public double s_avg() {
 		return (int)(10 * sum / 3.0) / 10.0;
 	}
@@ -85,27 +99,7 @@ public class Ex12 {
 		this.rank = rank + 1;
 		return rank;
 	}
-	
-	//getter
-	public String getName() {
-		return name;
-	}
-	
-	public int getSum() {
-		return sum;
-	}
-	
-	public double getAvg() {
-		return avg;
-	}
-	
-	public String getHak() {
-		return grade;
-	}
-	
-	public int getRank() {
-		return rank;
-	}
+
 	
 }
 
