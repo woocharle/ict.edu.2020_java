@@ -24,29 +24,30 @@ public class Main{
 		
 		
 		int max = 0;
-		int fig;
+		int m1 = 0;
 		int[] figs = new int[3];
 		
 		for (int i = 0; i < arr.length; i++) {
-			figs[0]= fig1(i, arr);
-			if(max < figs[0]) {
-				max = figs[0];
+			m1 = fig1(i, arr);
+			if(m1 > figs[0]) {
+				figs[0] = m1;
 			}
 		}
 		
 		for (int i = 0; i < y; i++) {
-			figs[1]= fig2(i, arr);
-			if(max < figs[1]) {
-				max = figs[1];
+			m1 = fig2(i, arr);
+			if(m1 > figs[1]) {
+				figs[1] = m1;
 			}
 		}
 		
 		figs[2] = fig3(x , y, arr);
 		
-				
-		
-		
-		
+		for (int i = 0; i < figs.length; i++) {
+			if(figs[i] > max) {
+				max = figs[i];
+			}
+		}
 		
 		System.out.println(max);
 		
@@ -66,6 +67,7 @@ public class Main{
 				max = sum;
 			}
 		}
+			
 		return max;
 		
 	}
@@ -93,20 +95,25 @@ public class Main{
 		int sum;
 		
 		for (int i = 0; i < x - 1; i++) {
-			sum = 0;
 			for (int j = 0; j < y - 1; j++) {
-				sum += arr[i][j] + arr[i][j + 1] + arr[i + 1][j] + arr[i + 1][j + 1];
+				sum = arr[i][j] + arr[i][j + 1] + arr[i + 1][j] + arr[i + 1][j + 1];
+				if(sum > max) {
+					max = sum;
+				}
 			}
-			if(sum > max) {
-				max = sum;
-			}
+			
+			
 		}
+		
+		
+		
+		
 		return max;
 
 	}
 	
 	public static int fig4(int x, int y, int[][] arr) {
-		int max = 0;
+		int max = 0;		
 		
 		return max;
 	}
