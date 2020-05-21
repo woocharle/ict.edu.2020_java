@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Class_A"/>
+		<item key="selection" value="hak"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="&#x09;&#x09;&#x09;&#x09;System.out.print(&quot;계속 할 까요? (y/n)=&gt; &quot;);"/>
+			<item value="grd"/>
+			<item value="rank"/>
+			<item value="box"/>
 			<item value="A"/>
 			<item value="z."/>
 			<item value="p."/>
@@ -19,12 +23,11 @@
 			<item value="arr"/>
 			<item value="sum"/>
 			<item value="name"/>
-			<item value="Ex09"/>
-			<item value="drink"/>
-			<item value="j"/>
-			<item value="97"/>
 		</list>
 		<list key="replacehistory">
+			<item value="hak"/>
+			<item value="stby"/>
+			<item value="arr"/>
 			<item value="Class_A"/>
 			<item value="t."/>
 			<item value="z."/>
@@ -37,9 +40,6 @@
 			<item value="grd"/>
 			<item value="Ex10"/>
 			<item value="menu"/>
-			<item value="i"/>
-			<item value="65"/>
-			<item value="continue"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
