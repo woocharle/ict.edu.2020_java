@@ -83,8 +83,8 @@ public class Ex03_main {
 			System.out.println("다 비었음.");
 		}
 		
+		Ex03[] arr1 =  h1.toArray(new Ex03[3]);
 		
-	
 	}
 	
 }

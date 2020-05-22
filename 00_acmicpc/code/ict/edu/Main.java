@@ -1,8 +1,8 @@
+package code.ict.edu;
 
 import java.io.*;
-import java.util.*;
 
-public class Main{
+public class Main {
 	static int[][] arr;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -100,39 +100,27 @@ public class Main{
 				if(sum > max) {
 					max = sum;
 				}
-			}
-			
-			
+			}			
 		}
 		
-		
-		
-		
+		for (int i = 1; i < x - 1; i++) {
+			for (int j = 1; j < y - 1; j++) {
+				sum = arr[i][j - 1] + arr[i][j] + arr[i][j + 1] + arr[i + 1][j];
+				if(sum > max) {
+					max = sum;
+				}				
+			}			
+		}
+				
 		return max;
-
+		
 	}
 	
-	public static int fig4(int x, int y, int[][] arr) {
-		int max = 0;		
-		
-		return max;
-	}
-	
-	public static int fig5(int x, int y, int[][] arr) {
+	public static int s_fig(int i , int j) {
 		int max = 0;
 		
 		return max;
 	}
-	
-	public static int fig6(int x, int y, int[][] arr) {
-		int max = 0;
-		
-		return max;
-	}
-	
-	
-	
 	
 	
 }
-

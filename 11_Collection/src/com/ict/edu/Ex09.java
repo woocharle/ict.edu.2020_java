@@ -1,6 +1,8 @@
 package com.ict.edu;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Iterator;
 import java.util.Vector;
 
 public class Ex09 {
@@ -38,6 +40,34 @@ public class Ex09 {
 		else {
 			System.out.println("존재하지 않음.");
 		}
+		
+		if(vector.contains("기성용")) {
+			System.out.println(vector.indexOf("기성용") + "번째 위치");
+			System.out.println(vector.get(2));
+			System.out.println(vector.lastIndexOf("기성용") + "번째 위치");
+			System.out.println(vector.elementAt(1));
+			System.out.println(vector.firstElement());
+			System.out.println(vector.lastElement());
+		}
+		
+		vector.set(1, "차두리");
+		vector.setElementAt("박세리", 2);
+		System.out.println(vector);
+		
+		System.out.println(list.size());
+		System.out.println(vector.size());
+		System.out.println("==============================================================");
+		
+		for(String k : list) {
+			System.out.println(k);
+		}
+		System.out.println("==============================================================");
+		
+		Iterator<String> it = list.iterator();
+		while(it.hasNext()) {
+			String res = (String)it.next();
+		}
+		
 		
 	}
 }
