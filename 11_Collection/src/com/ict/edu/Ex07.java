@@ -13,7 +13,6 @@ public class Ex07 {
 			if(lotto.add(k)) {
 				n++;
 			}
-			
 		}
 		
 		System.out.println(lotto);

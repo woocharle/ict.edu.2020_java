@@ -1,6 +1,7 @@
 package code.ict.edu;
 
 import java.io.*;
+import java.util.HashSet;
 
 public class Main {
 	static int[][] arr;
@@ -21,7 +22,6 @@ public class Main {
 			}
 			
 		}
-		
 		
 		int max = 0;
 		int m1 = 0;
@@ -94,33 +94,75 @@ public class Main {
 		int max = 0;
 		int sum;
 		
-		for (int i = 0; i < x - 1; i++) {
-			for (int j = 0; j < y - 1; j++) {
-				sum = arr[i][j] + arr[i][j + 1] + arr[i + 1][j] + arr[i + 1][j + 1];
-				if(sum > max) {
-					max = sum;
-				}
-			}			
-		}
-		
 		for (int i = 1; i < x - 1; i++) {
-			for (int j = 1; j < y - 1; j++) {
-				sum = arr[i][j - 1] + arr[i][j] + arr[i][j + 1] + arr[i + 1][j];
-				if(sum > max) {
-					max = sum;
-				}				
-			}			
+			sum = s_fig(i , y, arr);
+			if(max < sum) {
+				max = sum;
+			}
 		}
-				
+						
 		return max;
 		
 	}
 	
-	public static int s_fig(int i , int j) {
+	public static int s_fig(int x , int y, int[][] arr) {
 		int max = 0;
+		HashSet<Integer> res = new HashSet<Integer>();
+		
+		for (int i = 1; i < y - 1; i++) {
+			// ㅏ ㅜ ㅓ ㅗ, 응용한 번개 모양, L자
+			res.add(arr[x][i] + arr[x + 1][i - 1] + arr[x][i - 1] + arr[x - 1][i - 1]);  // ㅏ
+			res.add(arr[x][i] + arr[x - 1][i] + arr[x + 1][i] + arr[x][i + 1]);  // ㅏ
+			res.add(arr[x - 1][i] + arr[x + 1][i - 1] + arr[x][i - 1] + arr[x - 1][i - 1]);  // L자 1
+			res.add(arr[x + 1][i] + arr[x + 1][i - 1] + arr[x][i - 1] + arr[x - 1][i - 1]);  // L자 2	
+			res.add(arr[x][i] + arr[x - 1][i] + arr[x + 1][i] + arr[x - 1][i + 1]); // L자 1
+			res.add(arr[x][i] + arr[x - 1][i] + arr[x + 1][i] + arr[x + 1][i + 1]); // L자 2	
+			res.add(arr[x][i] + arr[x][i - 1] + arr[x + 1][i] + arr[x - 1][i - 1]);  //  번개
+			res.add(arr[x][i] + arr[x][i - 1] + arr[x - 1][i] + arr[x + 1][i - 1] );  // 번개 
+			
+			res.add(arr[x][i] + arr[x - 1][i - 1] + arr[x - 1][i] + arr[x - 1][i + 1]);  // ㅜ
+			res.add(arr[x][i] + arr[x][i - 1] + arr[x][i + 1] + arr[x + 1][i]);  // ㅜ
+			res.add(arr[x][i - 1] + arr[x - 1][i - 1] + arr[x - 1][i] + arr[x - 1][i + 1]);  // L자 1
+			res.add(arr[x][i + 1] + arr[x - 1][i - 1] + arr[x - 1][i] + arr[x - 1][i + 1]);  // L자 2
+			res.add(arr[x][i] + arr[x][i - 1] + arr[x][i + 1] + arr[x + 1][i - 1]); 
+			res.add(arr[x][i] + arr[x][i - 1] + arr[x][i + 1] + arr[x + 1][i + 1]); 
+			res.add(arr[x][i] + arr[x - 1][i] + arr[x - 1][i - 1] + arr[x][i + 1]);  // 번개 
+			res.add(arr[x][i] + arr[x - 1][i] + arr[x][i - 1] + arr[x - 1][i + 1]);  // 번개 
+			
+			res.add(arr[x][i] + arr[x - 1][i + 1] + arr[x][i + 1] + arr[x + 1][i + 1]); // ㅓ
+			res.add(arr[x][i] + arr[x - 1][i] + arr[x + 1][i] + arr[x][i - 1]); // ㅓ
+			res.add(arr[x - 1][i] + arr[x - 1][i + 1] + arr[x][i + 1] + arr[x + 1][i + 1]); // L자 1
+			res.add(arr[x + 1][i] + arr[x - 1][i + 1] + arr[x][i + 1] + arr[x + 1][i + 1]); // L자 2
+			res.add(arr[x][i] + arr[x - 1][i] + arr[x + 1][i] + arr[x - 1][i - 1]); // L
+			res.add(arr[x][i] + arr[x - 1][i] + arr[x + 1][i] + arr[x + 1][i - 1]); // L
+			res.add(arr[x][i] + arr[x][i + 1] + arr[x - 1][i + 1] + arr[x + 1][i]); // 번개 
+			res.add(arr[x][i] + arr[x][i + 1] + arr[x - 1][i] + arr[x + 1][i + 1]); // 번개 
+			
+			res.add(arr[x][i] + arr[x + 1][i + 1] + arr[x + 1][i] + arr[x + 1][i - 1]); // ㅗ
+			res.add(arr[x][i] + arr[x][i - 1] + arr[x][i + 1] + arr[x - 1][i]); // ㅗ
+			res.add(arr[x][i - 1] + arr[x + 1][i + 1] + arr[x + 1][i] + arr[x + 1][i - 1]); // L자 1
+			res.add(arr[x][i + 1] + arr[x + 1][i + 1] + arr[x + 1][i] + arr[x + 1][i - 1]); // L자 2
+			res.add(arr[x][i] + arr[x][i - 1] + arr[x][i + 1] + arr[x - 1][i - 1]); // L자 1
+			res.add(arr[x][i] + arr[x][i - 1] + arr[x][i + 1] + arr[x - 1][i + 1]); // L자 2
+			res.add(arr[x][i] + arr[x + 1][i] + arr[x + 1][i + 1] + arr[x][i - 1]); // 번개 
+			res.add(arr[x][i] + arr[x + 1][i] + arr[x][i + 1] + arr[x + 1][i - 1]); // 번개 
+			
+			// 네모
+			res.add(arr[x][i] + arr[x][i - 1] + arr[x - 1][i - 1] + arr[x - 1][i]);
+			res.add(arr[x][i] + arr[x - 1][i] + arr[x - 1][i + 1] + arr[x][i + 1]);
+			res.add(arr[x][i] + arr[x][i + 1] + arr[x + 1][i + 1] + arr[x + 1][i]);
+			res.add(arr[x][i] + arr[x + 1][i] + arr[x + 1][i - 1] + arr[x][i - 1]);
+	
+		}
+		
+		for(int k : res) {
+			if(k > max) {
+				max = k;
+			}
+		}
 		
 		return max;
-	}
 	
+	}
 	
 }
