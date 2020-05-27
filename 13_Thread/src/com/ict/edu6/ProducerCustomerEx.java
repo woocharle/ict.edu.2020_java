@@ -7,8 +7,11 @@ public class ProducerCustomerEx {
 		Customer customer = new Customer(c);
 		Thread tproducer = new Thread(producer);
 		Thread tcustomer = new Thread(customer);
+		
+	
 		tproducer.start();
 		tcustomer.start();
+		
 	
 	}
 }

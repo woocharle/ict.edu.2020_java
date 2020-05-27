@@ -1,30 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="arr"/>
+		<item key="selection" value="VO"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="VO1"/>
+			<item value="VO2"/>
+			<item value="list2["/>
+			<item value="list2."/>
+			<item value="Hashset"/>
+			<item value="fw."/>
+			<item value="System.out"/>
+			<item value="write"/>
+			<item value="dos."/>
 			<item value="arr"/>
 			<item value="&#x09;&#x09;&#x09;&#x09;System.out.print(&quot;계속 할 까요? (y/n)=&gt; &quot;);"/>
 			<item value="grd"/>
 			<item value="rank"/>
 			<item value="box"/>
 			<item value="A"/>
-			<item value="z."/>
-			<item value="p."/>
-			<item value="sleep"/>
-			<item value="mp3"/>
-			<item value="getbyte"/>
-			<item value="t1"/>
-			<item value="Ex10"/>
-			<item value="sum"/>
-			<item value="name"/>
 		</list>
 		<list key="replacehistory">
+			<item value="VO"/>
+			<item value="list["/>
+			<item value="list."/>
+			<item value="Arraylist"/>
+			<item value="bw."/>
+			<item value="ps"/>
+			<item value="read"/>
+			<item value="dis."/>
 			<item value="hak"/>
 			<item value="stby"/>
 			<item value="arr"/>
@@ -32,14 +40,6 @@
 			<item value="t."/>
 			<item value="z."/>
 			<item value="p2"/>
-			<item value="t3"/>
-			<item value="t2"/>
-			<item value="Ex12"/>
-			<item value="std"/>
-			<item value="avg"/>
-			<item value="grd"/>
-			<item value="Ex10"/>
-			<item value="menu"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

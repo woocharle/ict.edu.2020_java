@@ -15,9 +15,9 @@ public class Car {
 	public String getCar() {
 		String carName = null;
 		switch ((int)(Math.random() * 3)) {
-			case 0: carName = "SM5"; break;
-			case 1: carName = "매그너스"; break;
-			case 2: carName = "카렌스"; break;
+			case 0: carName = "K7"; break;
+			case 1: carName = "제네시스"; break;
+			case 2: carName = "에쿠스"; break;
 			
 		}
 		return carName;
