@@ -4,41 +4,42 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /*  
+     ì½”ë“œë³€ê²½ ìˆ˜ì •.
 	InetAddress
-     - ÀÚ¹Ù¿¡¼­ IPÁÖ¼Ò¸¦ Ç¥ÇöÇÏ´Â Å¬·¡½º, »ı¼ºÀÚ°¡ Á¸ÀçÇÏÁö¸¸ »ç¿ëÇÏÁö ¾Ê´Â´Ù.
-     - 6°³ÀÇ static ¸Ş¼Òµå »ç¿ë
-     ¡Ø localhost¶õ? ÇöÀç ³»°¡ »ç¿ëÇÏ°í ÀÖ´Â ÄÄÇ»ÅÍ¸¦ ¸»ÇÑ´Ù.  
+     - ìë°”ì—ì„œ IPì£¼ì†Œë¥¼ í‘œí˜„í•˜ëŠ” í´ë˜ìŠ¤, ìƒì„±ìê°€ ì¡´ì¬í•˜ì§€ë§Œ ì‚¬ìš©í•˜ì§€ ì•ŠëŠ”ë‹¤.
+     - 6ê°œì˜ static ë©”ì†Œë“œ ì‚¬ìš©
+     â€» localhostë€? í˜„ì¬ ë‚´ê°€ ì‚¬ìš©í•˜ê³  ìˆëŠ” ì»´í“¨í„°ë¥¼ ë§í•œë‹¤.  
  
- 	URL(Unifrom Resource Locator)Å¬·¡½º
- 	 - ÀÎÅÍ³İ¿¡¼­ Á¢±Ù °¡´ÉÇÑ ÀÚ¿øÀÇ ÁÖ¼Ò.
- 	 - final Å¬·¡½ºÀÌ´Ù. (»ó¼Ó ºÒ°¡)
- 	 - ¿ø°İÁö ¼­¹ö ÀÚ¿øÀÇ °á°ú¸¸ °¡Á®¿Â´Ù.
- 	 - ¿¹Á¦) Ex02
+ 	URL(Unifrom Resource Locator)í´ë˜ìŠ¤
+ 	 - ì¸í„°ë„·ì—ì„œ ì ‘ê·¼ ê°€ëŠ¥í•œ ìì›ì˜ ì£¼ì†Œ.
+ 	 - final í´ë˜ìŠ¤ì´ë‹¤. (ìƒì† ë¶ˆê°€)
+ 	 - ì›ê²©ì§€ ì„œë²„ ìì›ì˜ ê²°ê³¼ë§Œ ê°€ì ¸ì˜¨ë‹¤.
+ 	 - ì˜ˆì œ) Ex02
  	 
  	URLConnection clase 
- 	 - ¿ø°İÁö ¼­¹öÀÇ ÀÚ¿øÀÇ °á°ú¿Í ¿ø°İ ¼­¹öÀÇ Çì´õ Á¤º¸µéÀ» °¡Á®¿Ã ¼ö ÀÖ´Ù.
- 	 - ¿¹Á¦) Ex03
+ 	 - ì›ê²©ì§€ ì„œë²„ì˜ ìì›ì˜ ê²°ê³¼ì™€ ì›ê²© ì„œë²„ì˜ í—¤ë” ì •ë³´ë“¤ì„ ê°€ì ¸ì˜¬ ìˆ˜ ìˆë‹¤.
+ 	 - ì˜ˆì œ) Ex03
  	 
- 	 ¡Ø Å©·Ñ¸µÀÌ¶õ? ºĞ»ê ÀúÀåµÈ ¼öÁıÇÏ´Â ±â¼ú. ¼Ò½º°¡ °ø°³µÇ¾ú´Ù°í ÇÔºÎ·Î °øÀ¯ÇÏ¸é ¾È µÈ´Ù.
+ 	 â€» í¬ë¡¤ë§ì´ë€? ë¶„ì‚° ì €ì¥ëœ ìˆ˜ì§‘í•˜ëŠ” ê¸°ìˆ . ì†ŒìŠ¤ê°€ ê³µê°œë˜ì—ˆë‹¤ê³  í•¨ë¶€ë¡œ ê³µìœ í•˜ë©´ ì•ˆ ëœë‹¤.
  	 
- 	ÀÎÅÍ³İ Á¤º¸
- 	 - Çì´õ¿Í ¹Ùµğ·Î ³ª´¸.
- 	 - Çì´õ Á¤º¸¸¦ °¡Áö°í À¥ ºê¶ó¿ìÀú°¡ ÇØ¼®ÇÏ°í ½ÇÇàÇÑ´Ù.
- 	 - Çì´õ Á¤º¸¸¦ ¾ò¾î³»´Â ¹æ¹ı. (Ex03 Âü°í)
- 	 - ÆÄ½Ì: ¾î¶² ÆäÀÌÁö¿¡¼­ ³»°¡ ¿øÇÏ´Â µ¥ÀÌÅÍ¸¦ Æ¯Á¤ ÆĞÅÏÀÌ³ª ¼ø¼­·Î ÃßÃâÇØ¼­ °¡°øÇÏ´Â °Í.
+ 	ì¸í„°ë„· ì •ë³´
+ 	 - í—¤ë”ì™€ ë°”ë””ë¡œ ë‚˜ë‰¨.
+ 	 - í—¤ë” ì •ë³´ë¥¼ ê°€ì§€ê³  ì›¹ ë¸Œë¼ìš°ì €ê°€ í•´ì„í•˜ê³  ì‹¤í–‰í•œë‹¤.
+ 	 - í—¤ë” ì •ë³´ë¥¼ ì–»ì–´ë‚´ëŠ” ë°©ë²•. (Ex03 ì°¸ê³ )
+ 	 - íŒŒì‹±: ì–´ë–¤ í˜ì´ì§€ì—ì„œ ë‚´ê°€ ì›í•˜ëŠ” ë°ì´í„°ë¥¼ íŠ¹ì • íŒ¨í„´ì´ë‚˜ ìˆœì„œë¡œ ì¶”ì¶œí•´ì„œ ê°€ê³µí•˜ëŠ” ê²ƒ.
  	 - xml
- 	   Á¤ÀÇ: eXtensible Markup Language => È®ÀåµÉ ¼ö ÀÖ´Â Ç¥½Ã ¾ğ¾î.
- 	   »ç¿ëÀÚ°¡ ÅÂ±×¸¦ ¸¸µé¾î¼­ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
- 	   <½ÃÀÛÅÂ±× ¼Ó¼º = "°ª"> ³»¿ë </³¡ÅÂ±×> 
- 	   Markup Language: ÅÂ±× <>
+ 	   ì •ì˜: eXtensible Markup Language => í™•ì¥ë  ìˆ˜ ìˆëŠ” í‘œì‹œ ì–¸ì–´.
+ 	   ì‚¬ìš©ìê°€ íƒœê·¸ë¥¼ ë§Œë“¤ì–´ì„œ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
+ 	   <ì‹œì‘íƒœê·¸ ì†ì„± = "ê°’"> ë‚´ìš© </ëíƒœê·¸> 
+ 	   Markup Language: íƒœê·¸ <>
  	
- 	 - xml ÆÄ½Ì(parsing): xml·Î ±¸¼ºµÈ µ¥ÀÌÅÍ¸¦ ¿øÇÏ´Â µ¥ÀÌÅÍ¸¸ ÃßÃâ, °¡°øÇÏ´Â ¹æ¹ı.
- 	 - DOM(Document Object Modeling) ¹æ½Ä: À¥ºê¶ó¿ìÀú°¡ ÅÂ±×¸¦ ÇØ¼®ÇÏ°í Ç¥ÇöÇÏ´Â ¹æ½Ä.
+ 	 - xml íŒŒì‹±(parsing): xmlë¡œ êµ¬ì„±ëœ ë°ì´í„°ë¥¼ ì›í•˜ëŠ” ë°ì´í„°ë§Œ ì¶”ì¶œ, ê°€ê³µí•˜ëŠ” ë°©ë²•.
+ 	 - DOM(Document Object Modeling) ë°©ì‹: ì›¹ë¸Œë¼ìš°ì €ê°€ íƒœê·¸ë¥¼ í•´ì„í•˜ê³  í‘œí˜„í•˜ëŠ” ë°©ì‹.
  	 
  	 - JSON(JavaScript Object Notation)
- 	   µ¥ÀÌÅÍ ¿ÀºêÁ§Æ®¸¦ Àü´ŞÇÏ±â À§ÇØ ÀÎ°£ÀÌ ÀĞÀ» ¼ö ÀÖ´Â ÅØ½ºÆ®¸¦ »ç¿ëÇÏ´Â °³¹æÇü Ç¥ÁØ Æ÷¸Ë.
- 	   "¼Ó¼º-°ª ½Ö" ¶Ç´Â "Å°-°ª ½Ö"À¸·Î ÀÌ·ç¾îÁü.
- 	   ºñµ¿±â ºê¶ó¿ìÀú/¼­¹ö Åë½ÅÀ» À§ÇØ, ³Ğ°Ô´Â XMLÀ» ´ëÃ¼ÇÏ´Â ÁÖ¿ä µ¥ÀÌÅÍ Æ÷¸ËÀÌ¶ó°íµµ ÇÑ´Ù.
+ 	   ë°ì´í„° ì˜¤ë¸Œì íŠ¸ë¥¼ ì „ë‹¬í•˜ê¸° ìœ„í•´ ì¸ê°„ì´ ì½ì„ ìˆ˜ ìˆëŠ” í…ìŠ¤íŠ¸ë¥¼ ì‚¬ìš©í•˜ëŠ” ê°œë°©í˜• í‘œì¤€ í¬ë§·.
+ 	   "ì†ì„±-ê°’ ìŒ" ë˜ëŠ” "í‚¤-ê°’ ìŒ"ìœ¼ë¡œ ì´ë£¨ì–´ì§.
+ 	   ë¹„ë™ê¸° ë¸Œë¼ìš°ì €/ì„œë²„ í†µì‹ ì„ ìœ„í•´, ë„“ê²ŒëŠ” XMLì„ ëŒ€ì²´í•˜ëŠ” ì£¼ìš” ë°ì´í„° í¬ë§·ì´ë¼ê³ ë„ í•œë‹¤.
  	 
  	 
  	
@@ -48,29 +49,29 @@ public class Ex01_intro {
 	public static void main(String[] args) {
 		try {
 			InetAddress addr = InetAddress.getLocalHost();
-			System.out.println("ÀÌ¸§ : " + addr.getHostName());
-			System.out.println("ÁÖ¼Ò : " + addr.getHostAddress());
+			System.out.println("ì´ë¦„ : " + addr.getHostName());
+			System.out.println("ì£¼ì†Œ : " + addr.getHostAddress());
 			System.out.println("toString() : " + addr.toString());
 			System.out.println("=======================================================");
 			
 			addr = InetAddress.getByName("www.naver.com");
-			System.out.println("ÀÌ¸§ : " + addr.getHostName());
-			System.out.println("ÁÖ¼Ò : " + addr.getHostAddress());
+			System.out.println("ì´ë¦„ : " + addr.getHostName());
+			System.out.println("ì£¼ì†Œ : " + addr.getHostAddress());
 			System.out.println("toString() : " + addr.toString());
 			System.out.println("=======================================================");
 			
 			byte[] b = {(byte) 210,89,(byte) 164,90};
 			addr = InetAddress.getByAddress(b);
-			System.out.println("ÀÌ¸§ : " + addr.getHostName());
-			System.out.println("ÁÖ¼Ò : " + addr.getHostAddress());
+			System.out.println("ì´ë¦„ : " + addr.getHostName());
+			System.out.println("ì£¼ì†Œ : " + addr.getHostAddress());
 			System.out.println("toString() : " + addr.toString());
 			System.out.println("=======================================================");
 			
-			//InetAddress¸¦ ¹è¿­·Î »ç¿ë
+			//InetAddressë¥¼ ë°°ì—´ë¡œ ì‚¬ìš©
 			InetAddress[] addrs = InetAddress.getAllByName("m.naver.com");
 			for (InetAddress k : addrs) {
-				System.out.println("ÀÌ¸§ : " + k.getHostName());
-				System.out.println("ÁÖ¼Ò : " + k.getHostAddress());
+				System.out.println("ì´ë¦„ : " + k.getHostName());
+				System.out.println("ì£¼ì†Œ : " + k.getHostAddress());
 				System.out.println("toString() : " + k.toString());
 				System.out.println("------------------------------------------------------");
 			}
