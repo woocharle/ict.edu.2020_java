@@ -7,7 +7,7 @@ import java.net.URLConnection;
 
 public class Ex04 {
 	public static void main(String[] args) {
-		//�씤�꽣�꽬�떎�뻾
+		//사이트 검색
 		BufferedReader br = null; 
 		
 		
