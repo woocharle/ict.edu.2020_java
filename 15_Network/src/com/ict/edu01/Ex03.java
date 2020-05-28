@@ -10,6 +10,7 @@ import java.util.Map;
 public class Ex03 {
 	public static void main(String[] args) {
 		//InputStreamReader isr = null;
+		//ì½”ë“œë³€ê²½
 		BufferedReader br = null;
 		
 		try {
@@ -19,9 +20,9 @@ public class Ex03 {
 			//isr = new InputStreamReader(conn.getInputStream());
 			br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 			
-			System.out.println("ÀÎÄÚµù: " + conn.getContentEncoding());
-			System.out.println("±æÀÌ: " + conn.getContentLength());
-			System.out.println("¹®¼­Å¸ÀÔ: " + conn.getContentType());
+			System.out.println("Ã€ÃŽÃ„ÃšÂµÃ¹: " + conn.getContentEncoding());
+			System.out.println("Â±Ã¦Ã€ÃŒ: " + conn.getContentLength());
+			System.out.println("Â¹Â®Â¼Â­Ã…Â¸Ã€Ã”: " + conn.getContentType());
 			System.out.println("===================================================================");
 			
 			
