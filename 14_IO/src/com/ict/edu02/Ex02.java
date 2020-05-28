@@ -17,7 +17,7 @@ import java.io.IOException;
 */
 public class Ex02 {
 	public static void main(String[] args) throws IOException {
-		String pathname = "c:" + File.separator + "study" + File.separator + "util" 
+		String pathname = "c:" + File.separator + "study" + File.separator + "util"+ File.separator + "01_java"  + File.separator + "99_Practice_FileIO"
 						  + File.separator + "io01.txt";
 		
 		File file = new File(pathname);

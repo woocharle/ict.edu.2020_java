@@ -45,7 +45,8 @@ public class Output {
 						System.out.print("¼öÇÐ: ");
 						int mat = Integer.parseInt(br.readLine());
 					
-						list.add(new VO(name, kor, eng, mat));
+						VO vo = new VO(name, kor, eng, mat);
+						list.add(vo);
 						
 						
 						loop2: while(true) {
@@ -97,7 +98,7 @@ public class Output {
 			oos.flush();
 			
 		} catch (Exception e) {
-			
+			System.out.println(e);
 		} finally {
 			try {
 				br.close();

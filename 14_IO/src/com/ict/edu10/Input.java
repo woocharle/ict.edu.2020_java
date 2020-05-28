@@ -19,17 +19,18 @@ public class Input {
 		FileInputStream fis = null;
 		BufferedInputStream bis = null;
 		ObjectInputStream ois = null;
-		FileWriter fw = null;
-		BufferedWriter bw = null;
+	
+		//FileWriter fw = null;
+		//BufferedWriter bw = null;
 		
 		try {
 			fis = new FileInputStream(file);
 			bis = new BufferedInputStream(fis);
 			ois = new ObjectInputStream(bis);
-			fw = new FileWriter(file2);
-			bw = new BufferedWriter(fw);
+			//fw = new FileWriter(file2);
+			//bw = new BufferedWriter(fw);
 			
-			ArrayList<VO> list = (ArrayList<VO>)ois.readObject();
+			ArrayList<VO> list = (ArrayList<VO>) ois.readObject();
 			
 			for(VO k : list) {
 				System.out.print("이름: " + k.getName() + " ");
@@ -38,23 +39,23 @@ public class Input {
 				System.out.print("학점: " + k.getGrd() + " ");
 				System.out.println("순위: " + k.getRank());
 				
-				bw.write("이름: " + k.getName() + " ");
-				bw.write("총점: " + k.getSum() + " ");
-				bw.write("평균: " + k.getAvg() + " ");
-				bw.write("학점: " + k.getGrd() + " ");
-				bw.write("순위: " + k.getRank() + "\n");
+				//bw.write("이름: " + k.getName() + " ");
+				//bw.write("총점: " + k.getSum() + " ");
+				//bw.write("평균: " + k.getAvg() + " ");
+				//bw.write("학점: " + k.getGrd() + " ");
+				//bw.write("순위: " + k.getRank() + "\n");
 				
 			}
 			
-			bw.flush();
+			//bw.flush();
 			
 			
 		} catch (Exception e) {
-			// TODO: handle exception
+			System.out.println(e);
 		} finally {
 			try {
-				bw.close();
-				fw.close();
+				//bw.close();
+				//fw.close();
 				ois.close();
 				bis.close();
 				fis.close();

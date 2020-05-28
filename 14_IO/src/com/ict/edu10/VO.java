@@ -7,6 +7,9 @@ import java.io.ObjectOutput;
 
 public class VO implements Externalizable{
 	private String name;
+	private int kor;
+	private int eng;
+	private int math;
 	private int sum;
 	private double avg;
 	private String grd;
@@ -16,6 +19,10 @@ public class VO implements Externalizable{
 	
 	public VO(String name, int kor, int eng, int math) {
 		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;	
+		
 		this.sum = kor + eng + math;
 		this.avg = (int)(sum / 3.0 * 10) / 10.0;
 		this.grd = grade(avg);
@@ -25,8 +32,11 @@ public class VO implements Externalizable{
 	@Override
 	public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
 		name = (String) in.readObject();
+		kor = (int) in.readObject();
+		eng = (int) in.readObject();
+		math = (int) in.readObject();
 		sum = (int) in.readObject();
-		avg = (int) in.readObject();
+		avg = (double) in.readObject();
 		grd = (String) in.readObject();
 		rank = (int) in.readObject();
 		
@@ -35,6 +45,9 @@ public class VO implements Externalizable{
 	@Override
 	public void writeExternal(ObjectOutput out) throws IOException {
 		out.writeObject(name);
+		out.writeObject(kor);
+		out.writeObject(eng);
+		out.writeObject(math);
 		out.writeObject(sum);
 		out.writeObject(avg);
 		out.writeObject(grd);
