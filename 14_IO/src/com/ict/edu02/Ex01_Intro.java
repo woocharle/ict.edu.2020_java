@@ -1,72 +1,73 @@
 package com.ict.edu02;
 
 /*
-   Stream(½ºÆ®¸²)
-   	- µ¥ÀÌÅÍ¸¦ ¸ñÀûÁö±îÁö ÀÔ·Â, Ãâ·ÂÇÏ±â À§ÇÑ ¹æ¹ı
-   	- ÀÔ·Â½ºÆ®¸²: ½ºÆ®¸²¿¡¼­ µ¥ÀÌÅÍ¸¦ ÀĞ´Â °æ¿ì
-   	- Ãâ·Â½ºÆ®¸²: ½ºÆ®¸²¿¡¼­ µ¥ÀÌÅÍ¸¦ ¾²´Â °æ¿ì
+   ì½”ë“œ ë³€ê²½ ìˆ˜ì •...
+   Stream(ìŠ¤íŠ¸ë¦¼)
+   	- ë°ì´í„°ë¥¼ ëª©ì ì§€ê¹Œì§€ ì…ë ¥, ì¶œë ¥í•˜ê¸° ìœ„í•œ ë°©ë²•
+   	- ì…ë ¥ìŠ¤íŠ¸ë¦¼: ìŠ¤íŠ¸ë¦¼ì—ì„œ ë°ì´í„°ë¥¼ ì½ëŠ” ê²½ìš°
+   	- ì¶œë ¥ìŠ¤íŠ¸ë¦¼: ìŠ¤íŠ¸ë¦¼ì—ì„œ ë°ì´í„°ë¥¼ ì“°ëŠ” ê²½ìš°
    	
-   ½ºÆ®¸²ÀÇ Á¾·ù
+   ìŠ¤íŠ¸ë¦¼ì˜ ì¢…ë¥˜
     1) byte Stream
-       - ¸ğµÎ Ã³¸®¸¦ 1byte¾¿Ã³¸®
-       - ´ë»ó: 1byte·Î ÀÌ·ïÁø ¸ğµç ÆÄÀÏ(¿µ»ó, ¼Ò¸®, »çÁø µî ¸ğµç ÆÄÀÏ, ¿µ¹®ÀÚ Æ÷ÇÔ.)
-       - ÃÖ»óÀ§ Stream: InputStream, OutputStream
+       - ëª¨ë‘ ì²˜ë¦¬ë¥¼ 1byteì”©ì²˜ë¦¬
+       - ëŒ€ìƒ: 1byteë¡œ ì´ë¤„ì§„ ëª¨ë“  íŒŒì¼(ì˜ìƒ, ì†Œë¦¬, ì‚¬ì§„ ë“± ëª¨ë“  íŒŒì¼, ì˜ë¬¸ì í¬í•¨.)
+       - ìµœìƒìœ„ Stream: InputStream, OutputStream
        
        - Ex02: FileOutputStream
-	         write(int b): int b => ¾Æ½ºÅ°ÄÚµåÇÏ³ª ¾µ¼ö ÀÖ´Ù. 
-	  				ÇÑ±ÛÀÚ ¾²±â, int b ´ë½Å char ÇÏ³ª¸¦ »ç¿ëÇÒ ¼ö ÀÖ´Ù. 
-	  				¿µ¹®ÀÚ ´ë¼Ò¹®ÀÚ, ¼ıÀÚ, ÀÏºÎÆ¯¼ö¹®ÀÚ¸¸ ¾²±â °¡´É
-	  				¿µ¾î¸¦ »« ³ª¸ÓÁö ±ÛÀÚ´Â »ç¿ëºÒ°¡.
-			 write(byte[] b) : byte ¹è¿­»ç¿ëÀ» ÇÒ ¼ö ¾ø´Ù.
-			 flush(): writeÈÄ ¹İµå½Ã »ç¿ë, »¡¸® ÀúÀåÇÒ ¼ö ÀÖ´Ù.
-			 close(): open µÈ ½ºÆ®¸²À» ´İ±â(finally·Î Ã³¸®)
+	         write(int b): int b => ì•„ìŠ¤í‚¤ì½”ë“œí•˜ë‚˜ ì“¸ìˆ˜ ìˆë‹¤. 
+	  				í•œê¸€ì ì“°ê¸°, int b ëŒ€ì‹  char í•˜ë‚˜ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤. 
+	  				ì˜ë¬¸ì ëŒ€ì†Œë¬¸ì, ìˆ«ì, ì¼ë¶€íŠ¹ìˆ˜ë¬¸ìë§Œ ì“°ê¸° ê°€ëŠ¥
+	  				ì˜ì–´ë¥¼ ëº€ ë‚˜ë¨¸ì§€ ê¸€ìëŠ” ì‚¬ìš©ë¶ˆê°€.
+			 write(byte[] b) : byte ë°°ì—´ì‚¬ìš©ì„ í•  ìˆ˜ ì—†ë‹¤.
+			 flush(): writeí›„ ë°˜ë“œì‹œ ì‚¬ìš©, ë¹¨ë¦¬ ì €ì¥í•  ìˆ˜ ìˆë‹¤.
+			 close(): open ëœ ìŠ¤íŠ¸ë¦¼ì„ ë‹«ê¸°(finallyë¡œ ì²˜ë¦¬)
        - Ex03: FileInputStream
-       		 read(): int(¾Æ½ºÅ°ÄÚµå) => char(Çüº¯È¯) , read(byte[] b)
+       		 read(): int(ì•„ìŠ¤í‚¤ì½”ë“œ) => char(í˜•ë³€í™˜) , read(byte[] b)
        		 
        
-       - Ex07: Buffered¿Í °°ÀÌ½á¼­ ¼Óµµ Çâ»ó ½ÃÅ°´Â ¹ı
+       - Ex07: Bufferedì™€ ê°™ì´ì¨ì„œ ì†ë„ í–¥ìƒ ì‹œí‚¤ëŠ” ë²•
        
        
-       - DataInputStream°ú DataOutputSteam  (com.ict.edu3)
- 		 ±âº»ÀÚ·áÇüÀ» ÁÖ°í ¹ŞÀ» ¶§ »ç¿ë. ¹İµå½Ã ÀÔ·Â¼ø¼­¿Í Ãâ·Â ¼ø¼­¸¦ ¸ÂÃç¾ß ÇÑ´Ù.
- 		 ±âº» »ı¼ºÀÚ°¡ ¾ø¾î¼­ BufferedInputStream°ú BufferedOutputStreamÃ³·³
- 	  	 È¥ÀÚ¼­ »ç¿ë¸øÇÏ°í FileInputStream°ú FileOutputStream »ç¿ë.
+       - DataInputStreamê³¼ DataOutputSteam  (com.ict.edu3)
+ 		 ê¸°ë³¸ìë£Œí˜•ì„ ì£¼ê³  ë°›ì„ ë•Œ ì‚¬ìš©. ë°˜ë“œì‹œ ì…ë ¥ìˆœì„œì™€ ì¶œë ¥ ìˆœì„œë¥¼ ë§ì¶°ì•¼ í•œë‹¤.
+ 		 ê¸°ë³¸ ìƒì„±ìê°€ ì—†ì–´ì„œ BufferedInputStreamê³¼ BufferedOutputStreamì²˜ëŸ¼
+ 	  	 í˜¼ìì„œ ì‚¬ìš©ëª»í•˜ê³  FileInputStreamê³¼ FileOutputStream ì‚¬ìš©.
  	
-	   - PrintStreamÀº ¸ğµç ÀÚ·áÇüÀ» Ãâ·ÂÇÒ ¼ö ÀÖ´Ù.
-         º¸ÅëÀº È­¸éÀÌ³ª ÆÄÀÏ¿¡ Ãâ·ÂÇÑ´Ù. (Ãâ·ÂÀü¿ë)
+	   - PrintStreamì€ ëª¨ë“  ìë£Œí˜•ì„ ì¶œë ¥í•  ìˆ˜ ìˆë‹¤.
+         ë³´í†µì€ í™”ë©´ì´ë‚˜ íŒŒì¼ì— ì¶œë ¥í•œë‹¤. (ì¶œë ¥ì „ìš©)
        
     2) character Stream (com.ict.edu4)
-       - »ç¶÷ Áß½É
-       - ¸ğµç Ã³¸®¸¦ 2byte¾¿ Ã³¸®
-       - ´ë»ó: ¼¼°èÀÇ ¸ğµç ¾ğ¾î·Î ±¸¼ºµÈ ¹®¼­ ÆÄÀÏÀ» ÀÔÃâ·ÂÇÒ ¶§ »ç¿ë
-       - ÃÖ»óÀ§ ½ºÆ®¸²: Reader(ÀÔ·Â), Writer(Ãâ·Â)
-       - FileOutputStream : 1byteÃ³¸®, write(¾Æ½ºÅ°ÄÚµå), write(byte[] b) 
-       - FileWriter       : 2byteÃ³¸®, write(À¯´ÏÄÚµå), *Ã³¸® ¼Óµµ Çâ»óÀ» À§ÇØ¼­ BufferedWriteµµ ÇÔ²² »ç¿ë. 	
-       - FileInputSteam   : byte Stream ÂüÁ¶
-       - FileReader       : read(), int(À¯´ÏÄÚµå) => char(Çüº¯È¯) , read(byte[] b)		
-       - BufferedReader: ¼ÓµµÇâ»ó, readLine();	
-       - ¾Æ½ºÅ°ÄÚµå, À¯´ÏÄÚµå : int.
-       - PrintWriter : Bytestream, charcter Stream ¸ğµÎ ÀÎÀÚ·Î ¹ŞÀ» ¼ö ÀÖ´Ù.
+       - ì‚¬ëŒ ì¤‘ì‹¬
+       - ëª¨ë“  ì²˜ë¦¬ë¥¼ 2byteì”© ì²˜ë¦¬
+       - ëŒ€ìƒ: ì„¸ê³„ì˜ ëª¨ë“  ì–¸ì–´ë¡œ êµ¬ì„±ëœ ë¬¸ì„œ íŒŒì¼ì„ ì…ì¶œë ¥í•  ë•Œ ì‚¬ìš©
+       - ìµœìƒìœ„ ìŠ¤íŠ¸ë¦¼: Reader(ì…ë ¥), Writer(ì¶œë ¥)
+       - FileOutputStream : 1byteì²˜ë¦¬, write(ì•„ìŠ¤í‚¤ì½”ë“œ), write(byte[] b) 
+       - FileWriter       : 2byteì²˜ë¦¬, write(ìœ ë‹ˆì½”ë“œ), *ì²˜ë¦¬ ì†ë„ í–¥ìƒì„ ìœ„í•´ì„œ BufferedWriteë„ í•¨ê»˜ ì‚¬ìš©. 	
+       - FileInputSteam   : byte Stream ì°¸ì¡°
+       - FileReader       : read(), int(ìœ ë‹ˆì½”ë“œ) => char(í˜•ë³€í™˜) , read(byte[] b)		
+       - BufferedReader: ì†ë„í–¥ìƒ, readLine();	
+       - ì•„ìŠ¤í‚¤ì½”ë“œ, ìœ ë‹ˆì½”ë“œ : int.
+       - PrintWriter : Bytestream, charcter Stream ëª¨ë‘ ì¸ìë¡œ ë°›ì„ ìˆ˜ ìˆë‹¤.
        
     3) byte-char Stream (com.ict.edu5)
-  	   - ±â°è¸¦ ÅëÇØ ÀÔ/Ãâ·ÂÇÑ Á¤º¸¸¦ »ç¶÷ÀÌ »ç¿ëÇÒ ¼ö ÀÖµµ·Ï ÀÔ/Ãâ·Â
-  	   - ÇØ´ç Å¬·¡½º: InputStreamReader(ÀÔ·Â), OutputStreamWriter(Ãâ·Â)
-  	   	 InputStreamReader : InputStream => Reader (¹ÙÀÌÆ®½ºÆ®¸² => ¹®ÀÚ ½ºÆ®¸²)
+  	   - ê¸°ê³„ë¥¼ í†µí•´ ì…/ì¶œë ¥í•œ ì •ë³´ë¥¼ ì‚¬ëŒì´ ì‚¬ìš©í•  ìˆ˜ ìˆë„ë¡ ì…/ì¶œë ¥
+  	   - í•´ë‹¹ í´ë˜ìŠ¤: InputStreamReader(ì…ë ¥), OutputStreamWriter(ì¶œë ¥)
+  	   	 InputStreamReader : InputStream => Reader (ë°”ì´íŠ¸ìŠ¤íŠ¸ë¦¼ => ë¬¸ì ìŠ¤íŠ¸ë¦¼)
   	   	 InputStream => InputStreamReader => Reader => BufferedReader
   	   		
   	   	 OutputStreamWriter : OutputStream => Writer (byteStream = > chracter Stream)
   	   	 OutputStream => OutputSteamWriter => Writer => BufferedWriter
   	   
     4) Object Stream (com.ict.edu6 ~ 9)
-       - °´Ã¼¸¦ Á÷·ÄÈ­ÇÑ ÈÄ °´Ã¼ ´ÜÀ§·Î ÀÔ/Ãâ·Â
-       - ÇØ´ç Å¬·¡½º:
-         ObjectInputStream(readObject() :°´Ã¼ Á÷·ÄÈ­), ObjectOutputStream(writeObject() :°´Ã¼ ¿ªÁ÷·ÄÈ­)
-       - Serializable: ÀÎÅÍÆäÀÌ½º·Î Á÷·ÄÈ­ÇÒ ¼ö ÀÖ´Ù.
-         * Á÷·ÄÈ­ Á¦¿Ü ½ÃÅ°´Â ¹æ¹ı: º¯¼ö ¾Õ¿¡ transient ¿¹¾à¾î¸¦ »ç¿ë.
-	   - Serializable ¿Ü ¹æ¹ı: Externalizable
-	     writeExternal() => Á÷·ÄÈ­ , readExternal() => ¿ªÁ÷·Ä
-	     transientÀ¸·Î Á¦¿ÜÇÒ ¼ö ¾ø´Ù.
-	     writeExternal°ú readExternal() ¾È¿¡ ÀÖ´Â ¸â¹ö¸¦ µ¿½Ã¿¡ Á¦¿Ü½ÃÅ²´Ù.
+       - ê°ì²´ë¥¼ ì§ë ¬í™”í•œ í›„ ê°ì²´ ë‹¨ìœ„ë¡œ ì…/ì¶œë ¥
+       - í•´ë‹¹ í´ë˜ìŠ¤:
+         ObjectInputStream(readObject() :ê°ì²´ ì§ë ¬í™”), ObjectOutputStream(writeObject() :ê°ì²´ ì—­ì§ë ¬í™”)
+       - Serializable: ì¸í„°í˜ì´ìŠ¤ë¡œ ì§ë ¬í™”í•  ìˆ˜ ìˆë‹¤.
+         * ì§ë ¬í™” ì œì™¸ ì‹œí‚¤ëŠ” ë°©ë²•: ë³€ìˆ˜ ì•ì— transient ì˜ˆì•½ì–´ë¥¼ ì‚¬ìš©.
+	   - Serializable ì™¸ ë°©ë²•: Externalizable
+	     writeExternal() => ì§ë ¬í™” , readExternal() => ì—­ì§ë ¬
+	     transientìœ¼ë¡œ ì œì™¸í•  ìˆ˜ ì—†ë‹¤.
+	     writeExternalê³¼ readExternal() ì•ˆì— ìˆëŠ” ë©¤ë²„ë¥¼ ë™ì‹œì— ì œì™¸ì‹œí‚¨ë‹¤.
 
  */
 public class Ex01_Intro {
