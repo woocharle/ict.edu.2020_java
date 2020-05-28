@@ -12,13 +12,14 @@ import java.net.URL;
 
 public class Ex02 {
 	public static void main(String[] args) {
-		// ÇØ´ç»çÀÌÆ® °¡¼­ Á¤º¸ ÀĞ±â 
+		// ì½”ë“œë³€ê²½...
+		// í•´ë‹¹ì‚¬ì´íŠ¸ ê°€ì„œ ì •ë³´ ì½ê¸° 
 		InputStream is = null;
 		InputStreamReader isr = null;
 		BufferedReader br = null;
 		
 	
-		// ³»ÄÄÇ»ÅÍ¿¡ Á¤º¸ ÀúÀå.
+		// ë‚´ì»´í“¨í„°ì— ì •ë³´ ì €ì¥.
 		String filepath = "c:" + File.separator + "study" + File.separator + "util" + 
 							File.separator + "01_java"  + File.separator + "99_Practice_Network" + File.separator + "data1.txt";
 		
@@ -29,11 +30,11 @@ public class Ex02 {
 		
 		try {
 			URL url = new URL("http://www.naver.com");
-			System.out.println("ÇÁ·ÎÅäÄİ: " + url.getProtocol());
-			System.out.println("Æ÷Æ®: " + url.getPort());
+			System.out.println("í”„ë¡œí† ì½œ: " + url.getProtocol());
+			System.out.println("í¬íŠ¸: " + url.getPort());
 			System.out.println("Path: " + url.getPath());
-			System.out.println("È£½ºÆ®: " + url.getHost());
-			System.out.println("¾È³»: " + url.getUserInfo());
+			System.out.println("í˜¸ìŠ¤íŠ¸: " + url.getHost());
+			System.out.println("ì•ˆë‚´: " + url.getUserInfo());
 			System.out.println("====================================================");
 			
 			is = url.openStream();
