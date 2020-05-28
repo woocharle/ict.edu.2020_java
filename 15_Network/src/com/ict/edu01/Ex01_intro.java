@@ -36,11 +36,13 @@ import java.net.UnknownHostException;
  	 - xml 파싱(parsing): xml로 구성된 데이터를 원하는 데이터만 추출, 가공하는 방법.
  	 - DOM(Document Object Modeling) 방식: 웹브라우저가 태그를 해석하고 표현하는 방식.
  	 
- 	 - JSON(JavaScript Object Notation)
+ 	 - JSON(JavaScript Object Notation), JSON 파일읽기 Ex06참고
  	   데이터 오브젝트를 전달하기 위해 인간이 읽을 수 있는 텍스트를 사용하는 개방형 표준 포맷.
  	   "속성-값 쌍" 또는 "키-값 쌍"으로 이루어짐.
  	   비동기 브라우저/서버 통신을 위해, 넓게는 XML을 대체하는 주요 데이터 포맷이라고도 한다.
- 	 
+ 	   
+ 	   JSON 파일 읽기: JSON을 읽는 외부라이브러리 연결하기
+ 	   해당프로젝트에서 마우스 오른쪽 => Build path => 
  	 
  	
  */

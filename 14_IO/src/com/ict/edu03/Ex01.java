@@ -6,9 +6,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-
-
-
 public class Ex01 {
 	public static void main(String[] args) {
 		String filepath = "C:"+ File.separator + "study" + File.separator + "util" + File.separator + "io04.txt";
@@ -27,7 +24,7 @@ public class Ex01 {
 			fis = new FileInputStream(file1);
 			dis = new DataInputStream(fis);
 				
-			// ¾²±â: writeXXX() : XXX´Â ±âº» ÀÚ·áÇüÀ» ¸»ÇÑ´Ù.
+			// ï¿½ï¿½ï¿½ï¿½: writeXXX() : XXXï¿½ï¿½ ï¿½âº» ï¿½Ú·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ñ´ï¿½.
 			dos.writeByte(126);
 			dos.writeShort(5422);
 			dos.writeInt(124);
@@ -39,7 +36,7 @@ public class Ex01 {
 			
 			dos.flush();
 			
-			//ÀÐ±â: readXXX()
+			//ï¿½Ð±ï¿½: readXXX()
 			System.out.println(dis.readByte());
 			System.out.println(dis.readShort());
 			System.out.println(dis.readInt());

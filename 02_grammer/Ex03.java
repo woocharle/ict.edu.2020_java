@@ -1,14 +1,14 @@
 class Ex03{
 	public static void main(String[] args){
-		//¹®ÀÚ¸¦ º¯¼ö·Î ÀúÀåÇÏ±â 
-		//1.  ¼±¾ð°ú µ¥ÀÌÅÍ¸¦ ÇÑ¹ø¿¡ ÇÏ±â
+		//ï¿½ï¿½ï¿½Ú¸ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ 
+		//1.  ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½Ñ¹ï¿½ï¿½ï¿½ ï¿½Ï±ï¿½
 		char k1 = 'a';
 		System.out.println(k1);
 
 		char k2 = 65;
 		System.out.println(k2);
 
-		char k3 ='°¡';
+		char k3 ='ê°€';
 		System.out.println(k3);
 
 	 	char k4 = '1';

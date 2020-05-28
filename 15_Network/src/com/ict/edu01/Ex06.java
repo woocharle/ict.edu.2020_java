@@ -12,16 +12,20 @@ import java.net.URLConnection;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
+
 public class Ex06 {
 	public static void main(String[] args) {
 		BufferedReader br = null; 
 		String filepath = "c:" + File.separator + "study" + File.separator + "util" + 
-				File.separator + "01_java"  + File.separator + "99_Practice_Network" + File.separator + "오늘날씨.txt";
+				File.separator + "01_java"  + File.separator + "99_Practice_Network" + File.separator + "도서관.txt";
 		File file = new File(filepath);
 		FileWriter fw = null;
 		BufferedWriter bw = null;
@@ -29,7 +33,7 @@ public class Ex06 {
 		//
 		
 		try {
-			URL url = new URL("http://www.kma.go.kr/XML/weather/sfc_web_map.xml");
+			URL url = new URL("http://openapi.seoul.go.kr:8088/sample/json/SeoulLibraryTime/1/5/");
 			URLConnection urlc = url.openConnection();
 			br = new BufferedReader(new InputStreamReader(urlc.getInputStream()));
 			
@@ -38,43 +42,28 @@ public class Ex06 {
 			while((msg = br.readLine()) != null) {
 				sb.append(msg+"\n");
 			}
+			System.out.println("===================================================");
+		
+			//JSON부르기
+		
+			JSONParser parser = new JSONParser();
+			JSONObject obj1 = (JSONObject) parser.parse(sb.toString());
+			JSONObject obj2 = (JSONObject) obj1.get("SeoulLibraryTime");
+			JSONArray j_arr = (JSONArray) obj2.get("row");
 			
-			//sb에 존재하는 내용 읽기
-			InputSource is = new InputSource(new StringReader(sb.toString()));
+			StringBuffer sb2 = new StringBuffer();
 			
-			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder builder = factory.newDocumentBuilder();
-			Document document = builder.parse(is);
-						
+			for (Object k : j_arr) {
+				//System.out.println(k);
+				sb2.append(k + "\n");
+			}
 			
 			// 파일로 저장하기
 			fw = new FileWriter(file);
 			bw = new BufferedWriter(fw);
 			
-			
-			//원하는 태그를 찾자.
-			StringBuffer sb2 = new StringBuffer();
-			NodeList locals = document.getElementsByTagName("local");
-			for (int i = 0; i < locals.getLength(); i++) {
-				String txt = locals.item(i).getFirstChild().getNodeValue();
-				System.out.print(txt + "  ");
-				
-				// 태그(Element) 속성(attribute)
-				String att1 = ((Element)(locals.item(i))).getAttribute("desc");
-				String att2 = ((Element)(locals.item(i))).getAttribute("ta ");
-				
-				System.out.println(att1 + "\t\t" + att2);
-				
-				sb2.append(txt + "\t");
-				sb2.append(att1 + "\t");
-				sb2.append(att2 + "\n");
-				
-				
-			}
-			
 			bw.write(sb2.toString());
-			
-			
+			bw.flush();
 			//System.out.println(document.toString());
 
 		} catch (Exception e) {

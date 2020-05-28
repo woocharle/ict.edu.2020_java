@@ -49,23 +49,18 @@ public class Ex05 {
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			Document document = builder.parse(is);
 						
-			
-			// 파일로 저장하기
-			fw = new FileWriter(file);
-			bw = new BufferedWriter(fw);
-			
+			// 파일저장을 위한 파일
+			StringBuffer sb2 = new StringBuffer();
 			
 			//원하는 태그를 찾자.
-			StringBuffer sb2 = new StringBuffer();
 			NodeList locals = document.getElementsByTagName("local");
 			for (int i = 0; i < locals.getLength(); i++) {
 				String txt = locals.item(i).getFirstChild().getNodeValue();
-				System.out.print(txt + "  ");
+				System.out.print(txt + "\t");
 				
 				// 태그(Element) 속성(attribute)
 				String att1 = ((Element)(locals.item(i))).getAttribute("desc");
 				String att2 = ((Element)(locals.item(i))).getAttribute("ta ");
-				
 				System.out.println(att1 + "\t\t" + att2);
 				
 				sb2.append(txt + "\t");
@@ -75,8 +70,12 @@ public class Ex05 {
 				
 			}
 			
-			bw.write(sb2.toString());
+			// 파일로 저장하기
+			fw = new FileWriter(file);
+			bw = new BufferedWriter(fw);
 			
+			bw.write(sb2.toString());
+			bw.flush();
 			
 			//System.out.println(document.toString());
 
