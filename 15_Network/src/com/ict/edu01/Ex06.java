@@ -21,12 +21,12 @@ public class Ex06 {
 	public static void main(String[] args) {
 		BufferedReader br = null; 
 		String filepath = "c:" + File.separator + "study" + File.separator + "util" + 
-				File.separator + "01_java"  + File.separator + "99_Practice_Network" + File.separator + "¿À´Ã³¯¾¾.txt";
+				File.separator + "01_java"  + File.separator + "99_Practice_Network" + File.separator + "ì˜¤ëŠ˜ë‚ ì”¨.txt";
 		File file = new File(filepath);
 		FileWriter fw = null;
 		BufferedWriter bw = null;
 		
-		
+		//
 		
 		try {
 			URL url = new URL("http://www.kma.go.kr/XML/weather/sfc_web_map.xml");
@@ -39,7 +39,7 @@ public class Ex06 {
 				sb.append(msg+"\n");
 			}
 			
-			//sb¿¡ Á¸ÀçÇÏ´Â ³»¿ë ÀĞ±â
+			//sbì— ì¡´ì¬í•˜ëŠ” ë‚´ìš© ì½ê¸°
 			InputSource is = new InputSource(new StringReader(sb.toString()));
 			
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -47,19 +47,19 @@ public class Ex06 {
 			Document document = builder.parse(is);
 						
 			
-			// ÆÄÀÏ·Î ÀúÀåÇÏ±â
+			// íŒŒì¼ë¡œ ì €ì¥í•˜ê¸°
 			fw = new FileWriter(file);
 			bw = new BufferedWriter(fw);
 			
 			
-			//¿øÇÏ´Â ÅÂ±×¸¦ Ã£ÀÚ.
+			//ì›í•˜ëŠ” íƒœê·¸ë¥¼ ì°¾ì.
 			StringBuffer sb2 = new StringBuffer();
 			NodeList locals = document.getElementsByTagName("local");
 			for (int i = 0; i < locals.getLength(); i++) {
 				String txt = locals.item(i).getFirstChild().getNodeValue();
 				System.out.print(txt + "  ");
 				
-				// ÅÂ±×(Element) ¼Ó¼º(attribute)
+				// íƒœê·¸(Element) ì†ì„±(attribute)
 				String att1 = ((Element)(locals.item(i))).getAttribute("desc");
 				String att2 = ((Element)(locals.item(i))).getAttribute("ta ");
 				
