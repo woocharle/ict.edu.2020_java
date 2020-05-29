@@ -1,27 +1,27 @@
 package com.ict.edu3;
 
-//Runnable È°¿ë¹æ¹ı
+//Runnable í™œìš©ë°©ë²•
 public class TestMain {
 	public static void main(String[] args) {
 		Ex01 testA = new Ex01();
 		Ex02 testB = new Ex02();
 		
-		//testA, testB´Â RunnableÀ» °¡Áö°í ±¸ÇöÇÏ¿´À¸¹Ç·Î start()°¡ ¾ø´Ù.
-		//start() => run()À¸·Î °¡Áö ¾ÊÀ¸¸é Thread Ã³¸®°¡ ¾Æ´Ï´Ù.
+		//testA, testBëŠ” Runnableì„ ê°€ì§€ê³  êµ¬í˜„í•˜ì˜€ìœ¼ë¯€ë¡œ start()ê°€ ì—†ë‹¤.
+		//start() => run()ìœ¼ë¡œ ê°€ì§€ ì•Šìœ¼ë©´ Thread ì²˜ë¦¬ê°€ ì•„ë‹ˆë‹¤.
 		
-		//start()´Â Thread Å¬·¡½º°¡ °¡Áö°í ÀÖÀ¸¹Ç·Î Thread Å¬·¡½º¸¦ È°¿ëÇØ¾ß µÈ´Ù.
-		//¹æ¹ı 1 : Runnable¸¦ »ó¼Ó¹ŞÀº °´Ã¼¸¦ Thread Constructor¿¡ ³Ö¾îÁØ´Ù. 
+		//start()ëŠ” Thread í´ë˜ìŠ¤ê°€ ê°€ì§€ê³  ìˆìœ¼ë¯€ë¡œ Thread í´ë˜ìŠ¤ë¥¼ í™œìš©í•´ì•¼ ëœë‹¤.
+		//ë°©ë²• 1 : Runnableë¥¼ ìƒì†ë°›ì€ ê°ì²´ë¥¼ Thread Constructorì— ë„£ì–´ì¤€ë‹¤. 
 		Thread thread = new Thread(testA);
 		thread.start();
 		
-		new Thread(testB).start();   // ´Ù½Ã È£ÃâÀÌ ¾È µÊ. 
+		new Thread(testB).start();    // ë‹¤ì‹œ í˜¸ì¶œì´ ì•ˆ ë¨. 
 		
-		//¹æ¹ı 2: Anonymous class ÀÌ¿ëÇÑ´Ù. ¾Èµå·ÎÀÌµå¿¡ ÁÖ·Î»ç¿ë
+		//ë°©ë²• 2: Anonymous class ì´ìš©í•œë‹¤. ì•ˆë“œë¡œì´ë“œì— ì£¼ë¡œì‚¬ìš©
 		new Thread(new Runnable() {
 			@Override
 			public void run() {
 				while(true) {
-					System.out.println(Thread.currentThread().getName() + "°¡°¡°¡°¡°¡");
+					System.out.println(Thread.currentThread().getName() + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 				}
 			}
 		}).start();

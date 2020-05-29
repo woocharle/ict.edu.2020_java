@@ -2,18 +2,18 @@ package com.ict.edu;
 
 public class Ex07 {
 	public static void main(String[] args) {
-		System.out.println("while¹®");
+		System.out.println("whileë¬¸");
 	
 		System.out.println("---------------- for vs while ----------------");
 		
-		System.out.println("for¹® ÀÌ¿ë");
+		System.out.println("forë¬¸ ì´ìš©");
 		for (int i = 0; i < 11; i++) {
 			System.out.print(i + " ");
 		}
 		
 		System.out.println("\n");
 		
-		System.out.println("while¹® ÀÌ¿ë");
+		System.out.println("whileë¬¸ ì´ìš©");
 		int k1 = 0;
 		
 		while (k1 < 11) {
@@ -23,7 +23,7 @@ public class Ex07 {
 		
 		System.out.println("\n");
 		
-		System.out.println("while¹®(true) ÀÌ¿ë");
+		System.out.println("whileë¬¸(true) ì´ìš©");
 		
 		k1 = 0;
 		
@@ -34,9 +34,9 @@ public class Ex07 {
 		}
 		
 		System.out.println("\n");
-		System.out.println("¿¹Á¦ \n");
+		System.out.println("ì˜ˆì œ \n");
 		
-		// 0 ~ 10±îÁö Â¦¼ö¸¸ Ãâ·Â
+		// 0 ~ 10ê¹Œì§€ ì§ìˆ˜ë§Œ ì¶œë ¥
 		
 		k1 = 0;
 		
@@ -49,7 +49,7 @@ public class Ex07 {
 		
 		System.out.println("\n");
 		
-		// 0 ~ 10±îÁö È¦¼ö¸¸ Ãâ·Â
+		// 0 ~ 10ê¹Œì§€ í™€ìˆ˜ë§Œ ì¶œë ¥
 		
 		k1 = 0;
 		
@@ -62,7 +62,7 @@ public class Ex07 {
 		
 		System.out.println("\n");
 		
-		// 0 ~ 50±îÁö 7ÀÇ ¹è¼ö¸¸ Ãâ·Â
+		// 0 ~ 50ê¹Œì§€ 7ì˜ ë°°ìˆ˜ë§Œ ì¶œë ¥
 		
 		k1 = 1;
 		
@@ -74,7 +74,7 @@ public class Ex07 {
 		}
 		
 
-		// a ~ g±îÁö Ãâ·Â
+		// a ~ gê¹Œì§€ ì¶œë ¥
 		
 		System.out.println("\n");
 		
@@ -88,7 +88,7 @@ public class Ex07 {
 
 		System.out.println("\n");
 		
-		// 5´Ü (±¸±¸´Ü)
+		// 5ë‹¨ (êµ¬êµ¬ë‹¨)
 		
 		k1 = 1;
 		
@@ -99,7 +99,7 @@ public class Ex07 {
 		
 		System.out.println();
 	
-		/* ¾Æ·¡ÀÇ µµÇüÀ» Ãâ·ÂÇÏ½Ã¿À.
+		/* ì•„ë˜ì˜ ë„í˜•ì„ ì¶œë ¥í•˜ì‹œì˜¤.
 		0 0 0 0
 		0 0 0 0
 		0 0 0 0
@@ -123,7 +123,7 @@ public class Ex07 {
 		}
 		
 		System.out.println("\nHomework \n");
-		System.out.println("0 ºÎÅÍ 10 ´©ÀûÇÕ");
+		System.out.println("0 ë¶€í„° 10 ëˆ„ì í•©");
 		
 		k1 = 0;
 		int sum = 0;
@@ -134,7 +134,7 @@ public class Ex07 {
 		
 		System.out.println(sum + "\n");
 		
-		System.out.println("0 - 10 È¦¼öÀÇ ÇÕ");
+		System.out.println("0 - 10 í™€ìˆ˜ì˜ í•©");
 
 		k1 = 0;
 		sum = 0;
@@ -148,7 +148,7 @@ public class Ex07 {
 		System.out.println(sum + "\n");		
 		
 		
-		System.out.println("0 - 10 Â¦¼öÀÇ ÇÕ");
+		System.out.println("0 - 10 ì§ìˆ˜ì˜ í•©");
 		
 		k1 = 0;
 		sum = 0;
@@ -161,7 +161,7 @@ public class Ex07 {
 		
 		System.out.println(sum + "\n");		
 		
-		System.out.println("0 - 10 È¦¼ö, Â¦¼öÀÇ ÇÕ°è");
+		System.out.println("0 - 10 í™€ìˆ˜, ì§ìˆ˜ì˜ í•©ê³„");
 		
 		k1 = 0;
 		int sum_even = 0;
@@ -176,10 +176,10 @@ public class Ex07 {
 			}
 		}
 		
-		System.out.println("È¦¼ö" + sum_odd);		
-		System.out.println("Â¦¼ö" + sum_even + "\n");		
+		System.out.println("í™€ìˆ˜" + sum_odd);		
+		System.out.println("ì§ìˆ˜" + sum_even + "\n");		
 		
-		System.out.println("7!ÀÇ °ª.");
+		System.out.println("7!ì˜ ê°’.");
 		
 		k1 = 7;
 		sum = 1;

@@ -4,7 +4,7 @@ public class Ex05 {
 	public static void main(String[] args) {
 		/*
 		for(int i = 1; i < 11; i++) {
-			System.out.println(i + " ¹øÂ° hello");
+			System.out.println(i + " ë²ˆì§¸ hello");
 		}
 		
 		System.out.println("-------------------------------------------------");
@@ -13,7 +13,7 @@ public class Ex05 {
 			System.out.print(i + " ");
 		}
 		
-		// 0 ¿¡¼­ 10±îÁö Â¦¼ö¸¸ Ãâ·ÂÇÏ±â 
+		// 0 ì—ì„œ 10ê¹Œì§€ ì§ìˆ˜ë§Œ ì¶œë ¥í•˜ê¸° 
 		
 		System.out.println("\n-------------------------------------------------");
 		
@@ -38,7 +38,7 @@ public class Ex05 {
 			
 		}
 		
-		// È¦¼ö¸¸ Ãâ·ÂÇÏ±â 
+		// í™€ìˆ˜ë§Œ ì¶œë ¥í•˜ê¸° 
 	
 		System.out.println("\n-------------------------------------------------");
 		
@@ -55,7 +55,7 @@ public class Ex05 {
 			}
 		}
 		
-		// 0 ~ 50 ±îÁö 7ÀÇ ¹è¼ö¸¸ Ãâ·ÂÇÏ±â
+		// 0 ~ 50 ê¹Œì§€ 7ì˜ ë°°ìˆ˜ë§Œ ì¶œë ¥í•˜ê¸°
 		System.out.println("\n-------------------------------------------------");
 		
 		for(int i = 0; i <= 50; i++) {	
@@ -63,14 +63,13 @@ public class Ex05 {
 				System.out.print(i + " ");
 			}
 		}
-
 		
 		System.out.println("\n-------------------------------------------------");
 		for(char i = 'a'; i <= 'g'; i++) {
 			System.out.print(i + "\t");
 		}
 		
-		//5´Ü Ãâ·ÂÇÏ±â
+		//5ë‹¨ ì¶œë ¥í•˜ê¸°
 		for(int i = 0; i < 10 ; i++) {
 			System.out.println(5 + " x "  + i  + " = " + (5 * i));
 		}
@@ -82,14 +81,14 @@ public class Ex05 {
 			System.out.println();
 		}
 		*/
-		// ´©ÀûÇÕ
+		// ëˆ„ì í•©
 		int res = 0;
 		for (int i = 0; i < 11 ; i++) {
 			res += i;
 				//System.out.print(i + " ");
 		}
-		// 0 ~ 10 È¦¼öÀÇ ÇÕ°è 
-		System.out.println("´©ÀûÇÕ: " + res);
+		// 0 ~ 10 í™€ìˆ˜ì˜ í•©ê³„ 
+		System.out.println("ëˆ„ì í•©: " + res);
 		
 		res = 0;
 		for (int i = 0; i < 11 ; i++) {
@@ -101,7 +100,7 @@ public class Ex05 {
 		//System.out.println();
 		System.out.println(res);
 		
-		// 0 ~ 10 Â¦¼öÀÇ ÇÕ°è 
+		// 0 ~ 10 ì§ìˆ˜ì˜ í•©ê³„ 
 		
 		res = 0;
 		for (int i = 0; i < 11 ; i++) {
@@ -114,7 +113,7 @@ public class Ex05 {
 		System.out.println(res);
 	
 		
-		// 0 ~ 10 È¦¼ö, Â¦¼ö ÇÕ°è
+		// 0 ~ 10 í™€ìˆ˜, ì§ìˆ˜ í•©ê³„
 		
 		int odd = 0;
 		int even = 0;
@@ -129,10 +128,10 @@ public class Ex05 {
 			}
 		}
 		
-		System.out.println("È¦¼öÀÇ ÇÕÀº " + odd);
-		System.out.println("Â¦¼öÀÇ ÇÕÀº " + even);
+		System.out.println("í™€ìˆ˜ì˜ í•©ì€ " + odd);
+		System.out.println("ì§ìˆ˜ì˜ í•©ì€ " + even);
 		
-		// 7!ÀÇ °ª
+		// 7!ì˜ ê°’
 		int sum = 1;
 		for (int i = 7; i > 0 ; i--) {
 			sum *= i;

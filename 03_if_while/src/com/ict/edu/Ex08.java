@@ -2,14 +2,14 @@ package com.ict.edu;
 
 public class Ex08 {
 	public static void main(String[] args) {
-		//ÁßÇÕ while ¹®
+		//åé’¦ while å·©
 		for (int i = 1; i < 4; i++) {
 			for (int j = 1; j < 6; j++) {
 				System.out.println("i = " + i + ", j= " + j );
 			}
 		}
 		
-		System.out.println("\nwhile¹®À¸·Î ½áº¸±â");
+		System.out.println("\nwhileå·©æ è‚º ç»“ç„Šæ‰");
 		
 		int i = 1;
 		
@@ -23,8 +23,8 @@ public class Ex08 {
 		}
 		
 		 
-		System.out.println("\n±¸±¸´Ü\n");
-		//±¸±¸´Ü case 1
+		System.out.println("\nå¤‡å¤‡çªœ\n");
+		//å¤‡å¤‡çªœ case 1
 		i = 2;
 		
 		while (i <= 9) {
@@ -39,7 +39,7 @@ public class Ex08 {
 		
 		System.out.println("--------------------------------------------------");
 		
-		//±¸±¸´Ü case 2
+		//å¤‡å¤‡çªœ case 2
 		
 		i = 2;
 		
@@ -65,7 +65,7 @@ public class Ex08 {
 		
 		System.out.println("--------------------------------------------------");
 		
-		//±¸±¸´Ü case 3
+		//å¤‡å¤‡çªœ case 3
 		
 		i = 1;
 		

@@ -1,49 +1,48 @@
 package com.ict.edu;
 
 /*  Thread.
- 	- ½º·¹µåÀÇ »ý¸í ÁÖ±â: pptÀÇ Thread »ý¸íÁÖ±â ±×¸² ÇÊ±âÇÒ °Í.
-    - Thread Class´Â start(), run()ÀÌ Á¸ÀçÇÑ´Ù.
-    - ÄÚµù ¼ø¼­¿¡ µû¸¥ ¿ì¼±¼øÀ§°¡ ¾ø´Ù. 
-    - Thread¿¡ ÀÌ¸§À» ºÙÀÏ ¼ö ÀÖ´Ù. ex) new Thread([class·Î »ý¼ºÇÑ °´Ã¼], [ÀÌ¸§(String)])
-    - sleep(millis): Á¤ÀÇ_ÇØ´ç millis¾È µ¿¾È ´ë±â ¾Ë °Í, millis: 1/1000ÃÊ
-	- µ¥¸ó ½º·¹µå: 
-	  ÀÏ¹Ý ½º·¹µåÀÇ ÀÛ¾÷À» µ½´Â º¸Á¶ÀûÀÎ ¿ªÇÒÀ» ¼öÇàÇÏ´Â ½º·¹µå. 
-	  ÀÏ¹Ý ½º·¹µå°¡ Á¾·áÇÏ¸é µ¥¸ó ½º·¹µå´Â °­Á¦ÀûÀ¸·Î Á¾·á µÊ.
-	  setDaemon(boolean e): e°¡ true: mainÀÌ Á¾·áÇÏ¸é thread Á¾·á, false: mainÀÌ Á¾·áÇØµµ thread ÀÛµ¿.
-    
-    - join(): ÇöÀç ½º·¹µå¿¡¼­ ¿øÇÏ´Â ¿ÜºÎ ½º·¹µå°¡ ³¡³¯¶§±îÁö ´ë±â»óÅÂ·Î ºüÁ® ÀÖ´Ù°¡ 
-  	          ±× ½º·¹µå°¡ Á¾·áÇÏ¸é ½ÇÇàÇÏ°Ô ÇÏ´Â ¸í·É¾î. joinÀ» È£ÃâÇÑ ½º·¹µå°¡ ³¡³ª¾ß ½ÇÇàÀÌ °¡´ÉÇÏ´Ù.
-    
-    - ex)
-      com.ict.edu2: º´ÇàÃ³¸® 
-      com.ict.edu3: Runnable ÀÌ¿ë.
-      com.ict.edu4: Thread Á¾·á Á¶Àý. (setDeamon, join)
-  	
-  	Synchronized
-  	- ppt¿¡ synchronized Èå¸§µµ »ý¸íÁÖ±â ±×¸² ÇÊ±âÇÒ °Í.
-  	- ÀÓ°è¿µ¿ª: ¸ÖÆ¼½º·¹µå¿¡¼­ °øÅëÀ¸·Î »ç¿ëµÇ´Â ¿µ¿ª, 
-  			    ÇöÀç ½ÇÇà ÁßÀÎ ½º·¹µå°¡ ¼ø½Ä°£¿¡ ´Ù¸¥ ½º·¹µå¿¡°Ô Á¦¾î±ÇÀ» »©¾Ñ±â´Â ¹®Á¦°¡ ¹ß»ýÇÑ´Ù.
-  			    ÀÌ¸¦ ÇØ°áÇÏ±â À§ÇÑ ¹æ¹ýÀÌ µ¿±âÈ­ Ã³¸®ÀÌ´Ù. 
-  			  
-  	- µ¿±âÈ­Ã³¸®: ÀÓ°è¿µ¿ª¿¡ synchronized ¿¹¾à¾î¸¦ »ç¿ëÇÏ¸é µÈ´Ù.
-  				  ÇöÀç ½ÇÇàÁßÀÎ ½º·¹µå°¡ ³¡³¯ ¶§±îÁö ´Ù¸¥ ½º·¹µå´Â Á¢±ÙÇÒ ¼ö ¾ø´Ù.
-  	- wait(): ÁöÁ¤ÇÑ ½º·¹µå¸¦ ´ë±â »óÅÂ·Î ¸¸µå´Â method
-  	          ½º·¹µå¸¦ Ç®¾îÁÖÁö ¾ÊÀ¸¸é ±×´ë·Î ´ë±â»óÅÂ·Î ³¡³½´Ù.  
-  	- wait()µÈ ½º·¹µå¸¦ Ç®¾îÁÖ´Â ¿¹¾à¾î´Â notify(), notifyAll() ÀÌ´Ù.
-  	   
-  	
-  	- com.ict.edu5: synchronized.
-  	- ThreadÀÇ run()´Â ¹°·Ð ´Ù¸¥ ¸Þ¼Òµå¿¡µµ ºÙÀÏ ¼ö ÀÖ´Ù.
-  	- ±³Àç 674p
-  	
-  	
-  	
+	- ìŠ¤ë ˆë“œì˜ ìƒëª… ì£¼ê¸°: pptì˜ Thread ìƒëª…ì£¼ê¸° ê·¸ë¦¼ í•„ê¸°í•  ê²ƒ.
+	- Thread ClassëŠ” start(), run()ì´ ì¡´ìž¬í•œë‹¤.
+	- ì½”ë”© ìˆœì„œì— ë”°ë¥¸ ìš°ì„ ìˆœìœ„ê°€ ì—†ë‹¤. 
+	- Threadì— ì´ë¦„ì„ ë¶™ì¼ ìˆ˜ ìžˆë‹¤. ex) new Thread([classë¡œ ìƒì„±í•œ ê°ì²´], [ì´ë¦„(String)])
+	- sleep(millis): ì •ì˜_í•´ë‹¹ millisì•ˆ ë™ì•ˆ ëŒ€ê¸° ì•Œ ê²ƒ, millis: 1/1000ì´ˆ
+	- ë°ëª¬ ìŠ¤ë ˆë“œ: 
+	  ì¼ë°˜ ìŠ¤ë ˆë“œì˜ ìž‘ì—…ì„ ë•ëŠ” ë³´ì¡°ì ì¸ ì—­í• ì„ ìˆ˜í–‰í•˜ëŠ” ìŠ¤ë ˆë“œ. 
+	  ì¼ë°˜ ìŠ¤ë ˆë“œê°€ ì¢…ë£Œí•˜ë©´ ë°ëª¬ ìŠ¤ë ˆë“œëŠ” ê°•ì œì ìœ¼ë¡œ ì¢…ë£Œ ë¨.
+	  setDaemon(boolean e): eê°€ true: mainì´ ì¢…ë£Œí•˜ë©´ thread ì¢…ë£Œ, false: mainì´ ì¢…ë£Œí•´ë„ thread ìž‘ë™.
+	
+	- join(): í˜„ìž¬ ìŠ¤ë ˆë“œì—ì„œ ì›í•˜ëŠ” ì™¸ë¶€ ìŠ¤ë ˆë“œê°€ ëë‚ ë•Œê¹Œì§€ ëŒ€ê¸°ìƒíƒœë¡œ ë¹ ì ¸ ìžˆë‹¤ê°€ 
+		          ê·¸ ìŠ¤ë ˆë“œê°€ ì¢…ë£Œí•˜ë©´ ì‹¤í–‰í•˜ê²Œ í•˜ëŠ” ëª…ë ¹ì–´. joinì„ í˜¸ì¶œí•œ ìŠ¤ë ˆë“œê°€ ëë‚˜ì•¼ ì‹¤í–‰ì´ ê°€ëŠ¥í•˜ë‹¤.
+	
+	- ex)
+	  com.ict.edu2: ë³‘í–‰ì²˜ë¦¬ 
+	  com.ict.edu3: Runnable ì´ìš©.
+	  com.ict.edu4: Thread ì¢…ë£Œ ì¡°ì ˆ. (setDeamon, join)
+		
+	Synchronized
+	- pptì— synchronized íë¦„ë„ ìƒëª…ì£¼ê¸° ê·¸ë¦¼ í•„ê¸°í•  ê²ƒ.
+	- ìž„ê³„ì˜ì—­: ë©€í‹°ìŠ¤ë ˆë“œì—ì„œ ê³µí†µìœ¼ë¡œ ì‚¬ìš©ë˜ëŠ” ì˜ì—­, 
+			    í˜„ìž¬ ì‹¤í–‰ ì¤‘ì¸ ìŠ¤ë ˆë“œê°€ ìˆœì‹ê°„ì— ë‹¤ë¥¸ ìŠ¤ë ˆë“œì—ê²Œ ì œì–´ê¶Œì„ ë¹¼ì•—ê¸°ëŠ” ë¬¸ì œê°€ ë°œìƒí•œë‹¤.
+			    ì´ë¥¼ í•´ê²°í•˜ê¸° ìœ„í•œ ë°©ë²•ì´ ë™ê¸°í™” ì²˜ë¦¬ì´ë‹¤. 
+			  
+	- ë™ê¸°í™”ì²˜ë¦¬: ìž„ê³„ì˜ì—­ì— synchronized ì˜ˆì•½ì–´ë¥¼ ì‚¬ìš©í•˜ë©´ ëœë‹¤.
+				  í˜„ìž¬ ì‹¤í–‰ì¤‘ì¸ ìŠ¤ë ˆë“œê°€ ëë‚  ë•Œê¹Œì§€ ë‹¤ë¥¸ ìŠ¤ë ˆë“œëŠ” ì ‘ê·¼í•  ìˆ˜ ì—†ë‹¤.
+	- wait(): ì§€ì •í•œ ìŠ¤ë ˆë“œë¥¼ ëŒ€ê¸° ìƒíƒœë¡œ ë§Œë“œëŠ” method
+	          ìŠ¤ë ˆë“œë¥¼ í’€ì–´ì£¼ì§€ ì•Šìœ¼ë©´ ê·¸ëŒ€ë¡œ ëŒ€ê¸°ìƒíƒœë¡œ ëë‚¸ë‹¤.  
+	- wait()ëœ ìŠ¤ë ˆë“œë¥¼ í’€ì–´ì£¼ëŠ” ì˜ˆì•½ì–´ëŠ” notify(), notifyAll() ì´ë‹¤.
+	   
+	
+	- com.ict.edu5: synchronized.
+	- Threadì˜ run()ëŠ” ë¬¼ë¡  ë‹¤ë¥¸ ë©”ì†Œë“œì—ë„ ë¶™ì¼ ìˆ˜ ìžˆë‹¤.
+	- êµìž¬ 674p
+
 */
 
-//½Ì±Û ½º·¹µå
+//ì‹±ê¸€ ìŠ¤ë ˆë“œ
+
 public class Ex01 {
 	public static void main(String[] args) {
-		// ÇöÀç ½ÇÇà ÁßÀÎ ½º·¹µå
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		System.out.println(Thread.currentThread().getName());
 	
 		Ex02 test = new Ex02();
@@ -54,7 +53,7 @@ public class Ex01 {
 		System.out.println(2);
 		
 		System.out.println("========================================================================");
-		// ½Ì±Û ½º·¹µå
+		// ï¿½Ì±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Ex03 test2 = new Ex03();
 		System.out.println(Thread.currentThread().getName() + " 1");
 		test2.go();

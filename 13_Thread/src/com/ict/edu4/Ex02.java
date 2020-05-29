@@ -1,15 +1,14 @@
 package com.ict.edu4;
 
-/*join(): ÇöÀç ½º·¹µå¿¡¼­ ¿øÇÏ´Â ¿ÜºÎ ½º·¹µå°¡ ³¡³¯¶§±îÁö ´ë±â»óÅÂ·Î ºüÁ® ÀÖ´Ù°¡ 
- * 	      ±× ½º·¹µå°¡ Á¾·áÇÏ¸é ½ÇÇàÇÏ°Ô ÇÏ´Â ¸í·É¾î.
+/*join(): í˜„ì¬ ìŠ¤ë ˆë“œì—ì„œ ì›í•˜ëŠ” ì™¸ë¶€ ìŠ¤ë ˆë“œê°€ ëë‚ ë•Œê¹Œì§€ ëŒ€ê¸°ìƒíƒœë¡œ ë¹ ì ¸ ìˆë‹¤ê°€ 
+ * 	      ê·¸ ìŠ¤ë ˆë“œê°€ ì¢…ë£Œí•˜ë©´ ì‹¤í–‰í•˜ê²Œ í•˜ëŠ” ëª…ë ¹ì–´.
  *      
-          joinÀ» È£ÃâÇÑ ½º·¹µå°¡ ³¡³ª¾ß ½ÇÇàÀÌ °¡´ÉÇÏ´Ù.
-
+          joinì„ í˜¸ì¶œí•œ ìŠ¤ë ˆë“œê°€ ëë‚˜ì•¼ ì‹¤í–‰ì´ ê°€ëŠ¥í•˜ë‹¤.
 */
 
 public class Ex02 {
 	public static void main(String[] args) {
-		System.out.println("¸ŞÀÎ: " + Thread.currentThread().getName());
+		System.out.println("ï¿½ï¿½ï¿½ï¿½: " + Thread.currentThread().getName());
 		
 		Ex03 e3 = new Ex03();
 		Thread thread = new Thread(e3);
@@ -22,7 +21,7 @@ public class Ex02 {
 			e.printStackTrace();
 		}
 		
-		System.out.println("¼ö°í: " + Thread.currentThread().getName());
+		System.out.println("ï¿½ï¿½ï¿½ï¿½: " + Thread.currentThread().getName());
 		
 	}
 }

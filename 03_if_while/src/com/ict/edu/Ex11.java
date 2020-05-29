@@ -3,7 +3,7 @@ package com.ict.edu;
 public class Ex11 {
 	public static void main(String[] args) {
 		
-		System.out.println("±¸±¸´Ü case4");
+		System.out.println("êµ¬êµ¬ë‹¨ case4");
 		
 		// self
 		for(int k = 0; k < 3; k++) {

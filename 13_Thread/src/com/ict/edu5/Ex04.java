@@ -1,5 +1,5 @@
 package com.ict.edu5;
-//.¹®Á¦: Using two threads and print 1 ~ 100 using first Thread. 
+//.ï¿½ï¿½ï¿½ï¿½: Using two threads and print 1 ~ 100 using first Thread. 
 //       print 101 ~ 200 using second Thread. (you should use synchronized) 
 
 public class Ex04 implements Runnable {
@@ -14,8 +14,8 @@ public class Ex04 implements Runnable {
 	
 	public static void main(String[] args) {
 		Ex04 sing = new Ex04();
-		Thread singer1 = new Thread(sing, "±èÈ£Áß");
-		Thread singer2 = new Thread(sing, "ÀÓ¿µ¿õ");
+		Thread singer1 = new Thread(sing, "íŠ¸ì™€ì´ìŠ¤");
+		Thread singer2 = new Thread(sing, "ì•„ì´ì˜¤ì•„ì´");
 		
 		singer1.start();
 		singer2.start();

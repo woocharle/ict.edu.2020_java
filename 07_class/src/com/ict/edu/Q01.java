@@ -5,7 +5,8 @@ import java.util.Scanner;
 
 public class Q01 {
 	public static void main(String[] args) {
-		//Quiz : 010-7777-9999 => 010-7777-XXXX·Î ¹Ù²ã¶ó.
+		// UTF-8
+		//Quiz : 010-7777-9999 => 010-7777-XXXXë¡œ ë°”ê¿”ë¼.
 		Scanner sc = new Scanner(System.in);
 		Random ran = new Random();
 		String quiz = "010-7777-9999";
@@ -16,49 +17,49 @@ public class Q01 {
 		System.out.println();
 		System.out.println("===================================================================");
 		
-		// 1. ³ôÀº / ³·À½ ¸ÂÃß±â
-		// ÀÔ·Â: ½ÃÀÛ, randomÀ» µ¹¸®°í È¦¼ö ¸é ³ôÀ½ Â¦¼ö ¸é ³·À½
+		// 1. ë†’ì€ / ë‚®ìŒ ë§ì¶”ê¸°
+		// ì…ë ¥: ì‹œì‘, randomì„ ëŒë¦¬ê³  í™€ìˆ˜ ë©´ ë†’ìŒ ì§ìˆ˜ ë©´ ë‚®ìŒ
 		
-		System.out.println("Ã¹¹øÂ° ½ÃÀÛ");
+		System.out.println("ì²«ë²ˆì§¸ ì‹œì‘");
 		
 		int num = ran.nextInt();
 		
 		System.out.println(num);
 		if(num % 2 ==0) {
-			System.out.println("³·À½");
+			System.out.println("ë‚®ìŒ");
 		}
 		else {
-			System.out.println("³ôÀ½");
+			System.out.println("ë†’ìŒ");
 		}
 		System.out.println();
 		
-		// 2. randomÀ» µ¹¸®°í 0 ~ 6 ÀÌ¸é ³ôÀ½ 8 ~ 13ÀÌ¸é ³·À½, 7ÀÌ¸é ºñ±è
+		// 2. randomì„ ëŒë¦¬ê³  0 ~ 6 ì´ë©´ ë†’ìŒ 8 ~ 13ì´ë©´ ë‚®ìŒ, 7ì´ë©´ ë¹„ê¹€
 		
-		System.out.println("µÎ¹øÂ° ½ÃÀÛ");
+		System.out.println("ë‘ë²ˆì§¸ ì‹œì‘");
 		
 		num = (int)(Math.random() * 13 + 1);
 		
 		if(num >= 0 && num <= 6) {
-			System.out.println("³ôÀ½");
+			System.out.println("ë†’ìŒ");
 		}
 		else if(num == 7){
-			System.out.println("ºñ±è");
+			System.out.println("ë¹„ê¹€");
 		}
 		else if(num >= 8 && num <= 13){
-			System.out.println("³·À½");
+			System.out.println("ë‚®ìŒ");
 		}
 		
-		// °¡À§ ¹ÙÀ§ º¸ 
+		// ê°€ìœ„ ë°”ìœ„ ë³´ 
 		
 		loop:while(true) {
-				System.out.println("°¡À§, ¹ÙÀ§, º¸¸¦ ½ÃÀÛÇÕ´Ï´Ù.");
-				System.out.print("ÀÔ·ÂÇÏ½Ã¿À => ");
+				System.out.println("ê°€ìœ„, ë°”ìœ„, ë³´ë¥¼ ì‹œì‘í•©ë‹ˆë‹¤.");
+				System.out.print("ì…ë ¥í•˜ì‹œì˜¤ => ");
 				String str = sc.next();
 				
-				if(str.equals("°¡À§") == false) {
-					if(str.equals("¹ÙÀ§") == false) {
-						if(str.equals("º¸") == false) {
-							System.out.println("°¡À§, ¹ÙÀ§, º¸ Áß ¼¼°¡Áö Áß ÇÏ³ª¸¸ ÀÔ·ÂÇÏ¼¼¿ä.");
+				if(str.equals("ê°€ìœ„") == false) {
+					if(str.equals("ë°”ìœ„") == false) {
+						if(str.equals("ë³´") == false) {
+							System.out.println("ê°€ìœ„, ë°”ìœ„, ë³´ ì¤‘ ì„¸ê°€ì§€ ì¤‘ í•˜ë‚˜ë§Œ ì…ë ¥í•˜ì„¸ìš”.");
 							continue loop;
 						}
 					}
@@ -68,37 +69,37 @@ public class Q01 {
 				
 				num = (int)(Math.random() * 3);
 				if(num == 0) {
-					com = "°¡À§";
+					com = "ê°€ìœ„";
 				}
 				else if(num == 1) {
-					com = "¹ÙÀ§";
+					com = "ë°”ìœ„";
 				}
 				else if(num == 2) {
-					com = "º¸";
+					com = "ë³´";
 				}
 				
 				String res="";
 				
 				switch (str) {
-					case "°¡À§":
+					case "ê°€ìœ„":
 						switch (com) {
-							case "°¡À§": res = "ºñ°å½À´Ï´Ù."; break;
-							case "¹ÙÀ§": res = "Á³½À´Ï´Ù."; break;
-							case "º¸": res = "ÀÌ°å½À´Ï´Ù."; break;
+							case "ê°€ìœ„": res = "ë¹„ê²¼ìŠµë‹ˆë‹¤."; break;
+							case "ë°”ìœ„": res = "ì¡ŒìŠµë‹ˆë‹¤."; break;
+							case "ë³´": res = "ì´ê²¼ìŠµë‹ˆë‹¤."; break;
 								
 							}
-					case "¹ÙÀ§":
+					case "ë°”ìœ„":
 						switch (com) {
-						case "°¡À§": res = "ÀÌ°å½À´Ï´Ù."; break;
-						case "¹ÙÀ§": res = "ºñ°å½À´Ï´Ù."; break;
-						case "º¸": res = "Á³½À´Ï´Ù."; break;
+						case "ê°€ìœ„": res = "ì´ê²¼ìŠµë‹ˆë‹¤."; break;
+						case "ë°”ìœ„": res = "ë¹„ê²¼ìŠµë‹ˆë‹¤."; break;
+						case "ë³´": res = "ì¡ŒìŠµë‹ˆë‹¤."; break;
 						
 						}
-					case "º¸":
+					case "ë³´":
 						switch (com) {
-						case "°¡À§": res = "Á³½À´Ï´Ù."; break;
-						case "¹ÙÀ§": res = "ÀÌ°å´Ï´Ù."; break;
-						case "º¸": res = "ºñ°å½À´Ï´Ù."; break;
+						case "ê°€ìœ„": res = "ì¡ŒìŠµë‹ˆë‹¤."; break;
+						case "ë°”ìœ„": res = "ì´ê²¼ë‹ˆë‹¤."; break;
+						case "ë³´": res = "ë¹„ê²¼ìŠµë‹ˆë‹¤."; break;
 						
 						}
 		
@@ -107,7 +108,7 @@ public class Q01 {
 				System.out.println(res);
 				
 				loop1: while(true) {
-							System.out.println("°è¼Ó ÇÏ½Ã°Ú½À´Ï±î? (1.³×  2.¾Æ´Ï¿À)");
+							System.out.println("ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ? (1.ë„¤  2.ì•„ë‹ˆì˜¤)");
 							num = sc.nextInt();
 							if(num == 1) {
 								continue loop;
@@ -116,7 +117,7 @@ public class Q01 {
 								break loop;
 							}
 							else {
-								System.out.println("1°ú 2Áß ÇÏ³ª´Ã ÀÔ·ÂÇÏ½Ã¿À.");
+								System.out.println("1ê³¼ 2ì¤‘ í•˜ë‚˜ëŠ˜ ì…ë ¥í•˜ì‹œì˜¤.");
 								continue loop1;
 							}
 					
@@ -131,9 +132,9 @@ public class Q01 {
 	
 	  
 
-	// 3. °¡À§ ¹ÙÀ§º¸ ¹®ÀÚ
-	// ÀÔ·Â: °¡À§
-	// Ãâ·Â: ºñ±è, ÀÌ±è, Áü.
+	// 3. ê°€ìœ„ ë°”ìœ„ë³´ ë¬¸ì
+	// ì…ë ¥: ê°€ìœ„
+	// ì¶œë ¥: ë¹„ê¹€, ì´ê¹€, ì§.
 	
 	
 }

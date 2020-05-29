@@ -3,12 +3,12 @@ package com.ict.edu;
 public class Ex03 {
 	public static void main(String[] args) {
 		
-		// ÇÕ,ºÒ
+		// í•©,ë¶ˆ
 		
 		int k1 = 85;
-		String str = "ÃÊ±âÈ­";
+		String str = "ì´ˆê¸°í™”";
 		
-		// k1ÀÇ Á¡¼ö°¡ 90ÀÌ»óÀÌ¸é A, 80ÀÌ»óÀÌ¸é B, 70ÀÌ»óÀÌ¸é C, ³ª¸ÓÁö F
+		// k1ì˜ ì ìˆ˜ê°€ 90ì´ìƒì´ë©´ A, 80ì´ìƒì´ë©´ B, 70ì´ìƒì´ë©´ C, ë‚˜ë¨¸ì§€ F
 		
 		if (k1 >= 90) {
 			str = "A";
@@ -25,140 +25,140 @@ public class Ex03 {
 		
 		System.out.println(str);
 		
-		// ´ë¹®ÀÚ ¼Ò¹®ÀÚ
+		// ëŒ€ë¬¸ìž ì†Œë¬¸ìž
 		
 		char k2 = '1';
-		str = "ÃÊ±âÈ­";
+		str = "ì´ˆê¸°í™”";
 		
 		if (k2 >= 'a' && k2 <= 'z') {
-			str = "¼Ò¹®ÀÚ";
+			str = "ì†Œë¬¸ìž";
 		}	
 		else if (k2 >= 'A' && k2 <= 'Z') {
-			str = "´ë¹®ÀÚ";	
+			str = "ëŒ€ë¬¸ìž";	
 		} 
 		else if (k2 >= '0' && k2 <= '9') {
-			str = "¼ýÀÚ";	
+			str = "ìˆ«ìž";	
 		} 
 		else {
-			str = "±âÅ¸";
+			str = "ê¸°íƒ€";
 		}
 		
 		System.out.println(str);
 		
-		// char k3°¡ A,aÀÌ¸é ¾ÆÇÁ¸®Ä«, B,bÀÌ¸é ºê¶óÁú, C,cÀÌ¸é Ä³³ª´Ù ³ª¸ÓÁö ÇÑ±¹
+		// char k3ê°€ A,aì´ë©´ ì•„í”„ë¦¬ì¹´, B,bì´ë©´ ë¸Œë¼ì§ˆ, C,cì´ë©´ ìºë‚˜ë‹¤ ë‚˜ë¨¸ì§€ í•œêµ­
 		
 		char k3 = 'A';
-		str = "ÃÊ±âÈ­";
+		str = "ì´ˆê¸°í™”";
 		
 		if (k2 == 'a' || k2 == 'A') {
-			str = "¾ÆÇÁ¸®Ä«";
+			str = "ì•„í”„ë¦¬ì¹´";
 		}	
 		else if (k2 == 'b' || k2 == 'B') {
-			str = "ºê¶óÁú";
+			str = "ë¸Œë¼ì§ˆ";
 		}	
 		else if (k2 == 'c' || k2 == 'C') {
-			str = "Ä³³ª´Ù";
+			str = "ìºë‚˜ë‹¤";
 		}	
 		else {
-			str = "ÇÑ±¹";
+			str = "í•œêµ­";
 		}
 		
 		System.out.println(str);
 		
-		/*menu°¡ 1ÀÌ¸é Ä«Æä¸ðÄ« 3500, 2ÀÌ¸é Ä«Æä¶ó¶¼ 4000, 3ÀÌ¸é ¾Æ¸Þ¸®Ä«³ë 3000,
-		 ÀÌ¸é °úÀÏÁê½º 3500ÀÌ´Ù. Ä£±¸¿Í 2ÀÜÀ» 10000 ³»°í ¸Ô¾ú´Ù. ÀÜµ·Àº ¾ó¸¶ÀÎ°¡? (ºÎ°¡¼¼ 10% Æ÷ÇÔ.)*/
+		/*menuê°€ 1ì´ë©´ ì¹´íŽ˜ëª¨ì¹´ 3500, 2ì´ë©´ ì¹´íŽ˜ë¼ë–¼ 4000, 3ì´ë©´ ì•„ë©”ë¦¬ì¹´ë…¸ 3000,
+		 ì´ë©´ ê³¼ì¼ì¥¬ìŠ¤ 3500ì´ë‹¤. ì¹œêµ¬ì™€ 2ìž”ì„ 10000 ë‚´ê³  ë¨¹ì—ˆë‹¤. ìž”ëˆì€ ì–¼ë§ˆì¸ê°€? (ë¶€ê°€ì„¸ 10% í¬í•¨.)*/
 		
 		int friend = 2;
 		int price = 0; 
 		int choice = 1; 
 		int money = 10000;
-		str = "ÃÊ±âÈ­";
+		str = "ì´ˆê¸°í™”";
 		
 		if (choice == 1) {
-			str = "Ä«Æä¸ðÄ«";
+			str = "ì¹´íŽ˜ëª¨ì¹´";
 			price = (int)(friend * 3500 * 1.1);
 		}	
 		else if (choice == 2) {
-			str = "Ä«Æä¶ó¶¼";
+			str = "ì¹´íŽ˜ë¼ë–¼";
 			price = (int)(friend * 4000 * 1.1);
 		}	
 		else if (choice == 3) {
-			str = "¾Æ¸Þ¸®Ä«³ë";
+			str = "ì•„ë©”ë¦¬ì¹´ë…¸";
 			price = (int)(friend * 3000 * 1.1);
 		}	
 		else if (choice == 4) {
-			str = "°úÀÏÁê½º";
+			str = "ê³¼ì¼ì¥¬ìŠ¤";
 			price = (int)(friend * 3500 * 1.1);
 		}	
 		
-		System.out.println(str + "µÎ ÀÜ ±¸ÀÔ ÀÜµ·Àº " + (money - price) + "¿ø");
+		System.out.println(str + "ë‘ ìž” êµ¬ìž… ìž”ëˆì€ " + (money - price) + "ì›");
 		
 		int menu = 3;
 		if(menu == 1) {
 			int dan = 3500;
-			String drink = "Ä«Æä¸ðÄ«";
+			String drink = "ì¹´íŽ˜ëª¨ì¹´";
 			int su = 2;
 			int total = dan * su;
 			int vat = (int)(total * 0.1);
 			int input = 10000;
 			int output = input - (total + vat);
-			System.out.println("ÀÜµ·: " + output);
+			System.out.println("ìž”ëˆ: " + output);
 		}
 		else if(menu == 2) {
 			int dan = 4000;
-			String drink =  "Ä«Æä¶ó¶¼";
+			String drink =  "ì¹´íŽ˜ë¼ë–¼";
 			int su = 2;
 			int total = dan * su;
 			int vat = (int)(total * 0.1);
 			int input = 10000;
 			int output = input - (total + vat);
-			System.out.println("ÀÜµ·: " + output);
+			System.out.println("ìž”ëˆ: " + output);
 		}
 		else if(menu == 3) {
 			int dan = 3000;
-			String drink = "¾Æ¸Þ¸®Ä«³ë";
+			String drink = "ì•„ë©”ë¦¬ì¹´ë…¸";
 			int su = 2;
 			int total = dan * su;
 			int vat = (int)(total * 0.1);
 			int input = 10000;
 			int output = input - (total + vat);
-			System.out.println("ÀÜµ·: " + output);
+			System.out.println("ìž”ëˆ: " + output);
 		}
 		else if(menu == 4) {
 			int dan = 3500;
-			String drink = "°úÀÏÁê½º";
+			String drink = "ê³¼ì¼ì¥¬ìŠ¤";
 			int su = 2;
 			int total = dan * su;
 			int vat = (int)(total * 0.1);
 			int input = 10000;
 			int output = input - (total + vat);
-			System.out.println("ÀÜµ·: " + output);
+			System.out.println("ìž”ëˆ: " + output);
 		}
 		
-		// ¸®ÆåÅä¸µ 1. Áßº¹µÈ ¿ä¼Ò¸¦ Á¤¸®
+		// ë¦¬íŽ™í† ë§ 1. ì¤‘ë³µëœ ìš”ì†Œë¥¼ ì •ë¦¬
 		
 		int su = 2;
 		int dan = 0; 
-		String drink = "¸Þ´º"; 
+		String drink = "ë©”ë‰´"; 
 
 		menu = 3;
 		if(menu == 1) {
 			dan = 3500;
-			drink = "Ä«Æä¸ðÄ«";
+			drink = "ì¹´íŽ˜ëª¨ì¹´";
 
 		}
 		else if(menu == 2) {
 			dan = 4000;
-			drink =  "Ä«Æä¶ó¶¼";
+			drink =  "ì¹´íŽ˜ë¼ë–¼";
 
 		}
 		else if(menu == 3) {
 			dan = 3000;
-			drink = "¾Æ¸Þ¸®Ä«³ë";
+			drink = "ì•„ë©”ë¦¬ì¹´ë…¸";
 		}
 		else if(menu == 4) {
 			dan = 3500;
-			drink = "°úÀÏÁê½º";
+			drink = "ê³¼ì¼ì¥¬ìŠ¤";
 
 		}
 		
@@ -166,7 +166,7 @@ public class Ex03 {
 		int total = dan * su;
 		int vat = (int)(total * 0.1);
 		int output = input - (total + vat);
-		System.out.println("ÀÜµ·: " + output);
+		System.out.println("ìž”ëˆ: " + output);
 		
 		
 		

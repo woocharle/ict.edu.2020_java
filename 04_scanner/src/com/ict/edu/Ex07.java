@@ -4,50 +4,50 @@ import java.util.Scanner;
 
 public class Ex07 {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+Scanner sc = new Scanner(System.in);
 		
 		esc1: while(true) {
-			System.out.print("ÀÔ±İ¾×: ");
+			System.out.print("ì…ê¸ˆì•¡: ");
 			int input = sc.nextInt();
 			
 			esc: while(true) {
-				System.out.println("¸Ş´º: 1. Ä¿ÇÇÀ½·á(3500)" + 
-									"\n      2.ÀÌ¿ÂÀ½·á (2500)" + 
-									"\n      3.¹° (1500)" +
-									"\n      4.°úÀÏÁê½º (4000)" +
-									"\n      0.¼±ÅÃ ¾ÈÇÔ.");
+				System.out.println("ë©”ë‰´: 1. ì»¤í”¼ìŒë£Œ(3500)" + 
+									"\n      2.ì´ì˜¨ìŒë£Œ (2500)" + 
+									"\n      3.ë¬¼ (1500)" +
+									"\n      4.ê³¼ì¼ì¥¬ìŠ¤ (4000)" +
+									"\n      0.ì„ íƒ ì•ˆí•¨.");
 				
-				System.out.print("¸Ş´º¸¦ ¼±ÅÃÇÏ½Ã¿À (´Ü ºÎ°¡¼¼´Â Æ÷ÇÔ.) ");
+				System.out.print("ë©”ë‰´ë¥¼ ì„ íƒí•˜ì‹œì˜¤ (ë‹¨ ë¶€ê°€ì„¸ëŠ” í¬í•¨.) ");
 			
 				int chi = sc.nextInt();
 				String menu = ""; 
 				int price = 0;
 				
 				switch (chi) {
-				case 1: menu = "Ä¿ÇÇÀ½·á"; price= 3500; break;
-				case 2: menu = "ÀÌ¿ÂÀ½·á"; price= 2500; break;
-				case 3: menu = "¹°"; price= 1500; break;
-				case 4: menu = "°úÀÏÁê½º"; price= 4000; break;
+				case 1: menu = "ì»¤í”¼ìŒë£Œ"; price= 3500; break;
+				case 2: menu = "ì´ì˜¨ìŒë£Œ"; price= 2500; break;
+				case 3: menu = "ë¬¼"; price= 1500; break;
+				case 4: menu = "ê³¼ì¼ì¥¬ìŠ¤"; price= 4000; break;
 				case 0: break; 
 				default:	
-					System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä");	
+					System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”");	
 					System.out.println();
 					continue esc;
 				}
 							
-				System.out.println("¼±ÅÃÇÑ À½·á: " + menu);
-				System.out.println("ÀÔ±İ¾×: " + input + "¿ø");
+				System.out.println("ì„ íƒí•œ ìŒë£Œ: " + menu);
+				System.out.println("ì…ê¸ˆì•¡: " + input + "ì›");
 				if(price == 0) {
-					System.out.println("ÀÔ±İ¾×À» ¹Ù²Ù°Ú½À´Ï´Ù. \n");
+					System.out.println("ì…ê¸ˆì•¡ì„ ë°”ê¾¸ê² ìŠµë‹ˆë‹¤. \n");
 					continue esc1;
 				}
 				else {
 					if(price <= input) {
-						System.out.println("ÀÜµ·Àº " + (input - price) + "¿ø");
+						System.out.println("ì”ëˆì€ " + (input - price) + "ì›");
 					
 					}
 					else {
-						System.out.println((price - input) + "¿øÀÌ ¸ğÀÚ¶ø´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä");
+						System.out.println((price - input) + "ì›ì´ ëª¨ìëë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”");
 						System.out.println();
 						continue esc;
 					}
@@ -55,7 +55,7 @@ public class Ex07 {
 				}
 				
 				while(true) {
-					System.out.println("°è¼Ó ÇÏ½Ã°Ú½À´Ï±î? 1. yes / 2. no ");
+					System.out.println("ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ? 1. yes / 2. no ");
 					int choice = sc.nextInt();
 					if(choice == 1) {
 						System.out.println();
@@ -72,7 +72,7 @@ public class Ex07 {
 			
 		}
 		
-		System.out.println("¼ö°íÇÏ¼Ì½À´Ï´Ù.");
+		System.out.println("ìˆ˜ê³ í•˜ì…¨ìŠµë‹ˆë‹¤.");
 		
 	}
 	

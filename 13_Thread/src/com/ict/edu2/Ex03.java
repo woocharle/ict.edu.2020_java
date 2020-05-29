@@ -4,8 +4,8 @@ public class Ex03 extends Thread {
 	@Override
 	public void run() {
 		for (int i = 0; i < 50; i++) {
-			System.out.println(Thread.currentThread().getName()+" : °¡°¡°¡°¡°¡");
-			//System.out.println(" : °¡°¡°¡°¡°¡");
+			System.out.println(Thread.currentThread().getName()+" : ê°€ê°€ê°€ê°€ê°€");
+			//System.out.println(" : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		} 
 	}
 }

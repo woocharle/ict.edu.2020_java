@@ -6,13 +6,8 @@ public class Ex03 {
 	public static void main(String[] args) {
 		int[] num = {3, 4, 9, 5, 6, 1, 7, 2, 10, 8};
 		
-		System.out.println("Á¤·Ä Àü");
-		
-		for(int k : num) {
-			System.out.print(k + " ");
-		}
-		
-		System.out.println();
+		System.out.println("ë°°ì—´ ì¶œë ¥");
+		System.out.println("ì¼ë°˜ forë¬¸");
 				
 		for(int i = 0; i < num.length; i++) {
 			int tmp = 0;
@@ -27,7 +22,7 @@ public class Ex03 {
 			
 		}
 		
-		System.out.println("Á¤·Ä ÈÄ");
+		System.out.println("ë³€í˜• forë¬¸");
 		
 		for(int k : num) {
 			System.out.print(k + " ");
@@ -53,7 +48,7 @@ public class Ex03 {
 		System.out.println("\n");
 		
 		
-		//ArrayÅ¬·¡½º´Â 
+		//ArrayÅ¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 		
 		
 	}

@@ -12,7 +12,7 @@ public class Ex01 {
 		String msg = sc.next();
 		System.out.println(msg); */
 		
-		System.out.print("¿øÇÏ´Â ¹®ÀÚ ÀÔ·Â: ");
+		System.out.print("ìž…ë ¥: ");
 		InputStreamReader isr = null;
 		BufferedReader br = null;
 		
@@ -20,7 +20,7 @@ public class Ex01 {
 			isr = new InputStreamReader(System.in);
 			br = new BufferedReader(isr);
 			String msg = br.readLine();
-			System.out.println("¹ÞÀº ¹®ÀÚ: " + msg);
+			System.out.println("ì¶œë ¥: " + msg);
 			
 		} catch (Exception e) {
 			// TODO: handle exception

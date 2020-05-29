@@ -7,35 +7,32 @@ public class Ex02 {
 		ch[0] = 'J';
 		ch[1] = 'A';
 		ch[2] = 'V';
-		ch[3] = 65;  // intÁö¸¸, character ¹üÀ§¿¡ µé¾î°£ ¼ıÀÚ´Â ÀÔ·ÂÇÒ ¼ö ÀÖ´Ù.
+		ch[3] = 65;  // intì§€ë§Œ, character ë²”ìœ„ì— ë“¤ì–´ê°„ ìˆ«ìëŠ” ì…ë ¥í•  ìˆ˜ ìˆë‹¤.
 		
-		System.out.println("ÀÏ¹İ for¹®");
+		System.out.println("ì¼ë°˜ forë¬¸");
 		for (int i = 0; i < ch.length; i++) {
 			System.out.println(ch[i]);
 		}
 		System.out.println();
 		
-		System.out.println("°³·®µÈ for¹®");
+		System.out.println("ê°œëŸ‰ëœ forë¬¸");
 		for (char i : ch) {
 			System.out.println(i);
 		}
 		System.out.println();
 		
-		//¼±¾ğ, »ı¼º, µ¥ÀÌÅÍ ÀúÀå ÇÑ¹øÃ¼
+		//ì„ ì–¸, ìƒì„±, ë°ì´í„° ì €ì¥ í•œë²ˆì²´
 		
 		char[] ch2 = {'j', 'a', 'v', 'a'};
 		int[] k2 = {100, 200, 300, 400};
 		double[] d2 = {3.14, 71.0 , 42.1};
-		String[] str = {"È«±æµ¿", "ÀÌ±æµ¿", "ÀÓ²©Á¤", "³ëÁö½É"};
+		String[] str = {"í™ê¸¸ë™", "ì´ê¸¸ë™", "ì„êº½ì •", "ë…¸ì§€ì‹¬"};
 		
 		for(String k : str) {
 			System.out.println(k);
 		}
 		System.out.println();
-		
-		
-		
-		
+
 		
 	}
 

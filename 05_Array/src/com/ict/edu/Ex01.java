@@ -3,21 +3,21 @@ package com.ict.edu;
 public class Ex01 {
 	public static void main(String[] args) {
 		
-		// 1. ¹è¿­ ¼±¾ğ
+		// 1. ë°°ì—´ ì„ ì–¸
 		int[] su ;
-		// 2. ¹è¿­ »ı¼º
+		// 2. ë°°ì—´ ìƒì„±
 		su = new int[4];
-		// 3. µ¥ÀÌÅÍ ÀúÀå
+		// 3. ë°ì´í„° ì €ì¥
 		su[0] = 100;
 		su[1] = 200;
 		su[2] = 'a';
-		//su[3] = 3.14;  Å« ÀÚ·áÇüÀº ÀÛÀº ÀÚ·áÇü¿¡ ÀúÀå ºÒ°¡.
+		//su[3] = 3.14;  í° ìë£Œí˜•ì€ ì‘ì€ ìë£Œí˜•ì— ì €ì¥ ë¶ˆê°€.
 		su[3] = 300;
-		su[1] = 1000; //µ¥ÀÌÅÍ Áßº¹°¡´É.
+		su[1] = 1000; //ë°ì´í„° ì¤‘ë³µê°€ëŠ¥.
 		
 		System.out.println(su);
 		
-		//¹è¿­ ¾È¿¡ ÀÖ´Â µ¥ÀÌÅÍ Ãâ·ÂÇÏ±â 
+		//ë°°ì—´ ì•ˆì— ìˆëŠ” ë°ì´í„° ì¶œë ¥í•˜ê¸° 
 		System.out.println(su[0]);
 		System.out.println(su[1]);
 		System.out.println(su[2]);
@@ -35,12 +35,8 @@ public class Ex01 {
 		
 		System.out.println();
 		
-		for (int i : su) {				//suÀÇ ÇÏ³ªºÎÅÍ ³¡±îÁö i¿¡ ÀúÀå½ÃÄÑ
+		for (int i : su) {				//suì˜ í•˜ë‚˜ë¶€í„° ëê¹Œì§€ iì— ì €ì¥ì‹œì¼œ
 			System.out.println(i);
 		}
-		
-		
-		
-		
 	}
 }

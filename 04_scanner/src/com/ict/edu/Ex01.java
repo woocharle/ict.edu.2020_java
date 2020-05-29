@@ -4,34 +4,34 @@ import java.util.Scanner;
 
 public class Ex01 {
 	public static void main(String[] args) {
-		//Scanner Å¬·¡½º: zl
+		//Scanner í´ë˜ìŠ¤: zl
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("´ç½ÅÀÇ ÀÌ¸§: ");
+		System.out.print("ë‹¹ì‹ ì˜ ì´ë¦„: ");
 		
-		// ÀÔ·ÂÇÑ ³»¿ëÀÌ StringÀÏ °æ¿ì Ã³¸®ÇÏ´Â ¹æ¹ı
+		// ì…ë ¥í•œ ë‚´ìš©ì´ Stringì¼ ê²½ìš° ì²˜ë¦¬í•˜ëŠ” ë°©ë²•
 		String name = sc.next();
-		System.out.println("ÀÔ·ÂÇÑ ÀÌ¸§: " + name);
+		System.out.println("ì…ë ¥í•œ ì´ë¦„: " + name);
 		
 		
-		// intÀÏ °æ¿ì Ã³¸®
-		System.out.print("´ç½ÅÀÇ ³ªÀÌ: ");
+		// intì¼ ê²½ìš° ì²˜ë¦¬
+		System.out.print("ë‹¹ì‹ ì˜ ë‚˜ì´: ");
 		int age = sc.nextInt();
-		System.out.println("ÀÔ·ÂÇÑ ³ªÀÌ: " + age);
+		System.out.println("ì…ë ¥í•œ ë‚˜ì´: " + age);
 		
-		// ½Ç¼öÀÏ °æ¿ì Ã³¸®
-		System.out.print("´ç½ÅÀÇ Å°: ");
+		// ì‹¤ìˆ˜ì¼ ê²½ìš° ì²˜ë¦¬
+		System.out.print("ë‹¹ì‹ ì˜ í‚¤: ");
 		double height = sc.nextDouble();
-		System.out.println("ÀÔ·ÂÇÑ ³ªÀÌ: " + height);
+		System.out.println("ì…ë ¥í•œ ë‚˜ì´: " + height);
 		
-		// ÀÔ·ÂÇÑ ³»¿ëÀ» booleanÀ¸·Î Ã³¸®
-		System.out.print("´ç½ÅÀº ³²¼ºÀÔ´Ï±î? (true/false)");
+		// ì…ë ¥í•œ ë‚´ìš©ì„ booleanìœ¼ë¡œ ì²˜ë¦¬
+		System.out.print("ë‹¹ì‹ ì€ ë‚¨ì„±ì…ë‹ˆê¹Œ? (true/false)");
 		boolean gender = sc.nextBoolean();
 		if (gender == true) {
-			System.out.println("´ç½ÅÀº ³²¼ºÀÔ´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì€ ë‚¨ì„±ì…ë‹ˆë‹¤.");
 		}
 		else {
-			System.out.println("´ç½ÅÀº ¿©¼ºÀÔ´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì€ ì—¬ì„±ì…ë‹ˆë‹¤.");
 		}
 		
 		System.out.println();

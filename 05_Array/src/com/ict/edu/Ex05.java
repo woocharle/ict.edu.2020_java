@@ -2,7 +2,7 @@ package com.ict.edu;
 
 public class Ex05 {
 	public static void main(String[] args) {
-		String[] name = {"±èÈ£Áß", "¿µÅ¹  ", "ÀÌÂù¿ø", "Á¤µ¿¿ø", "ÀÓ¿µ¿õ"};
+		String[] name = {"ê¹€í˜¸ì¤‘", "ì˜íƒ  ", "ì´ì°¬ì›", "ì •ë™ì›", "ì„ì˜ì›…"};
 		int[] kor = {80, 90, 80, 70, 100};
 		int[] eng = {80, 95, 85, 70, 100};
 		int[] mat = {100, 100, 100, 100, 100};
@@ -40,16 +40,16 @@ public class Ex05 {
 			}
 		}
 		
-		System.out.println("ÀÌ ¸§\tÃÑ Á¡\tÆò ±Õ\tÇĞ Á¡\t¼ø À§");
+		System.out.println("ì´ ë¦„\tì´ ì \tí‰ ê· \tí•™ ì \tìˆœ ìœ„");
 		for (int i = 0; i < rank.length; i++) {
 			System.out.println(name[i] +"\t" + sum[i] +"\t" + avg[i] +"\t" + grd[i] +"\t" + rank[i]);
 		}
 		
 		System.out.println();
-		System.out.println("2Áß ¹è¿­ ÀÌ¿ë");
+		System.out.println("2ì¤‘ ë°°ì—´ ì´ìš©");
 		
 		String[][] data = new String[6][5];
-		data[0][0] = "ÀÌ ¸§";	data[0][1] = "ÃÑ Á¡";	data[0][2] = "Æò ±Õ";	data[0][3] = "ÇĞ Á¡"; data[0][4] = "¼ø À§";
+		data[0][0] = "ì´ ë¦„";	data[0][1] = "ì´ ì ";	data[0][2] = "í‰ ê· ";	data[0][3] = "í•™ ì "; data[0][4] = "ìˆœ ìœ„";
 		
 		for (int i = 1; i <= 5; i++) {
 			data[i][0] = name[i - 1];

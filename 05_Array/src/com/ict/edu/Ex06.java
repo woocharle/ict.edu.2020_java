@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Ex06 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¸î ¸í? ");
+		System.out.print("ëª‡ ëª…? ");
 		int n = sc.nextInt();
 		
 		String[] name = new String[n];
@@ -22,14 +22,14 @@ public class Ex06 {
 		}
 	
 		for (int i = 0; i < n; i++) {
-			System.out.println((i + 1) + "¹ø");
-			System.out.print("ÀÌ¸§: ");
+			System.out.println((i + 1) + "ï¿½ï¿½");
+			System.out.print("ï¿½Ì¸ï¿½: ");
 			name[i] = sc.next();
-			System.out.print("±¹¾î: ");
+			System.out.print("ï¿½ï¿½ï¿½ï¿½: ");
 			kor[i] = sc.nextInt();
-			System.out.print("¼öÇÐ: ");
+			System.out.print("ï¿½ï¿½ï¿½ï¿½: ");
 			mat[i] = sc.nextInt();
-			System.out.print("¿µ¾î: ");
+			System.out.print("ï¿½ï¿½ï¿½ï¿½: ");
 			eng[i] = sc.nextInt();
 			System.out.println();
 			
@@ -60,7 +60,7 @@ public class Ex06 {
 			}
 		}
 		
-		System.out.println("ÀÌ ¸§\tÃÑ Á¡\tÆò ±Õ\tÇÐ Á¡\t¼ø À§");
+		System.out.println("ï¿½ï¿½ ï¿½ï¿½\tï¿½ï¿½ ï¿½ï¿½\tï¿½ï¿½ ï¿½ï¿½\tï¿½ï¿½ ï¿½ï¿½\tï¿½ï¿½ ï¿½ï¿½");
 		for (int i = 0; i < n; i++) {
 			System.out.println(name[i] +"\t" + sum[i] +"\t" + avg[i] +"\t" + grd[i] +"\t" + rank[i]);
 		}

@@ -2,21 +2,21 @@ package com.ict.edu;
 
 public class Ex10 {
 	public static void main(String[] args) {
-		//break ¿Í continue
+		//break ì™€ continue
 		
 		for (int i = 1; i < 11; i++) {
 			System.out.print(i + " ");
 		}
 		System.out.println();
 		
-		// i = 6ÀÏ ¶§ break
+		// i = 6ï¿½ï¿½ ï¿½ï¿½ break
 		for (int i = 1; i < 11; i++) {
 			if (i == 6) break;
 			System.out.print(i + " ");
 		}
 		System.out.println();
 		
-		// i = 6 ÀÏ ¶§ continue
+		// i = 6 ï¿½ï¿½ ï¿½ï¿½ continue
 		
 		for (int i = 1; i < 11; i++) {
 			if (i == 6) continue;
@@ -24,7 +24,7 @@ public class Ex10 {
 		}
 		System.out.println();
 		
-		// 0 ~ 10Â¦¼ö Ãâ·Â
+		// 0 ~ 10Â¦ï¿½ï¿½ ï¿½ï¿½ï¿½
 		
 		for (int i = 0; i < 11; i++) {
 			if (i % 2 == 1) {

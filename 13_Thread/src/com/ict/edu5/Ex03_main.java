@@ -3,8 +3,8 @@ package com.ict.edu5;
 public class Ex03_main {
 	public static void main(String[] args) {
 		Ex03 test = new Ex03();
-		Thread thread = new Thread(test, "Æ®¿ÍÀÌ½º");
-		Thread thread2 = new Thread(test, "¾ÆÀÌ¿À¾ÆÀÌ");
+		Thread thread = new Thread(test, "ê¹€í˜¸ì¤‘");
+		Thread thread2 = new Thread(test, "ì„ì˜ì›…");
 		
 		thread.start();
 		thread2.start();

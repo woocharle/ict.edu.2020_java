@@ -3,100 +3,100 @@ package com.ict.edu;
 public class Ex04 {
 	public static void main(String[] args) {
 		
-		// char k1ÀÌ AÀÌ¸é ¾ÆÇÁ¸®Ä«, BÀÌ¸é ºê¶óÁú, CÀÌ¸é Ä³³ª´Ù ³ª¸ÓÁö ÇÑ±¹
+		// char k1ì´ Aì´ë©´ ì•„í”„ë¦¬ì¹´, Bì´ë©´ ë¸Œë¼ì§ˆ, Cì´ë©´ ìºë‚˜ë‹¤ ë‚˜ë¨¸ì§€ í•œêµ­
 		char k1 = 'A';
 		String res;
 		
 		switch (k1) {
 		case 'A':
-			res = "¾ÆÇÁ¸®Ä«";
+			res = "ì•„í”„ë¦¬ì¹´";
 			break;
 		case 'B':
-			res = "ºê¶óÁú";
+			res = "ë¸Œë¼ì§ˆ";
 			break;
 		case 'C':
-			res = "Ä³³ª´Ù";
+			res = "ìºë‚˜ë‹¤";
 			break;
 
 		default:
-			res = "ÇÑ±¹";	
+			res = "í•œêµ­";	
 			break;
 		}
 		
 		System.out.println(res);
 		
-		// char k2ÀÌ A,aÀÌ¸é ¾ÆÇÁ¸®Ä«, B,bÀÌ¸é ºê¶óÁú, C,cÀÌ¸é Ä³³ª´Ù ³ª¸ÓÁö ÇÑ±¹
+		// char k2ì´ A,aì´ë©´ ì•„í”„ë¦¬ì¹´, B,bì´ë©´ ë¸Œë¼ì§ˆ, C,cì´ë©´ ìºë‚˜ë‹¤ ë‚˜ë¨¸ì§€ í•œêµ­
 		
 		char k2 = 'a';
 		res = "";
 		
 		switch (k2) {
 		case 'A':
-		case 'a': res = "¾ÆÇÁ¸®Ä«";	break;
+		case 'a': res = "ì•„í”„ë¦¬ì¹´";	break;
 		case 'B':
-		case 'b': res = "ºê¶óÁú"; break;
+		case 'b': res = "ë¸Œë¼ì§ˆ"; break;
 		case 'C':
-		case 'c': res = "Ä³³ª´Ù"; break;
-		default: res = "ÇÑ±¹"; break;
+		case 'c': res = "ìºë‚˜ë‹¤"; break;
+		default: res = "í•œêµ­"; break;
 		}
 		
 		System.out.println(res);
 		
 		
 		
-		// k3°¡ 1 ¶Ç´Â 3ÀÌ¸é ³²ÀÚ, 2 ¶Ç´Â 4ÀÌ¸é ¿©ÀÚ 
+		// k3ê°€ 1 ë˜ëŠ” 3ì´ë©´ ë‚¨ì, 2 ë˜ëŠ” 4ì´ë©´ ì—¬ì 
 		
 		int k3 = 1;
-		String gender = "ÃÊ±âÈ­";
+		String gender = "ì´ˆê¸°í™”";
 		
 		switch (k3) {
 		case 1: 
-		case 3: gender = "³²ÀÚ"; break;
+		case 3: gender = "ë‚¨ì"; break;
 		case 2: 
-		case 4: gender = "¿©ÀÚ"; break;
-		default: gender = "¸ğ¸§"; break;
+		case 4: gender = "ì—¬ì"; break;
+		default: gender = "ëª¨ë¦„"; break;
 		}
 		
-		System.out.println("¼ºº°: " + gender);
+		System.out.println("ì„±ë³„: " + gender);
 		
 		
-		// k4ÀÌ ÇÑ±¹ = ¼­¿ï, Áß±¹ = ºÏ°æ, ÀÏº» = µ¿°æ, ¹Ì±¹ = ¿ö½ÌÅÏ
+		// k4ì´ í•œêµ­ = ì„œìš¸, ì¤‘êµ­ = ë¶ê²½, ì¼ë³¸ = ë™ê²½, ë¯¸êµ­ = ì›Œì‹±í„´
 		
-		String k4 = "ÇÑ±¹";
-		String nation = "¹ÌÁ¤";
+		String k4 = "í•œêµ­";
+		String nation = "ë¯¸ì •";
 		
 		switch (k4) {
-		case "ÇÑ±¹": nation = "¼­¿ï"; break;
-		case "Áß±¹": nation = "ºÏ°æ"; break;
-		case "ÀÏº»": nation = "µ¿°æ"; break;
-		case "¿ö½ÌÅÏ": nation = "¿ö½ÌÅÏ"; break;
+		case "í•œêµ­": nation = "ì„œìš¸"; break;
+		case "ì¤‘êµ­": nation = "ë¶ê²½"; break;
+		case "ì¼ë³¸": nation = "ë™ê²½"; break;
+		case "ì›Œì‹±í„´": nation = "ì›Œì‹±í„´"; break;
 		default: break;
 		}
 		
-		System.out.println(k4 + "ÀÇ ¼öµµ´Â " + nation);
+		System.out.println(k4 + "ì˜ ìˆ˜ë„ëŠ” " + nation);
 		
-		/*menu°¡ 1ÀÌ¸é Ä«Æä¸ğÄ« 3500, 2ÀÌ¸é Ä«Æä¶ó¶¼ 4000, 3ÀÌ¸é ¾Æ¸Ş¸®Ä«³ë 3000,
-		 ÀÌ¸é °úÀÏÁê½º 3500ÀÌ´Ù. Ä£±¸¿Í 2ÀÜÀ» 10000 ³»°í ¸Ô¾ú´Ù. ÀÜµ·Àº ¾ó¸¶ÀÎ°¡? (ºÎ°¡¼¼ 10% Æ÷ÇÔ.)*/
+		/*menuê°€ 1ì´ë©´ ì¹´í˜ëª¨ì¹´ 3500, 2ì´ë©´ ì¹´í˜ë¼ë–¼ 4000, 3ì´ë©´ ì•„ë©”ë¦¬ì¹´ë…¸ 3000,
+		 ì´ë©´ ê³¼ì¼ì¥¬ìŠ¤ 3500ì´ë‹¤. ì¹œêµ¬ì™€ 2ì”ì„ 10000 ë‚´ê³  ë¨¹ì—ˆë‹¤. ì”ëˆì€ ì–¼ë§ˆì¸ê°€? (ë¶€ê°€ì„¸ 10% í¬í•¨.)*/
 		
 		int k5 = 2;
 		int price = 0;
-		String menu = "¹ÌÁ¤";
+		String menu = "ë¯¸ì •";
 		
 		switch (k5) {
-		case 1: menu = "Ä«Æä¸ğÄ«"; price = 3500; break;
-		case 2: menu = "Ä«Æä¶ó¶¼"; price = 4000; break;
-		case 3: menu = "¾Æ¸Ş¸®Ä«³ë"; price = 3000; break;
-		case 4: menu = "°úÀÏÁê½º"; price = 3500; break;
+		case 1: menu = "ì¹´í˜ëª¨ì¹´"; price = 3500; break;
+		case 2: menu = "ì¹´í˜ë¼ë–¼"; price = 4000; break;
+		case 3: menu = "ì•„ë©”ë¦¬ì¹´ë…¸"; price = 3000; break;
+		case 4: menu = "ê³¼ì¼ì¥¬ìŠ¤"; price = 3500; break;
 		}
 		
 		int pp = 2;
 		int pay = 10000;
 		int cng = pay - (int)(pp * price * 1.1); 
 		
-		System.out.println("¸Ş´º´Â " + menu + "°Å½º¸§µ·Àº " + cng);
+		System.out.println("ë©”ë‰´ëŠ” " + menu + "ê±°ìŠ¤ë¦„ëˆì€ " + cng);
 		
-	    //k6ÀÇ Á¡¼ö°¡ 90ÀÌ»óÀÌ¸é A, 80ÀÌ»óÀÌ¸é B, 70ÀÌ»óÀÌ¸é C, ³ª¸ÓÁö´Â F
-		//switch case·Î ¹üÀ§¸¦ ±¸ÇÏ·Á¸é ¾Æ·¡Ã³·³ °¡°øÀ» ÇØ¾ß µÈ´Ù.
+	    //k6ì˜ ì ìˆ˜ê°€ 90ì´ìƒì´ë©´ A, 80ì´ìƒì´ë©´ B, 70ì´ìƒì´ë©´ C, ë‚˜ë¨¸ì§€ëŠ” F
+		//switch caseë¡œ ë²”ìœ„ë¥¼ êµ¬í•˜ë ¤ë©´ ì•„ë˜ì²˜ëŸ¼ ê°€ê³µì„ í•´ì•¼ ëœë‹¤.
 		
 		int k6 = 97;
 		k6 = k6 / 10;
@@ -108,7 +108,6 @@ public class Ex04 {
 		default: res = "F"; break;
 		}
 		
-		System.out.println("¼ºÀûÀº " + res);
-		
+		System.out.println("ì„±ì ì€ " + res);
 	}
 }

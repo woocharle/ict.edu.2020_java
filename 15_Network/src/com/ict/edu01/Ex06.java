@@ -52,11 +52,37 @@ public class Ex06 {
 			JSONArray j_arr = (JSONArray) obj2.get("row");
 			
 			StringBuffer sb2 = new StringBuffer();
-			
+			/* 전체보기
 			for (Object k : j_arr) {
 				//System.out.println(k);
 				sb2.append(k + "\n");
 			}
+			*/
+			
+			// 나눠서 보기
+			
+			for (Object k : j_arr) {
+				JSONObject obj3 = (JSONObject) k;
+				String name = (String) obj3.get("LBRRY_NAME");
+				String phone = (String) obj3.get("TEL_NO"); 
+				String addr = (String) obj3.get("ADRES"); 
+				System.out.print(name + "\t" + phone + "\t" + addr + "\n");
+				
+			}
+			
+			System.out.println("======================================================================");
+			
+			for (int i = 0; i < j_arr.size(); i++) {
+				JSONObject obj3 = (JSONObject) j_arr.get(i);
+				String name = (String) obj3.get("LBRRY_NAME");
+				String phone = (String) obj3.get("TEL_NO"); 
+				String addr = (String) obj3.get("ADRES"); 
+				
+				sb2.append(name + "\t" + phone + "\t" + addr + "\n");
+				System.out.print(name + "\t" + phone + "\t" + addr + "\n");
+				
+			}
+			
 			
 			// 파일로 저장하기
 			fw = new FileWriter(file);

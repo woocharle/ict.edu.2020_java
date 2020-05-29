@@ -6,19 +6,19 @@ public class Ex06 {
 	public static void main(String[] args) {
 		
 		esc: while(true) {
-			//Á¤º¸ ÀÔ·Â
+			//ì •ë³´ ì…ë ¥
 			Scanner sc = new Scanner(System.in);
 			
-			System.out.print("ÀÌ¸§: ");
+			System.out.print("ì´ë¦„: ");
 			String name = sc.next();
 			
-			System.out.print("±¹¾î: ");
+			System.out.print("êµ­ì–´: ");
 			int kor = sc.nextInt();
 			
-			System.out.print("¼öÇĞ: ");
+			System.out.print("ìˆ˜í•™: ");
 			int mat = sc.nextInt();
 			
-			System.out.print("¿µ¾î: ");
+			System.out.print("ì˜ì–´: ");
 			int eng = sc.nextInt();
 			
 			int sum = kor + mat + eng;
@@ -40,13 +40,13 @@ public class Ex06 {
 				rank = "F";
 			}
 			
-			System.out.println("ÀÌ¸§: " + name);
-			System.out.println("ÃÑÁ¡: " + sum);
-			System.out.println("Æò±Õ: " + avg);
-			System.out.println("ÇĞÁ¡: " + rank);
+			System.out.println("ì´ë¦„: " + name);
+			System.out.println("ì´ì : " + sum);
+			System.out.println("í‰ê· : " + avg);
+			System.out.println("í•™ì : " + rank);
 			
 			while(true) {
-				System.out.println("°è¼Ó ÁøÇàÇÒ±î¿ä? (1.¿¹/2.¾Æ´Ï¿ä)");
+				System.out.println("ê³„ì† ì§„í–‰í• ê¹Œìš”? (1.ì˜ˆ/2.ì•„ë‹ˆìš”)");
 				int answer = sc.nextInt();
 				if (answer == 1) {
 					continue esc;
@@ -55,7 +55,7 @@ public class Ex06 {
 					break esc;
 				}
 				else {
-					System.out.println("Á¦´ë·Î ÀÔ·ÂÇÏ½Ã¿À");
+					System.out.println("ì œëŒ€ë¡œ ì…ë ¥í•˜ì‹œì˜¤");
 					continue;
 				}
 				
@@ -63,6 +63,6 @@ public class Ex06 {
 			
 		}
 		
-		System.out.println("¼ö°íÇÏ¼Ì½À´Ï´Ù.");
+		System.out.println("ìˆ˜ê³ í•˜ì…¨ìŠµë‹ˆë‹¤.");
 	}
 }

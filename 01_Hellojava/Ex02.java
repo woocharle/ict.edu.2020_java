@@ -1,12 +1,12 @@
 public class Ex02{
 	public static void main(String[] args){
 
-		System.out.println(true);   //booleanÇü
-		System.out.println(false);  //booleanÇü
-		System.out.println('A');    //char ¹®ÀÚ
-		System.out.println(241);    //int Á¤¼ö
-		System.out.println(3.14);   //double  ½Ç¼ö 
-		System.out.println("A");    //String ¹®ÀÚ¿­
+		System.out.println(true);   //boolean ì°¸
+		System.out.println(false);  //boolean ê±°ì§“
+		System.out.println('A');    //char ë¬¸ì
+		System.out.println(241);    //int  ì •ìˆ˜
+		System.out.println(3.14);   //double  ì‹¤ìˆ˜ 
+		System.out.println("A");    //String  ë¬¸ìì—´
 		
 	}
 }

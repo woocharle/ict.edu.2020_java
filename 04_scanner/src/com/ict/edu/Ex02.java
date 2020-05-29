@@ -6,37 +6,37 @@ public class Ex02 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¼ıÀÚ ÀÔ·Â: ");
+		System.out.print("ìˆ«ì ì…ë ¥: ");
 		int su = sc.nextInt();
 		String result = "";
 		if(su % 2 == 0) {
-			result = "Â¦¼ö";
+			result = "ì§ìˆ˜";
 		}
 		if(su % 2 != 0) {
-			result = "È¦¼ö";
+			result = "í™€ìˆ˜";
 		}
 		
-		System.out.println("°á°ú: " + result);
+		System.out.println("ê²°ê³¼: " + result);
 		System.out.println();
 		
-		//±Ù¹«½Ã°£ 
+		//ê·¼ë¬´ì‹œê°„ 
 		
-		System.out.print("³ª¶óÀÔ·Â : 1.ÇÑ±¹, 2.Áß±¹, 3.ÀÏº» >> ");
+		System.out.print("ë‚˜ë¼ì…ë ¥ : 1.í•œêµ­, 2.ì¤‘êµ­, 3.ì¼ë³¸ >> ");
 		String nation = sc.next();
 		String cpt = "";
 		
 		switch (nation) {
-		case "ÇÑ±¹":	cpt = "¼­¿ï";	break;	
-		case "Áß±¹":	cpt = "º£ÀÌÂ¡";	break;	
-		case "ÀÏº»":	cpt = "µµÄì";	break;
-		default:		cpt = "data ¾øÀ½"; break;
+		case "í•œêµ­":	cpt = "ì„œìš¸";	break;	
+		case "ì¤‘êµ­":	cpt = "ë² ì´ì§•";	break;	
+		case "ì¼ë³¸":	cpt = "ë„ì¿„";	break;
+		default:		cpt = "data ì—†ìŒ"; break;
 		}
 		
-		System.out.println(nation + "ÀÇ ¼öµµ´Â " + cpt);
+		System.out.println(nation + "ì˜ ìˆ˜ë„ëŠ” " + cpt);
 		System.out.println();		
 		
 		
-		System.out.print("¾Ë¹Ù½Ã°£ : ");
+		System.out.print("ì•Œë°”ì‹œê°„ : ");
 		int time = sc.nextInt();
 		int pay = 8590;
 		int sal = 0;
@@ -48,12 +48,12 @@ public class Ex02 {
 			sal = time * pay;
 		}
 		
-		System.out.println("ÀÏ´çÀº " + sal);
+		System.out.println("ì¼ë‹¹ì€ " + sal);
 		System.out.println();
 		// menu
 		
-		System.out.print("menu ¼±ÅÃ : \n 1.Ä«Æä¸ğÄ«(3500) \n 2.Ä«Æä¶ó¶¼(4000) \n"
-				  			+ " 3.¾Æ¸Ş¸®Ä«³ë(3000)\n 4.°úÀÏÁê½º(3500) >> ");
+		System.out.print("menu ì„ íƒ : \n 1.ì¹´í˜ëª¨ì¹´(3500) \n 2.ì¹´í˜ë¼ë–¼(4000) \n"
+				  			+ " 3.ì•„ë©”ë¦¬ì¹´ë…¸(3000)\n 4.ê³¼ì¼ì¥¬ìŠ¤(3500) >> ");
 		
 		
 		int cho = sc.nextInt();
@@ -63,20 +63,17 @@ public class Ex02 {
 		int input = 10000;
 	
 		switch (cho) {
-		case 1: menu = "Ä«Æä¸ğÄ«";	price = 3500;	break;
-		case 2: menu = "Ä«Æä¶ó¶¼";	price = 4000;	break;
-		case 3: menu = "¾Æ¸Ş¸®Ä«³ë";	price = 3000;	break;
-		case 4: menu = "°úÀÏÁê½º";	price = 3500;	break;			
+		case 1: menu = "ì¹´í˜ëª¨ì¹´";	price = 3500;	break;
+		case 2: menu = "ì¹´í˜ë¼ë–¼";	price = 4000;	break;
+		case 3: menu = "ì•„ë©”ë¦¬ì¹´ë…¸";	price = 3000;	break;
+		case 4: menu = "ê³¼ì¼ì¥¬ìŠ¤";	price = 3500;	break;			
 		default: break;	
 		}
 		
 		int change = input - (int)(pp * price * 1.1); 
 		
-		System.out.println("°Å½º¸§µ·Àº " + change );
-		
-	
-		
-		
+		System.out.println("ê±°ìŠ¤ë¦„ëˆì€ " + change );
+
 		
 	}
 	

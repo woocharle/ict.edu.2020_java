@@ -12,32 +12,32 @@ public class Ex05 {
 
 		esc: while (true) {
 
-			System.out.print("¼ıÀÚÀÔ·Â: ");
+			System.out.print("ìˆ«ìì…ë ¥: ");
 			int num = sc.nextInt();
 			cnt++;
 
 			String res = "";
 
 			if (num % 2 != 1) {
-				res = "Â¦¼ö";
+				res = "ì§ìˆ˜";
 				even++;
 			} else {
-				res = "È¦¼ö";
+				res = "í™€ìˆ˜";
 				odd++;
 			}
 
-			System.out.println(num + "Àº " + res + "ÀÔ´Ï´Ù.");
+			System.out.println(num + "ì€ " + res + "ì…ë‹ˆë‹¤.");
 
 			/*
-			 * ³ªÀÇ Ç®ÀÌ
+			 * ë‚˜ì˜ í’€ì´
 			 * 
-			 * System.out.print("°è¼Ó ÇÒ ±î¿ä? ");
+			 * System.out.print("ê³„ì† í•  ê¹Œìš”? ");
 			 * 
 			 * dis = sc.nextInt();
 			 * 
 			 * 
 			 * if(dis == 2) { 
-			       System.out.println("¼ö°íÇÏ¼Ì½À´Ï´Ù."); 
+			       System.out.println("ìˆ˜ê³ í•˜ì…¨ìŠµë‹ˆë‹¤."); 
 			       break; 
 			   } 
 			   else if(dis == 1) {
@@ -45,7 +45,7 @@ public class Ex05 {
 			   } 
 			   else { 
 			   		esc:while(true) {
-			  			System.out.print("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ã¿À "); 
+			  			System.out.print("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹œì˜¤ "); 
 			 			dis = sc.nextInt(); 
 			 			if(dis == 1 || dis == 2) { 
 			 				break esc; 
@@ -53,7 +53,7 @@ public class Ex05 {
 			  		}
 			  
 					if(dis == 2) {
-						System.out.println("¼ö°íÇÏ¼Ì½À´Ï´Ù."); 
+						System.out.println("ìˆ˜ê³ í•˜ì…¨ìŠµë‹ˆë‹¤."); 
 						break; 
 					}
 			  
@@ -62,7 +62,7 @@ public class Ex05 {
 			// solution
 
 			while (true) {
-				System.out.print("°è¼Ó ÇÒ ±î¿ä? (1.yes, 2.no) ");
+				System.out.print("ê³„ì† í•  ê¹Œìš”? (1.yes, 2.no) ");
 				int k2 = sc.nextInt();
 				if (k2 == 1) {
 					continue esc;
@@ -71,7 +71,7 @@ public class Ex05 {
 					break esc;
 				}
 				else {
-					System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ½Ã¿À ");
+					System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì‹œì˜¤ ");
 					continue;
 				}
 
@@ -80,15 +80,9 @@ public class Ex05 {
 		}
 
 		System.out.println();
-		System.out.println("ÀüÃ¼ ÀÔ·Â È½¼ö´Â " + cnt);
-		System.out.println("±× Áß È¦¼öÀÇ °¹¼ö´Â " + odd);
-		System.out.println("±× Áß Â¦¼öÀÇ °¹¼ö´Â " + even);
-		
-		
-		
-		
-		
-		
+		System.out.println("ì „ì²´ ì…ë ¥ íšŸìˆ˜ëŠ” " + cnt);
+		System.out.println("ê·¸ ì¤‘ í™€ìˆ˜ì˜ ê°¯ìˆ˜ëŠ” " + odd);
+		System.out.println("ê·¸ ì¤‘ ì§ìˆ˜ì˜ ê°¯ìˆ˜ëŠ” " + even);
 
 	}
 

@@ -2,15 +2,15 @@ package com.ict.edu;
 
 public class Ex09 {
 	public static void main(String[] args) {
-		System.out.println("do ~ while 臾�");
+		System.out.println("do ~ while 문");
 		/*
 		 do{
-		 	�떎�뻾臾�;
-		 	利앷컧�떇;
-		 }while(議곌굔�떇);
+		 	실행문;
+		 	증감문;
+		 }while(조건문);
 		  
 		 */
-		System.out.println("0 ~ 10源뚯� 異쒕젰");
+		System.out.println("0 ~ 10까지 출력하시오.");
 		
 		int k1 = 0;
 		
@@ -21,7 +21,7 @@ public class Ex09 {
 		
 		System.out.println();
 		
-		System.out.println("0 ~ 10源뚯� 吏앹닔留� 異쒕젰");
+		System.out.println("0 ~ 10까지 짝수만 출력하시오.");
 		
 		k1 = 0;
 		
@@ -34,7 +34,7 @@ public class Ex09 {
 		
 		System.out.println();
 		
-		System.out.println("0 ~ 10源뚯� �늻�쟻�빀");
+		System.out.println("0 ~ 10까지의 합을 구하시오.");
 		
 		k1 = 0;
 		int sum = 0;
@@ -44,11 +44,11 @@ public class Ex09 {
 			k1++;
 		} while (k1 < 11);
 		
-		System.out.println("�늻�쟻�빀�� " + sum);	
+		System.out.println("총 합계는: " + sum);	
 		
 		System.out.println();		
 
-		System.out.println("援ш뎄�떒 5�떒");
+		System.out.println("5단을 출력하세요.");
 		
 		k1 = 1;
 		

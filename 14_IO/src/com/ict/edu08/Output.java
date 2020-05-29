@@ -13,7 +13,7 @@ public class Output {
 		String pathname = "C:" + File.separator + "study" + File.separator + "util" + File.separator + "io11.txt";
 		File file = new File(pathname);
 		
-		System.out.println("´Ù¼¸¸íÀÇ ¼ºÀûÀ» ÀÔ·ÂÇÏ½Ã¿À.");
+		System.out.println("5ëª…ì˜ ì´ë¦„ê³¼ ì„±ì ì„ ì…ë ¥í•˜ì‹œì˜¤.");
 		
 		FileOutputStream fos = null;
 		BufferedOutputStream bos = null;
@@ -35,13 +35,13 @@ public class Output {
 			ArrayList<VO1> list = new ArrayList<VO1>();
 			
 			for (int i = 0; i < 5; i++) {
-				System.out.print("ÀÌ¸§: ");
+				System.out.print("ì´ë¦„: ");
 				String name = br.readLine();
-				System.out.print("±¹¾î: ");
+				System.out.print("êµ­ì–´: ");
 				int kor = Integer.parseInt(br.readLine());
-				System.out.print("¿µ¾î: ");
+				System.out.print("ì˜ì–´: ");
 				int eng = Integer.parseInt(br.readLine());
-				System.out.print("¼öÇĞ: ");
+				System.out.print("ìˆ˜í•™: ");
 				int mat = Integer.parseInt(br.readLine());
 			
 				list.add(new VO1(name, kor, eng, mat));

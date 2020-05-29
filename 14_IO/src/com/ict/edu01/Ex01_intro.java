@@ -3,37 +3,34 @@ package com.ict.edu01;
 import java.io.File;
 
 /*
-	File Å¬·¡½º: Æ¯Á¤ À§Ä¡¿¡ Á¸ÀçÇÏ´Â ÆÄÀÏÀÌ³ª µğ·ºÅä¸®(Æú´õ)¸¦ Ã³¸®ÇÏ´Â Å¬·¡½º.
-	ÁÖ¿ä »ı¼ºÀÚ: 
-	 - File(String °æ·Î): ÇØ´ç Æú´õ¿¡ Æ÷ÇÔµÈ Æú´õµé °ø°³ 
-     - File(String »óÀ§°æ·Î, String ÇÏÀ§°æ·Î): °æ·Î¿Í Æú´õµé °ø°³.
-	 - File(File »óÀ§°æ·Î, String ÇÏÀ§°æ·Î)
-	ÁÖ¿ä ¸Ş¼Òµå:
-	- createNewFile(): ÆÄÀÏ »ı¼ºÇÏ¸é true,
-	- mkdir(), mkdirs() : µğ·ºÅä¸® »ı¼º
-	- isDirectory() : µğ·ºÅä¸®ÀÌ¸é true
-	- isFile(): ÆÄÀÏÀÌ¸é true
-	- list() : Æ¯À§Ä¡ÀÇ ÆÄÀÏ, µğ·ºÅä¸®µéÀ» String[]¿¡ ´ã¾Æ ³õ´Â °Í.
-	- length() : ÆÄÀÏÀÇ Å©±â¸¦ byte·Î Ç¥½Ã
-	- getAbsolutePath(): Àı´ë °æ·Î Ç¥½Ã	
-    - getCanonicalPath(): Á¤±ÔÈ­ °æ·Î Ç¥½Ã
-    - getPath(): »ó´ë°æ·Î Ç¥½Ã
+	File í´ë˜ìŠ¤: íŠ¹ì • ìœ„ì¹˜ì— ì¡´ì¬í•˜ëŠ” íŒŒì¼ì´ë‚˜ ë””ë ‰í† ë¦¬(í´ë”)ë¥¼ ì²˜ë¦¬í•˜ëŠ” í´ë˜ìŠ¤.
+	ì£¼ìš” ìƒì„±ì: 
+	 - File(String ê²½ë¡œ): í•´ë‹¹ í´ë”ì— í¬í•¨ëœ í´ë”ë“¤ ê³µê°œ 
+     - File(String ìƒìœ„ê²½ë¡œ, String í•˜ìœ„ê²½ë¡œ): ê²½ë¡œì™€ í´ë”ë“¤ ê³µê°œ.
+	 - File(File ìƒìœ„ê²½ë¡œ, String í•˜ìœ„ê²½ë¡œ)
+	ì£¼ìš” ë©”ì†Œë“œ:
+	- createNewFile(): íŒŒì¼ ìƒì„±í•˜ë©´ true,
+	- mkdir(), mkdirs() : ë””ë ‰í† ë¦¬ ìƒì„±
+	- isDirectory() : ë””ë ‰í† ë¦¬ì´ë©´ true
+	- isFile(): íŒŒì¼ì´ë©´ true
+	- list() : íŠ¹ì • ìœ„ì¹˜ì˜ íŒŒì¼, ë””ë ‰í† ë¦¬ë“¤ì„ String[]ì— ë‹´ì•„ ë†“ëŠ” ê²ƒ.
+	- length() : íŒŒì¼ì˜ í¬ê¸°ë¥¼ byteë¡œ í‘œì‹œ
+	- getAbsolutePath(): ì ˆëŒ€ ê²½ë¡œ í‘œì‹œ	
+    - getCanonicalPath(): ì •ê·œí™” ê²½ë¡œ í‘œì‹œ
+    - getPath(): ìƒëŒ€ê²½ë¡œ í‘œì‹œ
  	
- 	½ºÆ®¸² Á¾·ù´Â com.ict.edu2¿¡¼­
- 	
- 	
- 	
+ 	ìŠ¤íŠ¸ë¦¼ ì¢…ë¥˜ëŠ” com.ict.edu2ì—ì„œ
  	
  */
 
 
 public class Ex01_intro {
 	public static void main(String[] args) {
-		// File Å¬·¡½º »ı¼ºÀÚ¿¡ ³Ö±â À§ÇØ¼­ ¸ÕÀú ¸¸µç°Í.
+		// File í´ë˜ìŠ¤ ìƒì„±ìì— ë„£ê¸° ìœ„í•´ì„œ ë¨¼ì € ë§Œë“ ê²ƒ.
 		
-		// String pathName = "C:\\study\\util";   OS°¡ windowÀÏ ¶§,
-		// String pathName = "C:/study/util";      OS°¡ Linux, UnixÀÏ ¶§
-		// ¿î¿µÃ¼Á¦¿Í »ó°ü¾øÀÌ »ç¿ëÇÏ´Â ¹æ¹ı
+		// String pathName = "C:\\study\\util";   OSê°€ windowì¼ ê²½ìš°,
+		// String pathName = "C:/study/util";      OSê°€ Linux, Unixì¼ ê²½ìš°
+		// OSì— 
 		String pathName = "c:" + File.separator + "study" + File.separator+ "util";
 		File file = new File(pathName);
 		String[] arr = file.list();
@@ -43,17 +40,13 @@ public class Ex01_intro {
 			//System.out.println(file2);
 			
 			if (file2.isDirectory()) {
-				System.out.println("µğ·ºÅä¸®: " + file2 + " Å©±â°¡ Á¸ÀçÇÏÁö ¾ÊÀ½.");
+				System.out.println("ë””ë ‰í† ë¦¬: " + file2 + "í¬ê¸°ê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŒ.");
 			}
 			else {
-				System.out.println("ÆÄÀÏ: " + file2 + ", Å©±â: " + file2.length() + "byte");
+				System.out.println("íŒŒì¼: " + file2 + ", í¬ê¸°: " + file2.length() + "byte");
 			}
 			
 		}
-		
-		
-		
-		
 		
 	}
 

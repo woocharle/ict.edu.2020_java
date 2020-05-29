@@ -3,65 +3,65 @@ package com.ict.edu;
 public class Ex01 {
 	public static void main(String[] args) {
 		int k1 = 59;
-		String str = "ºÒÇÕ°Ý";
+		String str = "ë¶ˆí•©ê²©";
 		if(k1 >= 60) {
-			str = "ÇÕ°Ý";
+			str = "í•©ê²©";
 		}
 		
-		System.out.println("°á°ú: " + str);
-		System.out.println("¼ö°íÇÏ¼Ì½À´Ï´Ù.");
+		System.out.println("ê²°ê³¼: " + str);
+		System.out.println("ìˆ˜ê³ í•˜ì…¨ìŠµë‹ˆë‹¤.");
 		
 		
-		// È¦Â¦ ÆÇº°
+		// í™€ì§ íŒë³„
 		int k2 = 59;
-		str = "Â¦¼ö";
+		str = "ì§ìˆ˜";
 		if(k2 % 2 == 1) {
-			str = "È¦¼ö";
+			str = "í™€ìˆ˜";
 		}
 		
-		System.out.println("°á°ú: " + str);
-		System.out.println("¼ö°íÇÏ¼Ì½À´Ï´Ù.");		
+		System.out.println("ê²°ê³¼: " + str);
+		System.out.println("ìˆ˜ê³ í•˜ì…¨ìŠµë‹ˆë‹¤.");		
 		
 		
-		// ´ë¹®ÀÚ ¼Ò¹®ÀÚ ÆÇº°
+		// ëŒ€ë¬¸ìž ì†Œë¬¸ìž íŒë³„
 		
 		char k3 = '1';
-		str = "ÃÊ±âÈ­";
+		str = "ì´ˆê¸°í™”";
 		
 		if(k3 >= 'a' && k3 <= 'z') {
-			str = "¼Ò¹®ÀÚ";
+			str = "ì†Œë¬¸ìž";
 		}
 		else if(k3 >= 'A' && k3 <= 'Z'){
-			str = "´ë¹®ÀÚ";
+			str = "ëŒ€ë¬¸ìž";
 		}
 		else {
-			str = "±âÅ¸";
+			str = "ê¸°íƒ€";
 		}
 		
-		System.out.println("°á°ú: " + str);
-		System.out.println("¼ö°íÇÏ¼Ì½À´Ï´Ù.");	
+		System.out.println("ê²°ê³¼: " + str);
+		System.out.println("ìˆ˜ê³ í•˜ì…¨ìŠµë‹ˆë‹¤.");	
 		
-		// 1 ¶Ç´Â 3ÀÌ¸é ³²ÀÚ, ¾Æ´Ï¸é ¿©ÀÚ
+		// 1 ë˜ëŠ” 3ì´ë©´ ë‚¨ìž, ì•„ë‹ˆë©´ ì—¬ìž
 		
 		int k4 = 1;
 		
 		if(k4 == 1) {
-			str = "1900³â´ë ³²ÀÚ";
+			str = "1900ë…„ëŒ€ ë‚¨ìž";
 		}
 		else if(k4 == 2){
-			str = "1900³â´ë ¿©ÀÚ";
+			str = "1900ë…„ëŒ€ ì—¬ìž";
 		}
 		else if(k4 == 3){
-			str = "2000³â´ë ³²ÀÚ";
+			str = "2000ë…„ëŒ€ ë‚¨ìž";
 		}
 		else if(k4 == 4){
-			str = "2000³â´ë ¿©ÀÚ";
+			str = "2000ë…„ëŒ€ ì—¬ìž";
 		}
 		else {
-			str = "±âÅ¸";
+			str = "ê¸°íƒ€";
 		}
 		
-		System.out.println("°á°ú: " + str);
+		System.out.println("ê²°ê³¼: " + str);
 	
 		int time = 10;
 		int dan = 8590;
@@ -74,9 +74,9 @@ public class Ex01 {
 			pay = (int)((time - 8) * dan * 1.5) + 8 * dan;
 		}
 		
-		System.out.println("°á°ú: " + pay);	
+		System.out.println("ê²°ê³¼: " + pay);	
 		
-		// µÎ ¼ö Áß Å« °ª
+		// ë‘ ìˆ˜ ì¤‘ í° ê°’
 		
 		int k7 = 10;
 		int k8 = 15;
@@ -93,22 +93,11 @@ public class Ex01 {
 		}	
 		
 		if(result != 0) {
-			System.out.println("°á°ú: " + result);	
+			System.out.println("ê²°ê³¼: " + result);	
 		}
 		else {
-			System.out.println("°á°ú: equal");	
+			System.out.println("ê²°ê³¼: equal");	
 		}
-			
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 }

@@ -1,11 +1,11 @@
 package com.ict.edu4;
 
 /*	sleep(millis);
-  	 - Á¤ÀÇ: ÇØ´ç millis¾È µ¿¾È ´ë±â ¾Ë °Í.    
-  	 - millis: 1/1000ÃÊ
-	µ¥¸ó ½º·¹µå: ÀÏ¹İ ½º·¹µåÀÇ ÀÛ¾÷À» µ½´Â º¸Á¶ÀûÀÎ ¿ªÇÒÀ» ¼öÇàÇÏ´Â ½º·¹µå.
-				 ÀÏ¹İ ½º·¹µå°¡ Á¾·áÇÏ¸é µ¥¸ó ½º·¹µå´Â °­Á¦ÀûÀ¸·Î Á¾·á µÊ.
-	 - setDaemon(boolean e): e°¡ true: mainÀÌ Á¾·áÇÏ¸é thread Á¾·á, false: mainÀÌ Á¾·áÇØµµ thread ÀÛµ¿.
+	 - ì •ì˜: í•´ë‹¹ millisì•ˆ ë™ì•ˆ ëŒ€ê¸° ì•Œ ê²ƒ.    
+	 - millis: 1/1000ì´ˆ
+	ë°ëª¬ ìŠ¤ë ˆë“œ: ì¼ë°˜ ìŠ¤ë ˆë“œì˜ ì‘ì—…ì„ ë•ëŠ” ë³´ì¡°ì ì¸ ì—­í• ì„ ìˆ˜í–‰í•˜ëŠ” ìŠ¤ë ˆë“œ.
+			     ì¼ë°˜ ìŠ¤ë ˆë“œê°€ ì¢…ë£Œí•˜ë©´ ë°ëª¬ ìŠ¤ë ˆë“œëŠ” ê°•ì œì ìœ¼ë¡œ ì¢…ë£Œ ë¨.
+	 - setDaemon(boolean e): eê°€ true: mainì´ ì¢…ë£Œí•˜ë©´ thread ì¢…ë£Œ, false: mainì´ ì¢…ë£Œí•´ë„ thread ì‘ë™.
 	
 */
 
@@ -24,7 +24,7 @@ public class Ex01 implements Runnable{
 		}
 	}
 	public void autoSave() {
-		System.out.println("ÀÚ¹ÙÆÄÀÏÀ» ÀÚµ¿ ÀúÀåÇÕ´Ï´Ù.");
+		System.out.println("ìë°”íŒŒì¼ì„ ìë™ ì €ì¥í•©ë‹ˆë‹¤.");
 	}
 	
 	public static void main(String[] args) {
@@ -43,7 +43,7 @@ public class Ex01 implements Runnable{
 			System.out.println(i);
 		}
 		
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 		
 	}
 

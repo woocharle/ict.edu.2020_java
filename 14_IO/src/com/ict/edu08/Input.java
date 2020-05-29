@@ -31,17 +31,17 @@ public class Input {
 			ArrayList<VO1> list = (ArrayList<VO1>) ois.readObject();
 			
 			for(VO1 k : list) {
-				System.out.print("ÀÌ¸§: " + k.getName() + " ");
-				System.out.print("ÃÑÁ¡: " + k.getSum() + " ");
-				System.out.print("Æò±Õ: " + k.getAvg() + " ");
-				System.out.print("ÇĞÁ¡: " + k.getGrd() + " ");
-				System.out.println("¼øÀ§: " + k.getRank());
+				System.out.print("ì´ë¦„: " + k.getName() + " ");
+				System.out.print("ì´ì : " + k.getSum() + " ");
+				System.out.print("í‰ê· : " + k.getAvg() + " ");
+				System.out.print("ì„±ì : " + k.getGrd() + " ");
+				System.out.println("ìˆœìœ„: " + k.getRank());
 				
-				bw.write("ÀÌ¸§: " + k.getName() + " ");
-				bw.write("ÃÑÁ¡: " + k.getSum() + " ");
-				bw.write("Æò±Õ: " + k.getAvg() + " ");
-				bw.write("ÇĞÁ¡: " + k.getGrd() + " ");
-				bw.write("¼øÀ§: " + k.getRank() + "\n");
+				bw.write("ì´ë¦„: " + k.getName() + " ");
+				bw.write("ì´ì : " + k.getSum() + " ");
+				bw.write("í‰ê· : " + k.getAvg() + " ");
+				bw.write("ì„±ì : " + k.getGrd() + " ");
+				bw.write("ìˆœìœ„: " + k.getRank() + "\n");
 				
 			}
 			

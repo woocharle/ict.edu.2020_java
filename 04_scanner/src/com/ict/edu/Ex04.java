@@ -13,30 +13,30 @@ public class Ex04 {
 		while(true) {
 			
 			
-			System.out.print("¼ıÀÚÀÔ·Â: ");
+			System.out.print("ìˆ«ìì…ë ¥: ");
 			int num = sc.nextInt();
 			cnt++;
 			
 			String res = ""; 
 			
 			if(num % 2 != 1) {
-				res = "Â¦¼ö";
+				res = "ì§ìˆ˜";
 				even++;
 			}
 			else{
-				res = "È¦¼ö";
+				res = "í™€ìˆ˜";
 				odd++;
 			}
 			
-			System.out.println(num + "Àº " + res + "ÀÔ´Ï´Ù.");
+			System.out.println(num + "ì€" + res + "ì…ë‹ˆë‹¤.");
 			
-			System.out.print("°è¼Ó ÇÒ ±î¿ä? ");
+			System.out.print("ê³„ì† í•  ê¹Œìš”? ");
 		
 			dis = sc.nextInt();
 			
 			
 			if(dis == 2) {
-				System.out.println("¼ö°íÇÏ¼Ì½À´Ï´Ù.");
+				System.out.println("ìˆ˜ê³ í•˜ì…¨ìŠµë‹ˆë‹¤.");
 				break;
 			}
 			else if(dis == 1) {
@@ -47,9 +47,9 @@ public class Ex04 {
 		}
 		
 		System.out.println();
-		System.out.println("ÀüÃ¼ ÀÔ·Â È½¼ö´Â " + cnt);
-		System.out.println("±× Áß È¦¼öÀÇ °¹¼ö´Â " + odd);
-		System.out.println("±× Áß Â¦¼öÀÇ °¹¼ö´Â " + even);
+		System.out.println("ì „ì²´ ì…ë ¥ íšŸìˆ˜ëŠ” " + cnt);
+		System.out.println("ê·¸ ì¤‘ í™€ìˆ˜ì˜ ê°¯ìˆ˜ëŠ” " + odd);
+		System.out.println("ê·¸ ì¤‘ ì§ìˆ˜ì˜ ê°¯ìˆ˜ëŠ” " + even);
 		
 		
 	}
