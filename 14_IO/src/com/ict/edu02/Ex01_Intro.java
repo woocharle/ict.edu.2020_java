@@ -22,7 +22,9 @@ package com.ict.edu02;
 			 flush(): write후 반드시 사용, 빨리 저장할 수 있다.
 			 close(): open 된 스트림을 닫기(finally로 처리)
        - Ex03: FileInputStream
-       		 read(): int(아스키코드) => char(형변환) , read(byte[] b)
+       		   read() : int  => 결과가 숫자(아스키코드) 하나 나옴, char를 형변환해서 문자로 변경해야 된다.
+               read(byte[] b) : int  => 배열 크기를 지정해야 된다. 1byte씩 배열에 저장하고, 읽는 수 만큼 반환   
+               close() : 스트림을 닫기 (finally 로 처리)
        		 
        
        - Ex07: Buffered와 같이써서 속도 향상 시키는 법
