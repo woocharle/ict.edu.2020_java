@@ -8,21 +8,22 @@ import java.net.UnknownHostException;
 	InetAddress
      - 자바에서 IP주소를 표현하는 클래스, 생성자가 존재하지만 사용하지 않는다.
      - 6개의 static 메소드 사용
-     ※ localhost란? 현재 내가 사용하고 있는 컴퓨터를 말한다.  
- 
+     
  	URL(Unifrom Resource Locator)클래스
  	 - 인터넷에서 접근 가능한 자원의 주소.
  	 - final 클래스이다. (상속 불가)
  	 - 원격지 서버 자원의 결과만 가져온다.
  	 - 예제) Ex02
  	 
- 	URLConnection clase 
+ 	URLConnection class
  	 - 원격지 서버의 자원의 결과와 원격 서버의 헤더 정보들을 가져올 수 있다.
  	 - 예제) Ex03
  	 
+ 	
+ 	인터넷 정보
+ 	 ※ localhost란? 현재 내가 사용하고 있는 컴퓨터를 말한다.  
  	 ※ 크롤링이란? 분산 저장된 수집하는 기술. 소스가 공개되었다고 함부로 공유하면 안 된다.
  	 
- 	인터넷 정보
  	 - 헤더와 바디로 나뉨.
  	 - 헤더 정보를 가지고 웹 브라우저가 해석하고 실행한다.
  	 - 헤더 정보를 얻어내는 방법. (Ex03 참고)
