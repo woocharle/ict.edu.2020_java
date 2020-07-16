@@ -5,8 +5,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
-// PrintStreamÀº ¸ğµç ÀÚ·áÇüÀ» Ãâ·ÂÇÒ ¼ö ÀÖ´Ù.
-// º¸ÅëÀº È­¸éÀÌ³ª ÆÄÀÏ¿¡ Ãâ·ÂÇÑ´Ù. (Ãâ·ÂÀü¿ë)
+//PrintStreamì€ ëª¨ë“  ìë£Œí˜•ì„ ì¶œë ¥í•  ìˆ˜ ìˆë‹¤.
+//ë³´í†µì€ í™”ë©´ì´ë‚˜ íŒŒì¼ì— ì¶œë ¥í•œë‹¤. (ì¶œë ¥ì „ìš©)
 
 public class Ex02 {
 	public static void main(String[] args) {
@@ -19,13 +19,15 @@ public class Ex02 {
 		PrintStream ps = null;
 		
 		try {
-			//È­¸é¿¡ Ãâ·Â
+			// í™”ë©´ì— ì¶œë ¥
 			System.out.println(true);
 			System.out.println(10);
 			System.out.println(24.1);
 			System.out.println('c');
 			System.out.println("Hello");
+			System.out.println("ëŒ€í•œë¯¼êµ­");
 			
+			// íŒŒì¼ì— ì¶œë ¥
 			fos = new FileOutputStream(file1);
 			bos = new BufferedOutputStream(fos);
 			ps = new PrintStream(bos);
@@ -35,7 +37,7 @@ public class Ex02 {
 			ps.println(24.1);
 			ps.println('c');
 			ps.println("Hello");
-			ps.println("´ëÇÑ¹Î±¹");
+			ps.println("ëŒ€í•œë¯¼êµ­");
 			
 			ps.flush();
 			

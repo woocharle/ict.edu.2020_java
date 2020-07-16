@@ -1,4 +1,4 @@
-package com.ict.edu05;
+package com.ict.edu02;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -25,10 +25,10 @@ public class DAO {
 	// 접속
 	public Connection getConnection() {
 		try {
-			Class.forName("oracle.jdbc.OracleDriver");
-			String url = "jdbc:oracle:thin:@203.236.220.86";
-			String user = "c##jwc";					
-			String password = "1112";
+			Class.forName("org.mariadb.jdbc.Driver");
+			String url = "jdbc:mariadb://203.236.220.86:3306/mydb?autoReconnect=true";
+			String user = "jwc";
+			String password = "1111";
 			
 			conn = DriverManager.getConnection(url, user, password);
 			
@@ -43,7 +43,7 @@ public class DAO {
 		ArrayList<VO> list = new ArrayList<VO>();
 		try {
 			conn = getConnection();
-			String sql = "select * from members order by idx";
+			String sql = "select * from member01 order by idx";
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			// 데이터를 VO에 담는다.
@@ -76,7 +76,7 @@ public class DAO {
 		return list;
 	}
 	
-	public ArrayList<VO> getIDU(int su, String sql) {
+	public ArrayList<VO> getIDU(int su, String sql, int n_idx) {
 		ArrayList<VO> list = null;
 		String idx, id, pass, name, age;
 		
@@ -96,10 +96,13 @@ public class DAO {
 					System.out.print("나이: ");
 					age = sc.next();
 					
-					pstmt.setString(1, id);
-					pstmt.setString(2, pass);
-					pstmt.setString(3, name);
-					pstmt.setString(4, age);
+					idx = Integer.toString(n_idx);
+					
+					pstmt.setString(1, idx);
+					pstmt.setString(2, id);
+					pstmt.setString(3, pass);
+					pstmt.setString(4, name);
+					pstmt.setString(5, age);
 					
 				break;
 				

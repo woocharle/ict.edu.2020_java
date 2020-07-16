@@ -5,9 +5,9 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 
-// ObjectOutmputStream: °´Ã¼ Ãâ·Â ½Ã½ºÅÛ, ¹ÙÀÌÆ® ½ºÆ®¸²
-// writeObject() => Á÷·ÄÈ­¸Þ¼Òµå
-// DatastreamÀÌ³ª Object¸¦ ÀÌ¿ëÇÏ¸é ¸Þ¸ðÀå¿¡¼­ Àß ¾È º¸ÀÓ.
+//ObjectOutputStream : ê°ì²´ ì¶œë ¥ ìŠ¤íŠ¸ë¦¼, ë°”ì´íŠ¸ ìŠ¤íŠ¸ë¦¼
+//writeObject() => ì§ë ¬í™” ë©”ì†Œë“œ 
+//ì“´ë‹¤. => Output, VO 
 
 public class Output {
 	public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class Output {
 			bos = new BufferedOutputStream(fos);
 			oos = new ObjectOutputStream(bos);
 			
-			VO vo = new VO("°í±æµ¿", 34, 70.4, true);	
+			VO vo = new VO("ï¿½ï¿½æµ¿", 34, 70.4, true);	
 			
 			oos.writeObject(vo);
 			oos.flush();

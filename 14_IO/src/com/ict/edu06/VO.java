@@ -2,9 +2,10 @@ package com.ict.edu06;
 
 import java.io.Serializable;
 
-//  °´Ã¼ÀÇ Á¤º¸¸¦ ´ã´çÇÏ´Â Å¬·¡½º
-// Serializable ÀÎÅÍÆäÀÌ½º·Î Á÷·ÄÈ­ÇÒ ¼ö ÀÖ´Ù.
-// Á÷·ÄÈ­ Á¦¿Ü ½ÃÅ°´Â ¹æ¹ı: º¯¼ö ¾Õ¿¡ transient ¿¹¾à¾î¸¦ »ç¿ë.
+//ê°ì²´ì˜ ì •ë³´ë¥¼ ë‹´ë‹¹í•˜ëŠ” í´ë˜ìŠ¤
+//Serializable ì¸í„°í˜ì´ìŠ¤ë¥¼ ì‚¬ìš©í•´ì„œ ì§ë ¬í™”ë¥¼ í•  ìˆ˜ ìˆë‹¤.
+//ì§ë ¬í™” ì œì™¸ ì‹œí‚¤ëŠ” ë°©ë²• : ë³€ìˆ˜ì•ì— transient ì˜ˆì•½ì–´ë¥¼ ì‚¬ìš©
+//                         ì£¼ì˜ ì‚¬í•­ booleaní˜•ì€ ë¬´ì¡°ê±´ false 
 
 public class VO implements Serializable {
 	private String name;

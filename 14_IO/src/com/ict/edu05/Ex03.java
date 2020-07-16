@@ -20,12 +20,12 @@ public class Ex03 {
 			isr = new InputStreamReader(System.in);
 			br = new BufferedReader(isr);
 			
-			bw.write("¿øÇÏ´Â ¹®ÀÚ: ");
+			bw.write("ì›í•˜ëŠ” ë¬¸ì : ");
 			bw.flush();
 			
 			String msg = br.readLine();
 			
-			bw.write("¹ŞÀº ³»¿ë: " + msg);
+			bw.write("ë°›ì€ ë‚´ìš© : " + msg);
 			bw.flush();
 			
 			

@@ -5,7 +5,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 
-//  ObjectInputStream : ��ü �Է� ������, ����Ʈ ��Ʈ��.
+
+//ObjectInputStream : 객체 입력 스트림, 바이트 스트림
+//readObject() => 역직렬화 메소드
+//받아서 읽는다. Input, VO 클래스가 필요하다.
 
 
 public class Input {

@@ -13,7 +13,7 @@ public class Output {
 		String pathname = "C:" + File.separator + "study" + File.separator + "util" + File.separator + "io13.txt";
 		File file = new File(pathname);
 		
-		System.out.println("ÀÌ¸§°ú ¼ºÀûÀ» ÀÔ·ÂÇÏ½Ã¿À.");
+		System.out.println("ìë£Œë¥¼ ì…ë ¥í•˜ì‹œì˜¤.");
 		
 		FileOutputStream fos = null;
 		BufferedOutputStream bos = null;
@@ -36,13 +36,13 @@ public class Output {
 			
 			
 			loop1: while (true) {
-						System.out.print("ÀÌ¸§: ");
+						System.out.print("ì´ë¦„: ");
 						String name = br.readLine();
-						System.out.print("±¹¾î: ");
+						System.out.print("êµ­ì–´: ");
 						int kor = Integer.parseInt(br.readLine());
-						System.out.print("¿µ¾î: ");
+						System.out.print("ì˜ì–´: ");
 						int eng = Integer.parseInt(br.readLine());
-						System.out.print("¼öÇĞ: ");
+						System.out.print("ìˆ˜í•™: ");
 						int mat = Integer.parseInt(br.readLine());
 					
 						VO vo = new VO(name, kor, eng, mat);
@@ -50,7 +50,7 @@ public class Output {
 						
 						
 						loop2: while(true) {
-									System.out.println("°è¼ÓÇÏ½Ã°Ú½À´Ï±î? (y/n)");
+									System.out.println("ê³„ì†í• ê¹Œìš”? (y/n)");
 									String de = br.readLine();
 									if(de.equalsIgnoreCase("y")) {
 										continue loop1;
@@ -59,7 +59,7 @@ public class Output {
 										break loop1;
 										
 									} else {
-										System.out.println("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. y¿Í nÁß ÇÏ³ª¸¸ ÀÔ·ÂÇÏ½Ã¿À.");
+										System.out.println("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. yë‚˜ nì¤‘ í•˜ë‚˜ë§Œ ì…ë ¥í•˜ì„¸ìš”.");
 										continue loop2;
 									}
 									

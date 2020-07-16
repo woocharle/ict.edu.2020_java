@@ -2,75 +2,88 @@ package code.ict.edu;
 
 import java.io.*;
 
-
 public class Main {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String str = br.readLine();
+		String[] n0 = str.split(" ");
+		int row = Integer.parseInt(n0[0]);
+		int col = Integer.parseInt(n0[1]);
+		char[][] arr = new char[row][col]; 
+		char[][] arr1 = new char[8][8]; 
+		char[][] arr2 = new char[8][8]; 
 		
-		int n = Integer.parseInt(str);
-		int cnt = 0;
+		for (int i = 0; i < 8; i++) {
+			if(i % 2 == 0) {
+				for (int j = 0; j < 8; j++) {
+					if(j % 2 == 0) {
+						arr1[i][j] = 'B';
+						arr2[i][j] = 'W';
+					} else {
+						arr1[i][j] = 'W';
+						arr2[i][j] = 'B';
+					}
+				}
+			} else {
+				for (int j = 0; j < 8; j++) {
+					if(j % 2 == 0) {
+						arr1[i][j] = 'W';
+						arr2[i][j] = 'B';
+					} else {
+						arr1[i][j] = 'B';
+						arr2[i][j] = 'W';
+					}
+				}
+			}
+			
+		}
 		
-		for (int i = n - 1; i > 0; i--) {
-			int m = n - i;
-			
-			
-			int a = chk(m);
-			int b = 0;
+		for (int i = 0; i < row; i++) {
+			str = br.readLine();
+			for (int j = 0; j < col; j++) {
+				arr[i][j] = str.charAt(j);
+			}	
+		}
+		
+		int cnt = row * col;
+		int cnt1 = 0;
+		int cnt2 = 0;
+		
+		for (int i = 0; i < row - 7; i++) {
+			for (int j = 0; j < col - 7; j++) {
+				cnt1 = check(arr, arr1, i, j);
+				cnt2 = check(arr, arr2, i, j);
+				
+				if(cnt >= cnt1) {
+					cnt = cnt1;
+				}
+				
+				if(cnt >= cnt2) {
+					cnt = cnt2;
+				}
+				
+				
+			}
+		
+		}
+		
 
-			
-			
-			cnt += perm(i + a + b, i, a, b);
-			
-			
-			
-		}
-		
-		
-		System.out.println(perm(5, 3, 2, 0));
-		
-	
-	}
-	
-	public static int perm(int t, int a, int b, int c) {
-		int tf = 1;
-		int af = 1;
-		int bf = 1;
-		int cf = 1;
-		
-		for (int i = t; i > 1; i--) {
-			tf *= i;
-		}
-		
-		for (int i = a; i > 1; i--) {
-			af *= i;
-		}
-		
-		for (int i = b; i > 1; i--) {
-			bf *= i;
-		}
-		
-		for (int i = c; i > 1; i--) {
-			cf *= i;
-		}
-		
-		return tf / af / bf / cf;
+		System.out.println(cnt);
 		
 	}
 	
-	public static int chk(int m) {
-		int res = 0;
-		if(m <= 3) {
-			switch (m) {
-				case 1: res = 1; break;
-				case 2: res = 1; break;
-				case 3: res = 1; break;
-		
+	public static int check(char[][] arr1, char[][] arr2, int k, int l) {
+		int cnt = 0;
+
+		for (int i = 0; i < 8; i++) {
+			for (int j = 0; j < 8; j++) {
+				if(arr1[k + i][l + j] != arr2[i][j]) {
+					cnt++;
+				}
+			
 			}
 		}
-		// 3이하인 경우
-		
-		return res;
+		return cnt;
 	}
-	
+
 }

@@ -20,14 +20,11 @@ public class Ex01 {
 			char[] c = {'j', 'a', 'v', 'a', 13};
 			fw.write(c);
 			
-			fw.write("¹Ì½ºÅÍÆ®·Ô\n");
-			fw.write("1À§: ÀÓ¿µ¿õ\n");
-			fw.write("2À§: ¿µÅ¹\n");
-			fw.write("3À§: ÀÌÂù¿ø\n");
-			fw.write("4À§: ±èÈ£Áß\n");
-			fw.write("5À§: Á¤µ¿¿ø\n");
-			fw.write("6À§: Àå¹ÎÈ£\n");
-			fw.write("7À§: ±èÈñÀç\n");
+			fw.write("korea\n");
+			fw.write("ëŒ€í•œë¯¼êµ­\n");
+			fw.write("å¤§éŸ“\n");
+			fw.write("12345\n");
+			fw.flush();
 			
 			
 			fw.flush();

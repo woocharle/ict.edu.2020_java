@@ -13,7 +13,7 @@ public class Ex02 {
 			osw = new OutputStreamWriter(System.out);
 			bw = new BufferedWriter(osw);
 			
-			bw.write("³Ê³ª ³ª³ª ¶È°°Àº ÀÎ»ý");
+			bw.write("Welcome ëŒ€í•œë¯¼êµ­ !!!");
 			bw.flush();
 			
 		} catch (Exception e) {

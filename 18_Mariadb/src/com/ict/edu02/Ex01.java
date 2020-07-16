@@ -1,4 +1,4 @@
-package com.ict.edu05;
+package com.ict.edu02;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -30,6 +30,8 @@ public class Ex01 {
 		System.out.println("5. 로그인");
 		System.out.print(">>>> ");
 		int su = sc.nextInt();
+		int num = 0;
+		int cnt;
 		
 		try {
 			String sql;
@@ -38,16 +40,26 @@ public class Ex01 {
 				case 1: 
 					list = DAO.getInstance().getSelect(); 
 					listPrn(list);
+
+					
 				break;
 				case 2: 
 					list = DAO.getInstance().getSelect(); 
 					listPrn(list);
 					
-					sql = "insert into members \n"+
-						  "values(members_seq.nextval, ?, ?, ?, ?, SYSDATE)";
-					
-					
-					list = DAO.getInstance().getIDU(2 ,sql);
+					for(VO k : list) {
+						num++;
+						if(num != Integer.parseInt(k.getIdx())) {
+							break;
+						}
+	
+					}
+
+
+					sql = "insert into member01 \n"+
+						  "values(?, ?, ?, ?, ?, null)";
+
+					list = DAO.getInstance().getIDU(2 ,sql, num);
 					listPrn(list);
 				break;
 				
@@ -56,9 +68,9 @@ public class Ex01 {
 					listPrn(list);
 					DAO.getInstance().getSelect();
 	
-					sql = "delete from members where idx = ?";
+					sql = "delete from member01 where idx = ?";
 					
-					list = DAO.getInstance().getIDU(3, sql);
+					list = DAO.getInstance().getIDU(3, sql, 0);
 					listPrn(list);
 				break;
 			
@@ -68,17 +80,17 @@ public class Ex01 {
 					listPrn(list);
 					DAO.getInstance().getSelect();
 	
-					sql = "UPDATE members\n" +
-						  "SET m_age = ?\n" + 
+					sql = "UPDATE member01\n" +
+						  "SET age = ?\n" + 
 						  "where idx = ?";
 					
-					list = DAO.getInstance().getIDU(4, sql);
+					list = DAO.getInstance().getIDU(4, sql, 0);
 					listPrn(list);
 				break;
 				
 				case 5:
-					sql = "SELECT * from members \n" +
-						  "where m_id = ? and m_pw = ?";
+					sql = "SELECT * from member01 \n" +
+						  "where id = ? and pw = ?";
 					
 					list = DAO.getInstance().getLogin(sql);
 					

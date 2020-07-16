@@ -20,7 +20,7 @@ public class Ex05 {
 			bw = new BufferedWriter(fw);
 			pw = new PrintWriter(bw);
 			
-			pw.println("PrintWriter¸¦ °¡Áö°í ¿¬½ÀÀ» ÇÑ´Ù.");
+			pw.println("PrintWriterë¥¼ ê°€ì§€ê³  ì—°ìŠµí•œë‹¤.");
 			pw.println(true);
 			pw.println(12345);
 			pw.println(3.14);

@@ -2,15 +2,15 @@ package com.ict.edu;
 
 public class Ex02 {
 	public static void main(String[] args) {
-		String str = "ICTÀÎÀç°³¹ß¿ø 2°­ÀÇÀå";
+String str = "ICTì¸ì¬ê°œë°œì› 2ê°•ì˜ì¥";
 		
 		// 3. charAt(int index) : char
-		// À§Ä¡Á¤º¸°¡ ¼ıÀÚ·Î µé¾î¿À¸é ÇØ´ç À§Ä¡ÀÇ ±ÛÀÚ¸¦ ÃßÃâ
+		// ìœ„ì¹˜ì •ë³´ê°€ ìˆ«ìë¡œ ë“¤ì–´ì˜¤ë©´ í•´ë‹¹ ìœ„ì¹˜ì˜ ê¸€ìë¥¼ ì¶”ì¶œ
 		
 		char c1 = str.charAt(5);
 		System.out.println(c1);
 	
-		String str2 = "´ëÇÑ¹Î±¹ I love you 123";
+		String str2 = "ëŒ€í•œë¯¼êµ­ I love you 123";
 
 		for(int i = 0; i < str2.length(); i++) {
 			c1 = str2.charAt(i);
@@ -23,9 +23,9 @@ public class Ex02 {
 		System.out.println();
 		
 		// 4. concat(String str)
-		// ÀÔ·ÂµÈ ¹®ÀÚ¿­À» ÇØ´ç ¹®ÀÚ¿­°ú ÇÕÄ£´Ù.
+		// ì…ë ¥ëœ ë¬¸ìì—´ì„ í•´ë‹¹ ë¬¸ìì—´ê³¼ í•©ì¹œë‹¤.
 		
-		str = "´ëÇÑ¹Î±¹";
+		str = "ëŒ€í•œë¯¼êµ­";
 		str2 = "KOREA";
 		String res = str.concat(str2);
 		System.out.println(res);
@@ -34,24 +34,24 @@ public class Ex02 {
 		String str4 = "KOREA";
 		
 		if(str3.equals(str4)) {
-			System.out.println("°°´Ù.");
+			System.out.println("ê°™ë‹¤.");
 		}
 		else {
-			System.out.println("´Ù¸£´Ù");
+			System.out.println("ë‹¤ë¥´ë‹¤");
 		}
 		
 		if(str3.equalsIgnoreCase(str4)) {
-			System.out.println("°°´Ù.");
+			System.out.println("ê°™ë‹¤.");
 		}
 		else {
-			System.out.println("´Ù¸£´Ù");
+			System.out.println("ë‹¤ë¥´ë‹¤");
 		}
 		
 		System.out.println();
 		
 		//5. format (String format, Object ... args)
-		//Çü½ÄÀ» ÁöÁ¤ÇÏ°í Çü½Ä¿¡ ¸ÂÃç »ı¼º
-		String str5 = "ICT ÀÎÀç °³¹ß¿ø";
+		//í˜•ì‹ì„ ì§€ì •í•˜ê³  í˜•ì‹ì— ë§ì¶° ìƒì„±
+		String str5 = "ICT ì¸ì¬ ê°œë°œì›";
 		res = String.format("%s", str5);
 		System.out.println(res);
 		System.out.println();
@@ -60,8 +60,8 @@ public class Ex02 {
 		System.out.println();
 		
 		// 6. getBytes(): byte[]
-		// ÇØ´ç¹®ÀÚ¿­À» byte·Î º¯È¯½ÃÅ²´Ù.
-		// º¸Åë ÀÔÃâ·ÂÇÒ ¶§ »ç¿ëÇÑ´Ù.
+		// í•´ë‹¹ë¬¸ìì—´ì„ byteë¡œ ë³€í™˜ì‹œí‚¨ë‹¤.
+		// ë³´í†µ ì…ì¶œë ¥í•  ë•Œ ì‚¬ìš©í•œë‹¤.
 		
 		String str6 = "java";
 		byte[] b= str6.getBytes();
@@ -71,10 +71,10 @@ public class Ex02 {
 		System.out.println();
 		
 		//7. indexOf(int ch), indexOf(String str) :
-		// char³ª stringÀÌ µé¾î¿À¸é À§Ä¡°ªÀ» ¾Ë·ÁÁÜ.
+		// charë‚˜ stringì´ ë“¤ì–´ì˜¤ë©´ ìœ„ì¹˜ê°’ì„ ì•Œë ¤ì¤Œ.
 		String str10 = "BufferedReader";
 		
-		//'r'ÀÇ À§Ä¡°ªÀ» Ã£¾Æ¶ó.
+		//'r'ì˜ ìœ„ì¹˜ê°’ì„ ì°¾ì•„ë¼.
 		
 		int k1 = str10.indexOf("r");
 		System.out.println(k1);
@@ -89,8 +89,8 @@ public class Ex02 {
 		System.out.println();
 		
 		//8. indexOf(int ch, int fromIndex), indexOf(String str, int fromInder) :
-		// ¿©±â¼­ int fromIndex¶õ ½ÃÀÛÀ§Ä¡¸¦ ¸»ÇÑ´Ù. 
-		//¸ñÀû: ÇØ´ç ¹®ÀÚ¿­ÀÇ Ã¹¹øÂ° ¼ø¼­»Ó¸¸ ¾Æ´Ï¶ó µÎ¹øÂ° ÀÌ»óÀÇ ¿øÇÏ´Â ¼ø¼­ÀÇ ¹®ÀÚ¸¦ Ã£À» ¶§ ¾´´Ù.
+		// ì—¬ê¸°ì„œ int fromIndexë€ ì‹œì‘ìœ„ì¹˜ë¥¼ ë§í•œë‹¤. 
+		//ëª©ì : í•´ë‹¹ ë¬¸ìì—´ì˜ ì²«ë²ˆì§¸ ìˆœì„œë¿ë§Œ ì•„ë‹ˆë¼ ë‘ë²ˆì§¸ ì´ìƒì˜ ì›í•˜ëŠ” ìˆœì„œì˜ ë¬¸ìë¥¼ ì°¾ì„ ë•Œ ì“´ë‹¤.
 		
 		k1 = str10.indexOf("r", str10.indexOf('r') + 1);
 		System.out.println(k1);
@@ -104,28 +104,28 @@ public class Ex02 {
 		System.out.println(k1);
 		
 		//9. length(): int 
-		//ÇØ´ç¹®ÀÚ¿­ÀÇ ±æÀÌ¸¦ ±¸ÇÔ. (for¹®¿¡ ¸¹ÀÌ »ç¿ë)
+		//í•´ë‹¹ë¬¸ìì—´ì˜ ê¸¸ì´ë¥¼ êµ¬í•¨. (forë¬¸ì— ë§ì´ ì‚¬ìš©)
 		
-		String str11 = "abcABC123°¡³ª´Ù";
+		String str11 = "abcABC123ê°€ë‚˜ë‹¤";
 		k1 = str11.length();
-		System.out.println("±æÀÌ: " + k1);
+		System.out.println("ê¸¸ì´: " + k1);
 		
-		//10. replace:  ¹®ÀÚ¿­ Áß ¹®ÀÚ¸¦ ´Ù¸¥ ¹®ÀÚ·Î °íÄ¥ ¶§ 
+		//10. replace:  ë¬¸ìì—´ ì¤‘ ë¬¸ìë¥¼ ë‹¤ë¥¸ ë¬¸ìë¡œ ê³ ì¹  ë•Œ 
 		
-		String str12 = "´ëÇÑ¹Î±¹";
-		String str13 = str12.replace("´ëÇÑ¹Î±¹", "KOREA");
+		String str12 = "ëŒ€í•œë¯¼êµ­";
+		String str13 = str12.replace("ëŒ€í•œë¯¼êµ­", "KOREA");
 		System.out.println(str12);
 		System.out.println(str13);
 		System.out.println("==================================================================");
 		
 		
-		//11. contain: ¹®ÀÚ¿­¿¡ ÇØ´ç ¹®ÀÚ¿­ÀÌ ÀÖ´ÂÁö È®ÀÎ 
-		//String ÀÚÃ¼´Â º¯°æÀÌ µÇÁö ¾Ê´Â´Ù. ±×·¡¼­ Àß¸ø Â¥¸é ¸Ş¸ğ¸® ¼Ò¸ğ°¡ ½ÉÇÏ´Ù.
-		String str14 = "KOREA @ ´ëÇÑ¹Î±¹";
+		//11. contain: ë¬¸ìì—´ì— í•´ë‹¹ ë¬¸ìì—´ì´ ìˆëŠ”ì§€ í™•ì¸ 
+		//String ìì²´ëŠ” ë³€ê²½ì´ ë˜ì§€ ì•ŠëŠ”ë‹¤. ê·¸ë˜ì„œ ì˜ëª» ì§œë©´ ë©”ëª¨ë¦¬ ì†Œëª¨ê°€ ì‹¬í•˜ë‹¤.
+		String str14 = "KOREA @ ëŒ€í•œë¯¼êµ­";
 		boolean b1 = str14.contains("@");
 		System.out.println(b1);
 		
-		b1 = str14.contains("¹Î±¹");
+		b1 = str14.contains("ë¯¼êµ­");
 		System.out.println(b1);
 		
 		b1 = str14.contains("$");
@@ -138,22 +138,22 @@ public class Ex02 {
 		System.out.println(b1);
 		
 		//12. isEmpty():boolean
-		//ÇØ´ç¹®ÀÚ¿­ÀÌ ºñ¾îÀÖÀ¸¸é true, ¾Æ´Ï¸é false
+		//í•´ë‹¹ë¬¸ìì—´ì´ ë¹„ì–´ìˆìœ¼ë©´ true, ì•„ë‹ˆë©´ false
 		
 		String str15 ="";
 		b1 = str15.isEmpty();
 		System.out.println(b1);
 
-		str15 = "´ëÇÑ¹Î±¹";
+		str15 = "ëŒ€í•œë¯¼êµ­";
 		b1 = str15.isEmpty();
 		System.out.println(b1);
 		System.out.println("===================================================================");
 		
 		//13. split(String regex) : String[]
 		//split(String regex, int limit) : String[]
-		//String regex : ±¸ºĞÀÚ(³ª´­±âÁØ), int limit => ³ª´­ ¹è¿­ÀÇ Å©±â
+		//String regex : êµ¬ë¶„ì(ë‚˜ëˆŒê¸°ì¤€), int limit => ë‚˜ëˆŒ ë°°ì—´ì˜ í¬ê¸°
 		
-		String str16 = "»ç°ú,µş±â,¸Á°í ¿À·»Áö,ÆÄÀÎ¾ÖÇÃ,µÎ¸®¾È";
+		String str16 = "ì‚¬ê³¼,ë”¸ê¸°,ë§ê³  ì˜¤ë Œì§€,íŒŒì¸ì• í”Œ,ë‘ë¦¬ì•ˆ";
 		String[] arr1 = str16.split(",");
 		for (String k : arr1) {
 			System.out.println(k);
@@ -172,9 +172,9 @@ public class Ex02 {
 		}
 		
 		//14.substring(int beginIndex) : String
-		//   ½ÃÀÛÀ§Ä¡ºÎÅÍ ³¡±îÁö ÃßÃâ
+		//   ì‹œì‘ìœ„ì¹˜ë¶€í„° ëê¹Œì§€ ì¶”ì¶œ
 		//   substring(int beginIndex, int endIndex) 
-		//   ½ÃÀÛ À§Ä¡ºÎÅÍ ³¡À§Ä¡ Àü±îÁö ¹®ÀÚ ÃßÃâ
+		//   ì‹œì‘ ìœ„ì¹˜ë¶€í„° ëìœ„ì¹˜ ì „ê¹Œì§€ ë¬¸ì ì¶”ì¶œ
 		String str17 = "010-7777-9999";
 		String b2 = str17.substring(4, 8);
 		System.out.println(b2);
@@ -189,15 +189,15 @@ public class Ex02 {
 		System.out.println(b2);
 		System.out.println("===================================================================");
 		
-		//¼ıÀÚ¸¦ Áı¾î³Ö¾î¼­ ¹Ù²Ù±â indexof ¿Í replace
+		//ìˆ«ìë¥¼ ì§‘ì–´ë„£ì–´ì„œ ë°”ê¾¸ê¸° indexof ì™€ replace
 		
 		b2 = str18.substring(str18.indexOf("-") + 1 , str18.indexOf("-") + 2);
 		System.out.println(b2);
 		System.out.println("===================================================================");
 				
-		//15. toLowerCase(), toUppercase() : ¼Ò¹®ÀÚ, ´ë¹®´ë·Î ¹Ù²Ù´Â °Í.
+		//15. toLowerCase(), toUppercase() : ì†Œë¬¸ì, ëŒ€ë¬¸ëŒ€ë¡œ ë°”ê¾¸ëŠ” ê²ƒ.
 		
-		String str19 = "´ëÇÑ kOREa 19";
+		String str19 = "ëŒ€í•œ kOREa 19";
 		String b3 = str19.toLowerCase();
 		System.out.println(b3);
 		
@@ -207,8 +207,8 @@ public class Ex02 {
 		System.out.println("===================================================================");
 		
 		//16. toString() : String
-		// ÇüÀ» StringÀ¸·Î Çüº¯È¯
-		String str20 = "java 8 ÀÚ¹Ù 8";
+		// í˜•ì„ Stringìœ¼ë¡œ í˜•ë³€í™˜
+		String str20 = "java 8 ìë°” 8";
 		String msg = str20.toString();
 		System.out.println(msg);
 		System.out.println(str20);
@@ -217,17 +217,17 @@ public class Ex02 {
 		System.out.println("===================================================================");
 		
 		//17. trim() : String
-		//ÇØ´ç¹®ÀÚ¿­ÀÇ ¾Õ, µÚ °ø¹éÁ¦°Å, Áß°£ÀÇ °ø¹éÀº Á¦°ÅÇÏÁö ¸øÇÑ´Ù.
+		//í•´ë‹¹ë¬¸ìì—´ì˜ ì•, ë’¤ ê³µë°±ì œê±°, ì¤‘ê°„ì˜ ê³µë°±ì€ ì œê±°í•˜ì§€ ëª»í•œë‹¤.
 		
-		String str21 = "java 8 ÀÚ¹Ù 8  ";
+		String str21 = "java 8 ìë°” 8  ";
 		msg = str21.trim();
 		int chk = str21.length();
-		System.out.println(str21 + ", ¹®ÀåÀÇ ±æÀÌ: " + chk);
+		System.out.println(str21 + ", ë¬¸ì¥ì˜ ê¸¸ì´: " + chk);
 		chk = msg.length();
-		System.out.println(msg + ", ¹®ÀåÀÇ ±æÀÌ: " + chk);
+		System.out.println(msg + ", ë¬¸ì¥ì˜ ê¸¸ì´: " + chk);
 		
-		//18. valueOf(ÀÚ·áÇü) : static String
-		//¾î¶² ÀÚ·áÇüÀÌµç StringÀ¸·Î º¯°æ ½ÃÅ²´Ù.
+		//18. valueOf(ìë£Œí˜•) : static String
+		//ì–´ë–¤ ìë£Œí˜•ì´ë“  Stringìœ¼ë¡œ ë³€ê²½ ì‹œí‚¨ë‹¤.
 		
 		boolean bo1 = true;
 		char ch1 = 'A';
@@ -269,14 +269,14 @@ public class Ex02 {
 		System.out.println("===================================================================");
 		
 		/*19. Wrapper class:
-		  - °¢ ÀÚ·áÇüÀÇ ÇüÅÂ¸¦ °¡Áø ¹®ÀÚ¿­À» ÁøÂ¥ ÀÚ·áÇüÀ¸·Î º¯°æ½ÃÅ°´Â Å¬¶ó½º
-		  - ¿ø·¡ ÀÇ¹Ì´Â ±âº» ÀÚ·áÇüÀ» °´Ã¼·Î ¸¸µé ¶§ »ç¿ëÇÏ´Â Å¬·¡½º (ÀÌÁ¦´Â ÀÚµ¿À¸·Î ¸¸µé¾îÁü)
-		  - ¹®ÀÚ¿­À» booleanÇüÀ¸·Î : Boolean.parseBoolean();, true¿Í false¹Û¿¡ ¸ø µé¾î°£´Ù.
-		  - ¹®ÀÚ¿­À» Á¤¼öÇüÀ¸·Î: Integer.parseInt();
-		  - ¹®ÀÚ¿­À»  longÇüÀ¸·Î : Long.parseLong();, ¹®ÀÚ¿­¾È¿¡ ¼ıÀÚ¸¸ µé¾î°¡¾ß ÇÏ¸ç ¼ıÀÚ µÚ¿¡ LÀ» ºÙÀÌ¸é ¿À·ù°¡ ³­´Ù. ex) 100L Àº ¿À·ù
-		  - ¹®ÀÚ¿­À» floatÀ¸·Î : Float.parseFloat();, long°ú ¸¶Âù°¡Áö·Î ¼ıÀÚ µÚ¿¡ f¸¦ ºÙ¿©µµ ¿À·ù°¡ ³ªÁö ¾Ê´Â´Ù.
-		  - ¹®ÀÚ¿­À» double·Î : Double.parseDouble();
-		  - ¹®ÀÚ¿­À» ¹®ÀÚ·Î ¹Ù²Ù´Â Wrapper class´Â ¾ø´Ù.
+		  - ê° ìë£Œí˜•ì˜ í˜•íƒœë¥¼ ê°€ì§„ ë¬¸ìì—´ì„ ì§„ì§œ ìë£Œí˜•ìœ¼ë¡œ ë³€ê²½ì‹œí‚¤ëŠ” í´ë¼ìŠ¤
+		  - ì›ë˜ ì˜ë¯¸ëŠ” ê¸°ë³¸ ìë£Œí˜•ì„ ê°ì²´ë¡œ ë§Œë“¤ ë•Œ ì‚¬ìš©í•˜ëŠ” í´ë˜ìŠ¤ (ì´ì œëŠ” ìë™ìœ¼ë¡œ ë§Œë“¤ì–´ì§)
+		  - ë¬¸ìì—´ì„ booleaní˜•ìœ¼ë¡œ : Boolean.parseBoolean();, trueì™€ falseë°–ì— ëª» ë“¤ì–´ê°„ë‹¤.
+		  - ë¬¸ìì—´ì„ ì •ìˆ˜í˜•ìœ¼ë¡œ: Integer.parseInt();
+		  - ë¬¸ìì—´ì„ longí˜•ìœ¼ë¡œ : Long.parseLong();, ë¬¸ìì—´ì•ˆì— ìˆ«ìë§Œ ë“¤ì–´ê°€ì•¼ í•˜ë©° ìˆ«ì ë’¤ì— Lì„ ë¶™ì´ë©´ ì˜¤ë¥˜ê°€ ë‚œë‹¤. ex) 100L ì€ ì˜¤ë¥˜
+		  - ë¬¸ìì—´ì„ floatìœ¼ë¡œ : Float.parseFloat();, longê³¼ ë§ˆì°¬ê°€ì§€ë¡œ ìˆ«ì ë’¤ì— fë¥¼ ë¶™ì—¬ë„ ì˜¤ë¥˜ê°€ ë‚˜ì§€ ì•ŠëŠ”ë‹¤.
+		  - ë¬¸ìì—´ì„ doubleë¡œ : Double.parseDouble();
+		  - ë¬¸ìì—´ì„ ë¬¸ìë¡œ ë°”ê¾¸ëŠ” Wrapper classëŠ” ì—†ë‹¤.
 		*/
 		
 		String message = "true";
@@ -309,8 +309,8 @@ public class Ex02 {
 		System.out.println("==================================================================="); 
 		
 		// 20. toCharArray() : char[]
-		// ÇØ´ç¹®ÀÚ¿­À» char[]·Î ¸¸µé¾îÁÜ.
-		message = "java ÀÚ¹Ù JAVA ÓŞùÛÚÅÏĞ 2020";
+		// í•´ë‹¹ë¬¸ìì—´ì„ char[]ë¡œ ë§Œë“¤ì–´ì¤Œ.
+		message = "java ìë°” JAVA å¤§éŸ“æ°‘åœ‹ 2020";
 		byte[] m7 = message.getBytes();
 		for(byte k : m7) {
 			System.out.print(k + " ");
@@ -321,8 +321,5 @@ public class Ex02 {
 		for(char k : m8) {
 			System.out.print(k + " ");
 		}
-		
-		
-		
 	}
 }

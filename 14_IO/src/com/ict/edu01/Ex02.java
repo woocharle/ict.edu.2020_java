@@ -11,34 +11,34 @@ public class Ex02 {
 			boolean res = file.createNewFile();
 			
 			if(res) {
-				System.out.println("ÆÄÀÏ »ı¼º ¼º°ø");
+				System.out.println("íŒŒì¼ ìƒì„± ì„±ê³µ");
 			}
 			else {
-				System.out.println("ÆÄÀÏ »ı¼º ½ÇÆĞ");
+				System.out.println("íŒŒì¼ ìƒì„± ì‹¤íŒ¨");
 			}
 			
 		} catch (IOException e) {
-			System.out.println("ÆÄÀÏ »ı¼º ½ÇÆĞ");
-			System.out.println("ÆÄÀÏ°æ·Î°¡ Æ²·È½À´Ï´Ù.");
+			System.out.println("íŒŒì¼ ìƒì„± ì‹¤íŒ¨");
+			System.out.println("íŒŒì¼ê²½ë¡œê°€ í‹€ë ¸ìŠµë‹ˆë‹¤.");
 		}
 		
 		System.out.println();
-		System.out.println("Æú´õ ¸¸µé±â");
+		System.out.println("í´ë” ë§Œë“¤ê¸°");
 		
 		String pathName2 = "c:" + File.separator + "study" + File.separator+ "util"+ File.separator+ "test";
 		File file2 = new File(pathName2);
 		
 		boolean res2 = file2.mkdir();
 		if (res2) {
-			System.out.println("Æú´õ »ı¼º ¼º°ø");
+			System.out.println("í´ë” ìƒì„± ì„±ê³µ");
 		} 
 		else {
-			// °æ·Î°¡ Æ²¸®°Å³ª °°Àº µğ·ºÅä¸®°¡ ÀÖÀ¸¸é, ½ÇÆĞ.
-			System.out.println("Æú´õ »ı¼º ½ÇÆĞ");
+			// ê²½ë¡œê°€ í‹€ë¦¬ê±°ë‚˜ ë””ë ‰í† ë¦¬ê°€ ìˆìœ¼ë©´, ì‹¤íŒ¨
+			System.out.println("í´ë” ìƒì„± ì‹¤íŒ¨");
 		}
 		
 		System.out.println();
-		System.out.println("»èÁ¦");
+		System.out.println("íŒŒì¼ ì‚­ì œ");
 		
 		
 		String pathName3 = "c:" + File.separator + "study" + File.separator+ "util"+ File.separator+ "test.txt";
@@ -46,11 +46,11 @@ public class Ex02 {
 	
 		boolean res3 = file3.delete();
 		if (res3) {
-			System.out.println("ÆÄÀÏ »èÁ¦ ¼º°ø");
+			System.out.println("íŒŒì¼ ì‚­ì œ ì„±ê³µ");
 		} 
 		else {
-			// °æ·Î°¡ Æ²¸®°Å³ª °°Àº µğ·ºÅä¸®°¡ ÀÖÀ¸¸é, ½ÇÆĞ.
-			System.out.println("ÆÄÀÏ »èÁ¦ ½ÇÆĞ");
+			// ê²½ë¡œê°€ í‹€ë¦¬ê±°ë‚˜ í•´ë‹¹ íŒŒì¼ì´ ì—†ìœ¼ë©´
+			System.out.println("íŒŒì¼ ì‚­ì œ ì‹¤íŒ¨");
 		}
 			
 		String pathName4 = "c:" + File.separator + "study" + File.separator+ "util"+ File.separator+ "test";
@@ -58,11 +58,11 @@ public class Ex02 {
 	
 		boolean res4 = file4.delete();
 		if (res4) {
-			System.out.println("Æú´õ »èÁ¦ ¼º°ø");
+			System.out.println("í´ë” ì‚­ì œ ì„±ê³µ");
 		} 
 		else {
-			// °æ·Î°¡ Æ²¸®°Å³ª °°Àº µğ·ºÅä¸®°¡ ÀÖÀ¸¸é, ½ÇÆĞ.
-			System.out.println("Æú´õ »èÁ¦ ½ÇÆĞ");
+			// ê²½ë¡œê°€ í‹€ë¦¬ê±°ë‚˜ ë””ë ‰í† ë¦¬ê°€ ìˆìœ¼ë©´, ì‹¤íŒ¨
+			System.out.println("í´ë” ì‚­ì œ ì‹¤íŒ¨");
 		}
 		
 		

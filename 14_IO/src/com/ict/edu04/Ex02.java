@@ -22,16 +22,14 @@ public class Ex02 {
 			char[] c = {'j', 'a', 'v', 'a', 13};
 			bw.write(c);
 			
-			bw.write("¹Ì½ºÅÍÆ®·Ô");
+			// String : ì¤„ë°”ê¾¸ê¸° ë©”ì†Œë“œ=> newLine()
+			bw.write("korea");
 			bw.newLine();
-			bw.write("1À§: ÀÓ¿µ¿õ");
-			bw.write(", 2À§: ¿µÅ¹");
-			bw.write(", 3À§: ÀÌÂù¿ø");
+			bw.write("ëŒ€í•œë¯¼êµ­");
 			bw.newLine();
-			bw.write("4À§: ±èÈ£Áß");
-			bw.write(", 5À§: Á¤µ¿¿ø ");
-			bw.write(", 6À§: Àå¹ÎÈ£");
-			bw.write(", 7À§: ±èÈñÀç");
+			bw.write("å¤§éŸ“");
+			bw.newLine();
+			bw.write("12345");
 			
 			
 			bw.flush();

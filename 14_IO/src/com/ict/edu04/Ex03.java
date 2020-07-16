@@ -13,17 +13,18 @@ public class Ex03 {
 		try {
 			fr = new FileReader(file);
 			
-			// ÇÑ ±ÛÀÚ ÀĞ±â.
-			//int k = fr.read();
-			//System.out.println(k + ":" + (char)k);
+			// í•œ ê¸€ì ì½ê¸° : ëª¨ë“  ê¸€ìì„ ì½ì–´ì˜¬ìˆ˜ ìˆë‹¤.
+			// int k =  fr.read();
+			// System.out.println(k+":"+(char)(k));
 			
-			/*ÀüÃ¼ ÀĞ±â
+			// ì „ì²´ ì½ê¸°
+			/*
 			int k = 0;
 			while((k=fr.read()) != -1) {
 				System.out.println((char)k);
 			}*/
 			
-			//char[] for¹®°ú String
+			
  			char[] c = new char[(int)file.length()];
 			fr.read(c);
 			String str = new String(c);

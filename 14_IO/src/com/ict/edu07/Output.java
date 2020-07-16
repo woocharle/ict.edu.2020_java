@@ -21,11 +21,11 @@ public class Output {
 			bos = new BufferedOutputStream(fos);
 			oos = new ObjectOutputStream(bos);
 				
-			VO vo1 = new VO("°í±æµ¿", 34, 70.4, true);	
-			VO vo2 = new VO("¶ÇÄ¡", 34, 70.4, false);	
-			VO vo3 = new VO("µÑ¸®", 34, 70.4, true);	
-			VO vo4 = new VO("µµ¿ì³Ê", 34, 70.4, true);	
-			VO vo5 = new VO("Èñµ¿ÀÌ", 34, 70.4, true);	
+			VO vo1 = new VO("ê³ ê¸¸ë™", 34, 70.4, true);
+			VO vo2 = new VO("ë§ˆì´ì½œ", 16, 56.4, false);
+			VO vo3 = new VO("ë‘˜ë¦¬", 14, 86.7, true);
+			VO vo4 = new VO("í¬ë™ì´", 3, 74.1, true);
+			VO vo5 = new VO("ë„ìš°ë„ˆ", 47, 94.1, false);
 					
 			ArrayList<VO> list = new ArrayList<VO>();
 			
@@ -35,7 +35,7 @@ public class Output {
 			list.add(vo4);
 			list.add(vo5);
 
-			
+			// ê°ì²´ ì§ë ¬í™”
 			oos.writeObject(list);
 			oos.flush();
 			

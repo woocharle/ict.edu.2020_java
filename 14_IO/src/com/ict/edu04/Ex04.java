@@ -17,11 +17,11 @@ public class Ex04 {
 			fr = new FileReader(file);
 			br = new BufferedReader(fr);
 			
-			/*ÇÑÁÙ ÀĞ±â
+			/*í•œì¤„ ì½ê¸°
 			String msg = br.readLine();
 			System.out.println(msg); */
 			
-			//¸ğµÎ ÀĞ±â
+			//ëª¨ë‘ ì½ê¸°
 			String str = null;
 			String msg = null;
 			while((msg = br.readLine()) != null) {

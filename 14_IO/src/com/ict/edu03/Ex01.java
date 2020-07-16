@@ -24,7 +24,7 @@ public class Ex01 {
 			fis = new FileInputStream(file1);
 			dis = new DataInputStream(fis);
 				
-			// ����: writeXXX() : XXX�� �⺻ �ڷ����� ���Ѵ�.
+			// 쓰기 :  writeXXX() : XXX 는 기본 자료형를 말한다.
 			dos.writeByte(126);
 			dos.writeShort(5422);
 			dos.writeInt(124);
@@ -36,7 +36,7 @@ public class Ex01 {
 			
 			dos.flush();
 			
-			//�б�: readXXX()
+			// 읽기 : readXXX : XXX 는 기본 자료형을 말한다.
 			System.out.println(dis.readByte());
 			System.out.println(dis.readShort());
 			System.out.println(dis.readInt());

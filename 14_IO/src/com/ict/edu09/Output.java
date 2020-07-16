@@ -19,7 +19,7 @@ public class Output {
 			bos = new BufferedOutputStream(fos);
 			oos = new ObjectOutputStream(bos);
 			
-			VO2 vo = new VO2("ÅÂ±ÇºêÀÌ", 25, 190.1, true);
+			VO2 vo = new VO2("íƒœê¶Œë¸Œì´", 25, 190.1, true);
 			oos.writeObject(vo);
 			oos.flush();
 			
